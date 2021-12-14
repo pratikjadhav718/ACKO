@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import style from "./cars.module.css";
 
+
 function Cars() {
   return (
     <div className={style.carsbody}>
@@ -25,11 +26,17 @@ function Cars() {
           fontWeight: "700",
           fontSize: "16px",
           lineHeight: "26px",
-                  color: "#8A909F",
-          marginTop:"10px"
+          color: "#8A909F",
+          marginTop: "10px",
         }}
       >
         Insure your car in 2 minutes
+      </div>
+      <div className={style.divflex}>
+        <div className={style.flexdiv1}>
+      
+        </div>
+        <div className={style.flexdiv2}></div>
       </div>
     </div>
   );
