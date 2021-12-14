@@ -13,6 +13,7 @@ function Useofcar() {
           fontSize: "24px",
           lineHeight: "28px",
           alignItems: "center",
+          textAlign:"center"
         }}
       >
         What do you use car for?
@@ -27,7 +28,7 @@ function Useofcar() {
               lineHeight: "10px",
               fontStyle: "normal",
               fontWeight: "bold",
-              fontSize: "12px",
+              fontSize: "14px",
             }}
           >
             Personal Use
@@ -37,7 +38,7 @@ function Useofcar() {
               lineHeight: "10px",
               fontStyle: "normal",
               fontWeight: "bold",
-              fontSize: "8px",
+              fontSize: "10px",
               color: "#8A909F",
             }}
           >
@@ -56,7 +57,7 @@ function Useofcar() {
               lineHeight: "10px",
               fontStyle: "normal",
               fontWeight: "bold",
-              fontSize: "12px",
+              fontSize: "14px",
             }}
           >
             Commercial Use
@@ -66,7 +67,7 @@ function Useofcar() {
               lineHeight: "10px",
               fontStyle: "normal",
               fontWeight: "bold",
-              fontSize: "8px",
+              fontSize: "10px",
               color: "#8A909F",
             }}
           >

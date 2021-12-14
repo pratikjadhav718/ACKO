@@ -25,6 +25,7 @@ function Common() {
             lineHeight: "26px",
             color: "#8A909F",
             marginTop: "10px",
+            textAlign:"center"
           }}
         >
           Insure your car in 2 minutes
