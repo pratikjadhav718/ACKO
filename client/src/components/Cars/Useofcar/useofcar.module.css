@@ -1,14 +1,28 @@
 .useofcarbody{
     border: 1px solid black;
-  width: 700px;
+ 
+ 
+  min-width: 300px;
 }
 
 
 .personalcardiv{
 display: flex;
 justify-content: space-around;
-width: 30%;
-margin: "20px auto";
+width: 100%;
+margin: 20px auto;
 height: 60px;
 background-color: #F4F7FE;
+border-radius: 14px;
+transition: 0.4s;
+cursor: pointer;
+}
+
+.personalcardiv:hover{
+width: 52%;
+}
+@media only screen and (min-width: 1100px){
+  .useofcarbody{
+min-width: 600px;
+  }
 }
