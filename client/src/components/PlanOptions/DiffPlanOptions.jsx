@@ -1,3 +1,7 @@
+
+
 export const DifferentPlanOptions=()=>{
-    return <div></div>
+    return <div>
+
+    </div>
 }

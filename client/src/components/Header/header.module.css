@@ -1,0 +1,38 @@
+.headerbody{
+    width: 100%;
+min-height: 56px;
+box-shadow: 0px 2px 0px #F6F7FB;
+background: #FFFFFF;
+border: 1px solid black;
+}
+
+.headerlogodiv{
+    border: 1px solid black;
+    width: 5%;
+    min-height: 10px;
+  max-height: 20px;
+    min-height: 24px;
+    position: relative;
+margin-top: 10px;
+}
+
+.headerlogo{
+      position: absolute;
+    width: 100%;
+background: #9364ED;
+left: 0;
+
+}
+
+.circlelogo{
+    position: absolute;
+z-index: 2;
+right: 0;
+}
+
+/* .backviolet{
+    width: 100%;
+      position: absolute;
+z-index: 1;
+
+} */
