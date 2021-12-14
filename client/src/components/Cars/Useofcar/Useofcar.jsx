@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./useofcar.module.css";
 import percar from "./personelcar.svg";
-import colorcar from "./colorcar.svg"
+import colorcar from "./colourcar.svg"
 
 function Useofcar() {
   return (
