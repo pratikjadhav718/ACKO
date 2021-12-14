@@ -4,12 +4,12 @@ import percar from "./personelcar.svg";
 
 function Useofcar() {
   return (
-    <div style={{ border: "1px solid black" }}>
+    <div className={style.useofcarbody}>
       <div
         style={{
           fontStyle: "normal",
           fontWeight: "500",
-          fontSize: "18px",
+          fontSize: "24px",
           lineHeight: "28px",
           alignItems: "center",
         }}
@@ -26,7 +26,7 @@ function Useofcar() {
         }}
       >
         <div>
-          <img src={percar}  style={{marginTop:"10px"}}></img>
+          <img src={percar} style={{ marginTop: "10px" }}></img>
         </div>
         <div>
           <p

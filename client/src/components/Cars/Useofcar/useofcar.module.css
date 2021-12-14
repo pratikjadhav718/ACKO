@@ -1,4 +1,14 @@
+.useofcarbody{
+    border: 1px solid black;
+  width: 700px;
+}
+
+
 .personalcardiv{
 display: flex;
 justify-content: space-around;
+width: 30%;
+margin: "20px auto";
+height: 60px;
+background-color: #F4F7FE;
 }
