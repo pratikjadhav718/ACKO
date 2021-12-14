@@ -1,0 +1,6 @@
+.dynamicbody{
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    height: 400px;
+}
