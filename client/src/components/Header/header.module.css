@@ -3,24 +3,27 @@
 min-height: 56px;
 box-shadow: 0px 2px 0px #F6F7FB;
 background: #FFFFFF;
-border: 1px solid black;
+
 }
 
 .headerlogodiv{
     border: 1px solid black;
-    width: 5%;
+    width: 10%;
     min-height: 10px;
   max-height: 20px;
     min-height: 24px;
     position: relative;
 margin-top: 10px;
+margin-left: 30%;
 }
 
 .headerlogo{
-      position: absolute;
+      /* position: absolute; */
     width: 100%;
 background: #9364ED;
-left: 0;
+height: 100%;
+
+ /* border: 1px solid black; */
 
 }
 
@@ -28,11 +31,8 @@ left: 0;
     position: absolute;
 z-index: 2;
 right: 0;
+width: 1em;
+top: 0.3em;
 }
 
-/* .backviolet{
-    width: 100%;
-      position: absolute;
-z-index: 1;
 
-} */

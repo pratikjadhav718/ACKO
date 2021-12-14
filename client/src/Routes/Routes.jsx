@@ -1,16 +1,28 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import Cars from '../components/Cars/Cars'
+import Useofcar from '../components/Cars/Useofcar/Useofcar';
+import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
 
 function Routes() {
-    return (
-        <>
-            <Switch>
-                <Route>
-                    <h1>404:Page not found</h1>
-                </Route>
-            </Switch>
-        </>
-    )
+  return (
+    <>
+      <Switch>
+
+        <Route path="/cars" exact>
+         <Useofcar/>
+        </Route>
+
+        <Route path="/plans">
+          <DifferentPlanOptions></DifferentPlanOptions>
+        </Route>
+
+        <Route>
+          <h1>404:Page not found</h1>
+        </Route>
+      </Switch>
+    </>
+  )
 }
 
-export default Routes
+export default Routes;
