@@ -25,8 +25,8 @@ function Routes() {
           <Routecarnumber />
         </Route>
 
-        <Route>
-         <Routepolicy/>
+        <Route path="/cars/policy" exact>
+          <Routepolicy />
         </Route>
 
         <Route path="/plans">
@@ -40,7 +40,6 @@ function Routes() {
         <Route>
           <h1>404:Page not found</h1>
         </Route>
-
       </Switch>
     </>
   );
