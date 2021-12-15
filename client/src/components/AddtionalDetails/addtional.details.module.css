@@ -1,0 +1,214 @@
+.maindiv {
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+    height: 1000px;
+}
+
+.flexdiv {
+    display: flex;
+    justify-content: space-around;
+}
+
+.detailsmaindiv {
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    height: 481px;
+    width: 304px;
+    margin-top: 10px;
+    margin-left: 24%;
+
+    /* position: absolute;
+    width: 304px;
+    height: 481px;
+    left: 344px;
+    top: 88px; */
+}
+
+.owndamageplandiv1 {
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    width: 240px;
+    height: 56px;
+    margin-left: auto;
+    margin-top: 32px;    
+
+    /* position: absolute;
+    width: 240px;
+    height: 56px;
+    left: 728px;
+    top: 120px; */
+}
+
+.owndamageplandiv2 {
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    width: 240px;
+    height: 284px;
+    margin-top: 32px;
+    margin-left: auto;
+
+    /* position: absolute;
+    width: 240px;
+    height: 284px;
+    left: 728px;
+    top: 208px; */
+}
+
+.noticediv {
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    width: 256px;
+    height: 144px;
+    margin-top: 48px;
+    margin-left: 24%;
+
+    /* position: absolute;
+    width: 256px;
+    height: 144px;
+    left: 344px;
+    top: 617px; */
+}
+
+
+/* .hrclass  {
+    position: absolute;
+    width: 256px;
+    height: 0px;
+    left: 344px;
+    top: 785px;
+} */
+
+.termsandconditions {
+    width: 258px;
+    height: 20px;
+    margin-top: 48px;
+    margin-left: 24%;
+
+    /* position: absolute;
+    width: 258px;
+    height: 20px;
+    left: 349px;
+    top: 809px; */
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 8px;
+    line-height: 10px;
+
+    color: #000000;
+}
+
+.continuebtndiv {
+    margin-top: 48px;
+    margin-left: 24%;
+    width: 176px;
+    height: 40px;
+}
+
+.continuebtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 48px;
+
+    /* position: absolute;
+    width: 176px;
+    height: 40px;
+    left: 344px;
+    top: 853px; */
+
+    /* Secondary Colour/Button */
+
+    background: #522ED3;
+    border-radius: 4px;
+    color: white;
+    font-weight: 650;
+}
+
+
+
+
+.topdottedline {
+    margin-top: 24px;
+}
+
+hr.dottedline{
+    border-top: 1px dotted red;
+}
+
+.title {
+    width: 303px;
+    height: 28px;
+    margin-top: 23px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.titlediscription {
+    /* border: 1px solid black; */
+    width: 100%;
+    max-width: 304px;
+    height: 40px;
+    padding-right: 30px;
+    /* padding-left: 30px; */
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
+
+    color: #000000;
+}
+
+.fullnamediv {
+    /* width: 100%; */
+    display: block;
+}
+
+.nameinput {
+    width: 100%;
+    /* display: block; */
+    height: 40px;
+    margin-top: 24px;
+
+    border: 1px solid #9364ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.nameinput:focus{
+    outline: none !important;
+    border-color: #9364ED;
+    box-shadow: 0 0 10px #9364ED;
+}
+
+.emailinput {
+    width: 100%;
+    height: 40px;
+    margin-top: 24px;
+
+    border: 1px solid #9364ED;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.emailinput:focus {
+    outline: none !important;
+    border-color: #9364ED;
+    box-shadow: 0 0 10px #9364ED;
+}
+
