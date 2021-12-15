@@ -10,7 +10,23 @@ export const AddtionalDetails = () => {
             <div className={style.flexdiv}>
                 <div>
                     <div className={style.detailsmaindiv}>
+                        <div className={style.topdottedline}>
+                            <hr className={style.dottedline}/>
+                        </div>
+                        <div className={style.title}>
+                            Answer a few more questions
+                        </div>
+                        <div className={style.titlediscription}>
+                            We ask for minimum information required to issue your policy. You can always add additional details like nominee details & address post policy issuance
+                        </div>
 
+                        <div className={style.fullnamediv}>
+                            <input type="text" placeholder="Full Name" className={style.nameinput}/>
+                        </div>
+
+                        <div className={style.emaildiv}>
+                            <input type="email" placeholder="Email" className={style.emailinput}/>
+                        </div>
                     </div>
 
                     <div className={style.noticediv}>
