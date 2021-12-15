@@ -12,7 +12,7 @@ function Cardetail() {
             style={{
               fontStyle: "normal",
               fontWeight: "500",
-              fontSize: "22px",
+              fontSize: "24px",
               lineHeight: "28px",
             }}
           >
@@ -22,12 +22,13 @@ function Cardetail() {
           <div
             style={{
               background: "F5F5F5",
-
+              fontSize: "18px",
               width: "100px",
               backgroundColor: "#F5F5F5",
               marginTop: "20px",
               borderRadius: "4px",
               fontWeight: "bolder",
+              marginLeft: "10px",
             }}
           >
             TN74MD12
@@ -56,6 +57,37 @@ function Cardetail() {
         </div>
       </div>
       <hr />
+
+      <div
+        style={{
+          fontStyle: "normal",
+          fontWeight: "700",
+          fontSize: "12px",
+          lineHeight: "15px",
+          marginTop: "20px",
+        }}
+      >
+        Do you have external CNG kit
+      </div>
+      <div></div>
+      <p
+        style={{
+          fontStyle: "normal",
+          fontWeight: "500",
+          fontSize: "12px",
+          lineHeight: "10px",
+          color: "#8F909A",
+        }}
+      >
+        Mobile Number
+      </p>
+      <input className={style.detailinp} placeholder="90000900000" />
+      <div className={style.cardepara}>
+        <p>We'll only use it to send you important policy updates. No spam,</p>
+        <p style={{ textAlign: "center" }}>We Promise!!</p>
+      </div>
+
+      <div><button className={style.deebtn} >Continue</button></div>
     </div>
   );
 }

@@ -34,6 +34,44 @@
   margin-top: 100px
 }
 
+.detailinp{
+    width: 250px;
+    height: 32px;
+    padding: 8px 84px;
+    border: 1px solid #9364ED;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.detailinp:focus{
+      outline: none !important;
+    border-color: #9364ED;
+    box-shadow: 0 0 10px #9364ED;
+}
+
+.cardepara{
+    width: 250px;
+}
+
+.cardepara >p{
+color: #8F909A;
+font-style: normal;
+font-weight: 500;
+font-size: 8px;
+line-height: 10px;
+}
+
+.deebtn{
+    background: #522ED3;
+border-radius: 4px;
+padding: 8px 32px;
+color: white;
+width: 176px;
+border: none;
+margin-top: 25px;
+cursor: pointer;
+}
+
 @media only screen and (max-width: 600px){
     .cardetailbody{
         min-width: 300px;
