@@ -10,3 +10,12 @@
     line-height: 4px;
 
 }
+
+.expirycont{
+    background: #522ED3;
+border-radius: 4px;
+border: none;
+padding: 8px 64px;
+width: 176px;
+cursor: pointer;
+}

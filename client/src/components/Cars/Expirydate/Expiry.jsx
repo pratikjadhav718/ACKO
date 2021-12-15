@@ -31,8 +31,8 @@ function Expiry() {
         <div className={style.datetpdiv}></div>
         <div className={style.dateoddiv}></div>
       </div>
-
-      <div style={{ marginTop: "10px" }}>
+<div style={{marginTop:"25px"}} ><button className={style.expirycont} >Continue</button></div>
+      <div style={{ marginTop: "16px" }}>
         <p className={style.expirypara}>
           Cars bought after Sept 2018 come with a bundled policy covering the
           car for 1year and third part for 3 years in case of an accident.
