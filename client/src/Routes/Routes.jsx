@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-
+import Routecardetail from "../components/Cars/Cardetail/Routecardetail"
 import { AddtionalDetails } from '../components/AddtionalDetails/AddtionalDetails';
 import Routecarnumber from "../components/Cars/Carnumber/Routecarnumber"
 import Routeexpiry from '../components/Cars/Expirydate/Routeexpiry';
@@ -32,6 +32,10 @@ function Routes() {
 
         <Route path="/cars/policy" exact>
           <Routepolicy />
+        </Route>
+
+        <Route path="/cars/cardetail" exact>
+          <Routecardetail />
         </Route>
 
         <Route path="/plans">
