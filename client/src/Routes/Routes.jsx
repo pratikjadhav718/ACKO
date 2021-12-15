@@ -1,5 +1,6 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
+import Routecarnumber from '../components/Cars/Carnumber/Routecarnumber';
 import Routepincode from '../components/Cars/Pincode/Routepincode';
 import Routeuseofcar from '../components/Cars/Useofcar/Routeuseofcar';
 import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
@@ -13,7 +14,10 @@ function Routes() {
         </Route>
 
         <Route path="/cars/pincode" exact>
-          <Routepincode/>
+          <Routepincode />
+        </Route>
+        <Route path="/cars/carnumber" exact>
+          <Routecarnumber />
         </Route>
 
         <Route path="/plans">

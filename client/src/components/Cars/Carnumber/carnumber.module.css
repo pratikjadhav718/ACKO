@@ -1,0 +1,27 @@
+.pininput{
+margin-top: 25px;
+width: 240px;
+height: 32px;
+padding: 8px 96px 8px 32px;
+border: 1px solid #9364ED;
+box-sizing: border-box;
+border-radius: 4px;
+}
+
+.pininput:focus{
+    outline: none !important;
+    border-color: #9364ED;
+    box-shadow: 0 0 10px #9364ED;
+}
+
+.pinbtn{
+    padding: 8px 32px;
+    width: 176px;
+height: 32px;
+background: #522ED3;
+border-radius: 4px;
+border: none;
+cursor: pointer;
+color: white;
+margin-top: 10px;
+}
