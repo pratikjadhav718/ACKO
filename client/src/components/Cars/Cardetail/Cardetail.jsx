@@ -2,7 +2,7 @@ import React from "react";
 import style from "./cardetail.module.css";
 import buttonpen from "./Button pen.svg";
 import ecosport from "./Eco sport.svg";
-
+import carwithstar from "./Car with star.svg"
 function Cardetail() {
   return (
     <div className={style.cardetailbody}>
@@ -88,6 +88,10 @@ function Cardetail() {
       </div>
 
       <div><button className={style.deebtn} >Continue</button></div>
+      <div className={style.lastflexdiv} >
+        <img src={carwithstar} alt="" />
+        <p>Great car! Now let us offer you really great insurance for it</p>
+      </div>
     </div>
   );
 }

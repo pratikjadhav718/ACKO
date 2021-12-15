@@ -1,5 +1,5 @@
 .cardetailbody{
-    border: 1px solid black;
+    /* border: 1px solid black; */
   min-width: 600px;
 
 }
@@ -71,6 +71,23 @@ border: none;
 margin-top: 25px;
 cursor: pointer;
 }
+
+.lastflexdiv{
+    display: flex;
+    margin-top: 25px;
+width: 340px;
+justify-content: space-between;
+}
+
+.lastflexdiv >p{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 16px;
+color: #000000;
+}
+
+
 
 @media only screen and (max-width: 600px){
     .cardetailbody{
