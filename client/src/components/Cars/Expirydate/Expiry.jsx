@@ -1,5 +1,6 @@
 import React from "react";
 import style from "./expiry.module.css";
+import calender from "./Calender.svg";
 
 function Expiry() {
   return (
@@ -28,10 +29,14 @@ function Expiry() {
       </p>
 
       <div className={style.datemaindiv}>
-        <div className={style.datetpdiv}></div>
+        <div className={style.datetpdiv}>
+          <img src={calender} alt="" />
+        </div>
         <div className={style.dateoddiv}></div>
       </div>
-<div style={{marginTop:"25px"}} ><button className={style.expirycont} >Continue</button></div>
+      <div style={{ marginTop: "25px" }}>
+        <button className={style.expirycont}>Continue</button>
+      </div>
       <div style={{ marginTop: "16px" }}>
         <p className={style.expirypara}>
           Cars bought after Sept 2018 come with a bundled policy covering the
