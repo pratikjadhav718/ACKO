@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom'
 
 import { AddtionalDetails } from '../components/AddtionalDetails/AddtionalDetails';
 import Routecarnumber from "../components/Cars/Carnumber/Routecarnumber"
+import Routeexpiry from '../components/Cars/Expirydate/Routeexpiry';
 import Routepolicy from '../components/Cars/Lastpolicy/Routepolicy';
 
 import Routepincode from '../components/Cars/Pincode/Routepincode';
@@ -23,6 +24,10 @@ function Routes() {
         </Route>
         <Route path="/cars/carnumber" exact>
           <Routecarnumber />
+        </Route>
+
+        <Route path="/cars/expiry" exact>
+          <Routeexpiry />
         </Route>
 
         <Route path="/cars/policy" exact>
