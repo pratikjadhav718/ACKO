@@ -1,0 +1,22 @@
+.ncbpopupbody{
+    border: 1px solid black;
+    width: 300px;
+    height: 150px;
+background-color: white;
+}
+
+.congradiv{
+    display: flex;
+    justify-content: space-around;
+}
+
+.congradiv p{
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 24px;
+}
+
+.congradiv  img{
+    cursor: pointer;
+}

@@ -3,6 +3,7 @@ import Header from '../../Header/Header';
 import style from "../cars.module.css"
 import Common from '../Common/Common';
 import Dynamic from '../Dynamic/Dynamic';
+import Ncbpopup from '../Ncbpopup/Ncbpopup';
 import Policy from './Policy';
 
 function Routepolicy() {
@@ -18,6 +19,7 @@ function Routepolicy() {
             <Dynamic />
           </div>
         </div>
+        <Ncbpopup/>
       </div>
     );
 }
