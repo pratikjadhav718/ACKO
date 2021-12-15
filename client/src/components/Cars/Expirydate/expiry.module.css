@@ -1,6 +1,44 @@
 .expirybody{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     min-width: 500px;
+}
+
+.datemaindiv{
+    display: flex;
+    margin-top: 35px;
+}
+
+.datetpdiv{
+    display: flex;
+    /* border: 1px solid black; */
+    background: #F4F7FE;
+border-radius: 4px;
+height: 30px;
+
+}
+.dateoddiv{
+    display: flex;
+     /* border: 1px solid black; */
+     background: #F4F7FE;
+border-radius: 4px;
+margin-left: 10px;
+height: 30px;
+}
+
+.expirydatepicker{
+   border: none;
+      background: #F4F7FE;
+      margin-left: 30px;
+}
+
+.expirydatepicker:focus{
+    border: none;
+}
+
+.calenderimg{
+    width: 12px;
+    margin-left: 30px;
+    padding-bottom: 5px;
 }
 
 
@@ -8,7 +46,7 @@
     font-style: normal;
     font-weight: normal;
     font-size: 8px;
-    line-height: 4px;
+    /* line-height: 4px; */
 
 }
 
@@ -19,4 +57,6 @@ border: none;
 padding: 8px 64px;
 width: 176px;
 cursor: pointer;
+margin-top: 10px;
+color: white;
 }
