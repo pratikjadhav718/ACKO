@@ -2,6 +2,7 @@ import React from "react";
 import style from "./useofcar.module.css";
 import percar from "./personelcar.svg";
 import colorcar from "./colourcar.svg"
+import caronhand from "./Car on hand.svg"
 
 function Useofcar() {
   return (
@@ -20,7 +21,7 @@ function Useofcar() {
       </div>
       <div className={style.personalcardiv}>
         <div>
-          <img src={percar} style={{ marginTop: "20px" }}></img>
+          <img src={percar} style={{ marginTop: "20px" }} alt=""></img>
         </div>
         <div>
           <p
@@ -49,7 +50,7 @@ function Useofcar() {
 
       <div className={style.personalcardiv}>
         <div>
-          <img src={colorcar} style={{ marginTop: "20px" }}></img>
+          <img src={colorcar} style={{ marginTop: "20px" }}  alt=""></img>
         </div>
         <div>
           <p
@@ -75,6 +76,12 @@ function Useofcar() {
           </p>
         </div>
       </div>
+
+      <div className={style.handcardiv} >
+        <img src={caronhand} alt="" />
+        <p  style={{fontSize:"14px",fontWeight:"normal"}}>We've insured more than 5 Lakh cars in India till date</p>
+      </div>
+
     </div>
   );
 }

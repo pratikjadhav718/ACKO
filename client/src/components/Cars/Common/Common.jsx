@@ -15,12 +15,12 @@ function Common() {
             marginTop: "80px",
           }}
         >
-          Upto 85% Off Comprehensive Car Insurance
+          Upto 85%* Off Comprehensive Car Insurance
         </div>
         <div
           style={{
             fontStyle: "normal",
-            fontWeight: "700",
+            fontWeight: "400",
             fontSize: "16px",
             lineHeight: "26px",
             color: "#8A909F",
