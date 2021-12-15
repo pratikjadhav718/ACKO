@@ -1,19 +1,19 @@
-import React from 'react'
-import acko from "./ackologo.svg"
-import style from "./header.module.css"
-import circle from "./greencle.svg"
-import back from "./backviolet.svg"
+import React from "react";
+import style from "./header.module.css";
+import logo from "./Logo.svg";
 
 function Header() {
-    return (
-      <div className={style.headerbody}>
-            <div className={style.headerlogodiv}>
-                {/* <img className={style.backviolet}  src={back} /> */}
-                <img className={style.headerlogo} src={acko}></img>
-                <img className={style.circlelogo} src={circle} ></img>
-        </div>
+  return (
+    <div className={style.headerbody}>
+      <div className={style.headerlogodiv}>
+        <img
+          style={{ fontSize: "64px" }}
+          className={style.circlelogo}
+          src={logo}
+        ></img>
       </div>
-    );
+    </div>
+  );
 }
 
-export default Header
+export default Header;
