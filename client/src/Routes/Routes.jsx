@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
-<<<<<<< HEAD
+
 import { AddtionalDetails } from '../components/AddtionalDetails/AddtionalDetails';
 import Cars from '../components/Cars/Cars'
-=======
+
 import Routepincode from '../components/Cars/Pincode/Routepincode';
 import Routeuseofcar from '../components/Cars/Useofcar/Routeuseofcar';
->>>>>>> c3aba9afef0cc7dec99e7bd781f96fd248bbfbde
+
 import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
 
 function Routes() {
