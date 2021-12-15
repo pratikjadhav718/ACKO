@@ -1,3 +1,44 @@
 .cardetailbody{
     border: 1px solid black;
+  min-width: 600px;
+
+}
+
+.cardetailtopbody{
+    display: flex;
+    min-width: 600px;
+    justify-content: space-between;
+}
+
+.editflexdiv{
+    display: flex;
+    /* border: 1px solid black; */
+    width: 200px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.editflexdiv> img{
+    width: 14px;
+    cursor: pointer;
+
+}
+
+.editflexdiv > p{
+    font-style: normal;
+    font-size: 14px;
+    font-weight:500 ;
+}
+
+.cardetailrighttopbody{
+  margin-top: 100px
+}
+
+@media only screen and (max-width: 600px){
+    .cardetailbody{
+        min-width: 300px;
+    }
+    .cardetailtopbody{
+        min-width: 300px;
+    }
 }
