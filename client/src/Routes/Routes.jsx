@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Cars from '../components/Cars/Cars'
+import Routeuseofcar from '../components/Cars/Useofcar/Routeuseofcar';
 import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
 
 function Routes() {
@@ -9,7 +10,7 @@ function Routes() {
       <Switch>
 
         <Route path="/cars" exact>
-         <Cars/>
+         <Routeuseofcar/>
         </Route>
 
         <Route path="/plans">
