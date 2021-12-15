@@ -12,6 +12,18 @@ export const AddtionalDetails = () => {
                     <div className={style.detailsmaindiv}>
 
                     </div>
+
+                    <div className={style.noticediv}>
+
+                    </div>
+
+                    <div className={style.termsandconditions}>
+                        <p> By tapping on continue I declare that i have provided correct details and have read Acko’s T&C.</p>
+                    </div>
+
+                    <div className={style.continuebtndiv}>
+                        <button className={style.continuebtn}>Continue</button>
+                    </div>
                 </div>
 
                 <div>
@@ -26,17 +38,17 @@ export const AddtionalDetails = () => {
             </div>
 
             <div>
-                <div className={style.noticediv}>
+                {/* <div className={style.noticediv}>
 
-                </div>
+                </div> */}
                 {/* <hr className="hrclass" /> */}
-                <div className={style.termsandconditions}>
+                {/* <div className={style.termsandconditions}>
                 <p> By tapping on continue I declare that i have provided correct details and have read Acko’s T&C.</p>
-                </div>
+                </div> */}
 
-                <div className={style.continuebtndiv}>
+                {/* <div className={style.continuebtndiv}>
                     <button className={style.continuebtn}>Continue</button>
-                </div>
+                </div> */}
             </div>
 
         </div>

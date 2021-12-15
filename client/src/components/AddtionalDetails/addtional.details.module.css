@@ -14,52 +14,64 @@
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 500px;
+    height: 481px;
+    width: 304px;
+    margin-top: 10px;
+    margin-left: 24%;
 
-    position: absolute;
+    /* position: absolute;
     width: 304px;
     height: 481px;
     left: 344px;
-    top: 88px;
+    top: 88px; */
 }
 
 .owndamageplandiv1 {
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 100px;
+    width: 240px;
+    height: 56px;
+    margin-left: auto;
+    margin-top: 32px;    
 
-    position: absolute;
+    /* position: absolute;
     width: 240px;
     height: 56px;
     left: 728px;
-    top: 120px;
+    top: 120px; */
 }
 
 .owndamageplandiv2 {
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 500px;
+    width: 240px;
+    height: 284px;
+    margin-top: 32px;
+    margin-left: auto;
 
-    position: absolute;
+    /* position: absolute;
     width: 240px;
     height: 284px;
     left: 728px;
-    top: 208px;
+    top: 208px; */
 }
 
 .noticediv {
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 300px;
+    width: 256px;
+    height: 144px;
+    margin-top: 48px;
+    margin-left: 24%;
 
-    position: absolute;
+    /* position: absolute;
     width: 256px;
     height: 144px;
     left: 344px;
-    top: 617px;
+    top: 617px; */
 }
 
 
@@ -72,11 +84,16 @@
 }
 
 .termsandconditions {
-    position: absolute;
+    width: 258px;
+    height: 20px;
+    margin-top: 48px;
+    margin-left: 24%;
+
+    /* position: absolute;
     width: 258px;
     height: 20px;
     left: 349px;
-    top: 809px;
+    top: 809px; */
 
     font-family: Helvetica Neue;
     font-style: normal;
@@ -87,6 +104,13 @@
     color: #000000;
 }
 
+.continuebtndiv {
+    margin-top: 48px;
+    margin-left: 24%;
+    width: 176px;
+    height: 40px;
+}
+
 .continuebtn {
     display: flex;
     flex-direction: row;
@@ -94,11 +118,11 @@
     align-items: center;
     padding: 12px 48px;
 
-    position: absolute;
+    /* position: absolute;
     width: 176px;
     height: 40px;
     left: 344px;
-    top: 853px;
+    top: 853px; */
 
     /* Secondary Colour/Button */
 
