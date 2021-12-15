@@ -27,6 +27,22 @@ export const AddtionalDetails = () => {
                         <div className={style.emaildiv}>
                             <input type="email" placeholder="Email" className={style.emailinput}/>
                         </div>
+
+                        <div className={style.mobilediv}>
+                            <input type="number" placeholder="Mobile Number" className={style.mobilinput}/>
+                        </div>
+
+                        <div className={style.dropdowndiv}>
+                            <select name="test" id="insurance" className={style.dropdown}>
+                                <option value="" disabled selected>Previous Insurer</option>
+                                <option value="Bharti AXA General Insurance Company Limited">Bharti AXA General Insurance Company Limited</option>
+                                <option value="Cholamandalam MS General Insurance Co. Ltd.">Cholamandalam MS General Insurance Co. Ltd.</option>
+                                <option value="DHFL General Insurance Limited">DHFL General Insurance Limited</option>
+                                <option value="Edelweiss General Insurance Company Limited">Edelweiss General Insurance Company Limited</option>
+                                <option value="Future General India Insurance Company Limited">Future General India Insurance Company Limited</option>
+                            </select>
+                        </div>
+
                     </div>
 
                     <div className={style.noticediv}>
