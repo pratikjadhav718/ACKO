@@ -1,6 +1,6 @@
 .divflex{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 100px;
     /* border: 1px solid black; */
 }

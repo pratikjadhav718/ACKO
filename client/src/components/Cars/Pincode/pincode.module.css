@@ -14,7 +14,9 @@ border-radius: 4px;
 }
 
 .pininput:focus{
-    border: 1px solid #9364ED;
+    outline: none !important;
+    border-color: #9364ED;
+    box-shadow: 0 0 10px #9364ED;
 }
 
 .pinbtn{
@@ -26,9 +28,16 @@ border-radius: 4px;
 border: none;
 cursor: pointer;
 color: white;
+margin-top: 10px;
 }
 
+.pindivflex{
+    max-width: 280px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
 
+}
 
 
 
