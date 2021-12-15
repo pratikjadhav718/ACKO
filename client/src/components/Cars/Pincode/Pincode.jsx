@@ -5,9 +5,9 @@ import navigation from "./Navigation.svg"
 function Pincode() {
     return (
         <div className={style.pincodebody} >
-            <div style={{fontStyle:"normal",fontWeight:"700",fontSize:"20px",lineHeight:"28px"}} >Where do you stay?</div>
+            <div style={{fontStyle:"normal",fontWeight:"700",fontSize:"24px",lineHeight:"28px"}} >Where do you stay?</div>
             <input className={style.pininput} placeholder='560065' />
-            <p style={{fontSize:"8px",lineHeight:"20px",fontWeight:"normal",color:"black"}} >Please enter the pincode where your vehicle is currently located</p>
+            <p style={{fontSize:"10px",lineHeight:"20px",fontWeight:"normal",color:"black"}} >Please enter the pincode where your vehicle is currently located</p>
             <div><button className={style.pinbtn} >Continue</button></div>
             
             <div className={style.pindivflex} >

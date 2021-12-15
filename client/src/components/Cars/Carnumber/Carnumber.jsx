@@ -8,7 +8,7 @@ function Carnumber() {
           style={{
             fontStyle: "normal",
             fontWeight: "bold",
-            fontSize: "20px",
+            fontSize: "24px",
             lineHeight: "28px",
           }}
         >
@@ -18,7 +18,7 @@ function Carnumber() {
           style={{
             fontStyle: "normal",
             fontWeight: "normal",
-            fontSize: "10px",
+            fontSize: "12px",
             lineHeight: "12px",
           }}
         >

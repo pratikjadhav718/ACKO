@@ -1,8 +1,19 @@
 .ncbpopupbody{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 300px;
     height: 150px;
-background-color: white;
+background-color: #FAFAFA;
+border-radius: 10px;
+
+
+position: absolute;
+    top:0;
+    bottom: 30vh;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+
 }
 
 .congradiv{
@@ -15,8 +26,30 @@ font-style: normal;
 font-weight: bold;
 font-size: 20px;
 line-height: 24px;
+margin-left: 50px;
 }
 
 .congradiv  img{
     cursor: pointer;
+}
+
+.ncbdiv{
+    font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+}
+
+.popupbtn{
+  margin-left: 90px;
+  width: 116px;
+height: 40px;
+background: #522ED3;
+border-radius: 4px;
+padding: 8px 32px;
+border: none;
+color: white;
+margin-top: 25px;
+cursor: pointer;
 }
