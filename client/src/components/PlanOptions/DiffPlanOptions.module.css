@@ -1,0 +1,79 @@
+.vehicle {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+
+  margin-left: 10px;
+}
+.editLink {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: #528ae2;
+}
+.fontType {
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  /* background-color: rgb(66, 31, 31); */
+  background-image: linear-gradient(to right, #efd44f, #68d58a);
+  width: 100%;
+  height: 6px;
+  border-radius: 2px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: rgb(184, 142, 142);
+  opacity: 1;
+  width: 26px;
+  height: 26px;
+  border-radius: 16px;
+  background: url("./assets/sliderSvg.svg");
+  background-size: 140%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: rgb(0 0 0 / 9%) 0px 1px 8px;
+}
+.needHelpMain {
+  margin-left: 14px;
+  margin-top: 14px;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 48px 200px;
+  grid-gap: 10px;
+}
+.needHelpMain > :first-child > :first-child {
+  width: 48px;
+  height: 48px;
+}
+.needHelpMain > :nth-child(2) > :first-child {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 14px;
+}
+.needHelpMain > :nth-child(2) > :nth-child(2) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 8px;
+  color: #9296a5;
+}
+.needHelpMain > :nth-child(2) > :nth-child(3) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  margin-top: 8px;
+  color: #3f8fd7;
+}
