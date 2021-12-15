@@ -7,7 +7,7 @@ function Common() {
         <div
           style={{
             fontWeight: "bold",
-            fontSize: "20px",
+            fontSize: "24px",
             lineHeight: "32px",
             textAlign: "center",
             fontStyle: "normal",
