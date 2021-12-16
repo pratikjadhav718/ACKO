@@ -9,7 +9,7 @@ function Header() {
         <img
           style={{ fontSize: "64px" }}
           className={style.circlelogo}
-          src={logo}
+          src={logo} alt=""
         ></img>
       </div>
     </div>
