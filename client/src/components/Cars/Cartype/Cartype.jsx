@@ -5,6 +5,7 @@ import petrol from "./petrol.svg"
 import gear from "./gear.svg"
 import downarrow from "./Down arrow.svg"
 import Petrolpopup from '../Petrolpopup/Petrolpopup'
+import Typecarpopup from '../Typecarpopup/Typecarpopup'
 function Cartype() {
 
     const [carr, setCar] = useState("Ford Ecosport");
@@ -13,7 +14,9 @@ function Cartype() {
 
     const [gearr, setGear] = useState("Titanium AT")
     
-    const [petrolpopup,setPetrolpopup]=useState(false)
+    const [petrolpopup, setPetrolpopup] = useState(false);
+
+    const [carpopup,setCarpopup]=useState(false)
 
 
     return (
@@ -22,10 +25,12 @@ function Cartype() {
         <div className={style.cartypeflex}>
           <img src={car} alt="" />
           <p>{carr}</p>
-          <img className={style.imagearrow} src={downarrow} alt="" />
+                <img onClick={() => {
+                    setCarpopup(!carpopup);
+          }} className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />
-
+        <Typecarpopup carpopup={carpopup} setCarpopup={setCarpopup} />
         <div className={style.cartypeflex}>
           <img src={petrol} alt="" />
           <p>{fuel}</p>
