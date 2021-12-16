@@ -6,6 +6,7 @@ import gear from "./gear.svg"
 import downarrow from "./Down arrow.svg"
 import Petrolpopup from '../Petrolpopup/Petrolpopup'
 import Typecarpopup from '../Typecarpopup/Typecarpopup'
+import Gearpopup from '../Gearpopup/Gearpopup'
 function Cartype() {
 
     const [carr, setCar] = useState("Ford Ecosport");
@@ -16,7 +17,9 @@ function Cartype() {
     
     const [petrolpopup, setPetrolpopup] = useState(false);
 
-    const [carpopup,setCarpopup]=useState(false)
+    const [carpopup, setCarpopup] = useState(false);
+
+    const [gearpopup,setGearpopup]=useState(false)
 
 
     return (
@@ -25,9 +28,14 @@ function Cartype() {
         <div className={style.cartypeflex}>
           <img src={car} alt="" />
           <p>{carr}</p>
-                <img onClick={() => {
-                    setCarpopup(!carpopup);
-          }} className={style.imagearrow} src={downarrow} alt="" />
+          <img
+            onClick={() => {
+              setCarpopup(!carpopup);
+            }}
+            className={style.imagearrow}
+            src={downarrow}
+            alt=""
+          />
         </div>
         <hr />
         <Typecarpopup carpopup={carpopup} setCarpopup={setCarpopup} />
@@ -52,9 +60,12 @@ function Cartype() {
         <div className={style.cartypeflex}>
           <img src={gear} alt="" />
           <p>{gearr}</p>
-          <img className={style.imagearrow} src={downarrow} alt="" />
+                <img onClick={() => {
+                   setGearpopup(!gearpopup); 
+          }} className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />
+        <Gearpopup gearpopup={gearpopup} setGearpopup={setGearpopup} />
         <button className={style.cartypebtn}>Continue</button>
       </div>
     );
