@@ -39,7 +39,11 @@ function Cartype() {
           />
         </div>
         <hr />
-        <Petrolpopup petrolpopup={petrolpopup} />
+        <Petrolpopup
+          petrolpopup={petrolpopup}
+          setFuel={setFuel}
+          setPetrolpopup={setPetrolpopup}
+        />
         <div className={style.cartypeflex}>
           <img src={gear} alt="" />
           <p>{gearr}</p>

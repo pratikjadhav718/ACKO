@@ -1,14 +1,30 @@
 import React from 'react'
 import style from "./petrol.module.css"
 
-function Petrolpopup({ petrolpopup }) {
-  return petrolpopup ?(
+function Petrolpopup({ petrolpopup, setFuel, setPetrolpopup }) {
+  return petrolpopup ? (
     <div className={style.petrolpopup}>
-      <p>Petrol</p>
+      <p
+        onClick={() => {
+          setFuel("Petrol")
+          setPetrolpopup(false)
+        }}
+      >
+        Petrol
+      </p>
       <hr />
-      <p>Diesel</p>
+      <p
+        onClick={() => {
+          setFuel("Diesel")
+          setPetrolpopup(false)
+        }}
+      >
+        Diesel
+      </p>
     </div>
-  ):""
+  ) : (
+    ""
+  );
 }
 
 export default Petrolpopup
