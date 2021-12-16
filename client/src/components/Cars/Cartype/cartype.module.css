@@ -1,0 +1,41 @@
+.cartypebody{
+    /* border: 1px solid black; */
+    min-width: 350px;
+}
+
+.cartypehead{
+    margin-bottom: 30px;
+    font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 28px;
+}
+
+.cartypeflex{
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+.cartypeflex p{
+  margin-right: 120px;
+  font-family: Helvetica Neue;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+
+color: #528AE3;
+}
+
+.cartypebtn{
+    background: #522ED3;
+border-radius: 4px;
+padding: 8px 32px;
+width: 176px;
+height: 32px;
+border: none;
+margin-top: 30px;
+cursor: pointer;
+color: white;
+}
