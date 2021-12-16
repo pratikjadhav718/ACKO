@@ -11,6 +11,7 @@ import Routeuseofcar from '../components/Cars/Useofcar/Routeuseofcar';
 
 import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
 import Routeyear from '../components/Cars/Year/Routeyear';
+import Routemonth from '../components/Cars/Month/Routemonth';
 
 function Routes() {
   return (
@@ -28,7 +29,11 @@ function Routes() {
         </Route>
 
         <Route path="/cars/year" exact>
-          <Routeyear/>
+          <Routeyear />
+        </Route>
+
+        <Route path="/cars/month" exact>
+          <Routemonth />
         </Route>
 
         <Route path="/cars/expiry" exact>
