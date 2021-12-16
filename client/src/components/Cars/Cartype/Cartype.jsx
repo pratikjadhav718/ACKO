@@ -11,19 +11,19 @@ function Cartype() {
         <div className={style.cartypeflex}>
           <img src={car} alt="" />
           <p>Ford Ecosport</p>
-          <img src={downarrow} alt="" />
+          <img className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />
         <div className={style.cartypeflex}>
           <img src={petrol} alt="" />
           <p>Ford Ecosport</p>
-          <img src={downarrow} alt="" />
+          <img className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />
         <div className={style.cartypeflex}>
           <img src={gear} alt="" />
           <p>Ford Ecosport</p>
-          <img src={downarrow} alt="" />
+          <img className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />
         <button className={style.cartypebtn} >Continue</button>

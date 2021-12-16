@@ -28,6 +28,10 @@ line-height: 16px;
 color: #528AE3;
 }
 
+.imagearrow{
+    cursor: pointer;
+}
+
 .cartypebtn{
     background: #522ED3;
 border-radius: 4px;
