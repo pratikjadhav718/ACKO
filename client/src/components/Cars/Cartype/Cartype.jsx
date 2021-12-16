@@ -30,7 +30,9 @@ function Cartype() {
           <p>{carr}</p>
           <img
             onClick={() => {
-              setCarpopup(!carpopup);
+              setCarpopup(!carpopup)
+              setPetrolpopup(false)
+              setGearpopup(false)
             }}
             className={style.imagearrow}
             src={downarrow}
@@ -44,7 +46,9 @@ function Cartype() {
           <p>{fuel}</p>
           <img
             onClick={() => {
-              setPetrolpopup(!petrolpopup);
+              setPetrolpopup(!petrolpopup)
+              setCarpopup(false)
+              setGearpopup(false)
             }}
             className={style.imagearrow}
             src={downarrow}
@@ -61,7 +65,9 @@ function Cartype() {
           <img src={gear} alt="" />
           <p>{gearr}</p>
                 <img onClick={() => {
-                   setGearpopup(!gearpopup); 
+            setGearpopup(!gearpopup)
+            setPetrolpopup(false)
+            setCarpopup(false)
           }} className={style.imagearrow} src={downarrow} alt="" />
         </div>
         <hr />

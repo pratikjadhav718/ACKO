@@ -16,13 +16,13 @@ box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.16);
 }
 
 .inputflexdiv img{
-  width: 25px;
+  width: 15px;
   background-color: #FAFAFA;
   border: none;
 }
 
 .inputflexdiv input{
-    margin-left: 30px;
+    margin-left: 20px;
     width: 200px;
   border: none;
   outline: none;
