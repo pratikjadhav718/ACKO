@@ -10,6 +10,7 @@ import Routepincode from '../components/Cars/Pincode/Routepincode';
 import Routeuseofcar from '../components/Cars/Useofcar/Routeuseofcar';
 
 import { DifferentPlanOptions } from "../components/PlanOptions/DiffPlanOptions";
+import Routeyear from '../components/Cars/Year/Routeyear';
 
 function Routes() {
   return (
@@ -24,6 +25,10 @@ function Routes() {
         </Route>
         <Route path="/cars/carnumber" exact>
           <Routecarnumber />
+        </Route>
+
+        <Route path="/cars/year" exact>
+          <Routeyear/>
         </Route>
 
         <Route path="/cars/expiry" exact>
