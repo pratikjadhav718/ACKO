@@ -1,7 +1,11 @@
 import Header from "../Header/Header";
 import style from "./addtional.details.module.css";
+import DatePicker from "react-datepicker";
+import { useState } from "react";
 
 export const AddtionalDetails = () => {
+    const [selectDate, setSelectDate] = useState(null);
+
     return (
         <div className={style.maindiv}>
 
@@ -41,6 +45,31 @@ export const AddtionalDetails = () => {
                                 <option value="Edelweiss General Insurance Company Limited">Edelweiss General Insurance Company Limited</option>
                                 <option value="Future General India Insurance Company Limited">Future General India Insurance Company Limited</option>
                             </select>
+                        </div>
+
+                        <div className={style.new}>
+                            <p>When should your new policy start?</p>
+
+                            <div className={style.startoptions}>
+                                <div className={style.tomorrowbtndiv}>
+                                    <button className={style.tomorrowbtn}>Tomorrow</button>
+                                </div>
+                                
+                                <div className={style.calenderdiv}>
+                                    <DatePicker 
+                                    className={style.calender}
+                                    placeholderText="Choose Date"
+                                    selected={selectDate}
+                                    onChange= {(date) => setSelectDate(date)}
+                                    dateFormat="dd/MM/yyyy"
+                                    minDate= {new Date()}
+                                    showYearDropdown
+                                    scrollableMonthYearDropdown
+                                    />
+                                </div>
+
+                                
+                            </div>
                         </div>
 
                     </div>
