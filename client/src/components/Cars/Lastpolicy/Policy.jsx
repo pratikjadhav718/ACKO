@@ -14,11 +14,12 @@ function Policy({ setpopupp }) {
           width: "300px",
         }}
       >
+
         Did you make a claim in last policy period?
       </div>
       <div style={{ marginTop: "40px" }}>
         <button>Yes</button>
-        <button onClick={setpopupp(true)} style={{ marginLeft: "20px" }}>
+        <button onClick={() => { setpopupp(true) }} style={{ marginLeft: "20px" }}>
           No
         </button>
       </div>

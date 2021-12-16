@@ -8,7 +8,7 @@ import Policy from './Policy';
 
 function Routepolicy() {
 
-const [popupp,setpopupp]=useState(false)
+  const [popupp, setpopupp] = useState(false);
 
     return (
       <div>
