@@ -1,6 +1,7 @@
 .cartypebody{
     /* border: 1px solid black; */
     min-width: 350px;
+  z-index: 12;
 }
 
 .cartypehead{

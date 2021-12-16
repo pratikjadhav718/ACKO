@@ -1,0 +1,18 @@
+.petrolpopup{
+    position: absolute;
+    border-radius: 12px;
+    width: 400px;
+    height: 100px;
+    background-color: white;
+    box-shadow:4px 5px 5px 5px #EEEEEE; ;
+    z-index: 2;
+}
+
+.petrolpopup p{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.petrolpopup  :hover{
+  color: #522ED3;
+}
