@@ -62,14 +62,21 @@ function Cardetail() {
         style={{
           fontStyle: "normal",
           fontWeight: "700",
-          fontSize: "12px",
+          fontSize: "14px",
           lineHeight: "15px",
           marginTop: "20px",
         }}
       >
         Do you have external CNG kit
       </div>
-      <div></div>
+      <div className={style.labeldiv} >
+        <label>
+          <input type="radio" /> Yes
+        </label>
+        <label style={{marginLeft:"30px"}}>
+          <input type="radio" /> No
+        </label>
+      </div>
       <p
         style={{
           fontStyle: "normal",
@@ -87,8 +94,10 @@ function Cardetail() {
         <p style={{ textAlign: "center" }}>We Promise!!</p>
       </div>
 
-      <div><button className={style.deebtn} >Continue</button></div>
-      <div className={style.lastflexdiv} >
+      <div>
+        <button className={style.deebtn}>Continue</button>
+      </div>
+      <div className={style.lastflexdiv}>
         <img src={carwithstar} alt="" />
         <p>Great car! Now let us offer you really great insurance for it</p>
       </div>
