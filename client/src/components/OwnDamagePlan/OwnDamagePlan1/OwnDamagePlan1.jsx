@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export const OwnDamagePlan1 = () => {
     const [carname, setCarName] = useState("Ford Ecosport 2020");
+    
     return (
         <div className="owndamageplandiv11">
                 <div className="oneone">

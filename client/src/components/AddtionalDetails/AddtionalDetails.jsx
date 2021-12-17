@@ -121,10 +121,6 @@ export const AddtionalDetails = () => {
 
                 </div>
             </div>
-            <br />
-            <div>
-                {/* <OwnDamagePlan1 /> */}
-            </div>
 
         </div>
     )

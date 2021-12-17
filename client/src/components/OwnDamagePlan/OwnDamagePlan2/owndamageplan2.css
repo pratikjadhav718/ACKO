@@ -48,3 +48,23 @@
     /* border: 1px solid aqua; */
     text-align: right;
 }
+
+
+.owndamageplanprices2 {
+    display: grid;
+    grid-template-columns: 242px 78px;
+    grid-gap: 23px;
+    padding: 10px;
+}
+
+.owndamageplanprices2 > :nth-child(2){
+    text-align: right;
+}
+
+.owndamageplanprices2 > :nth-child(4){
+    text-align: right;
+}
+
+.owndamageplanprices2 > :nth-child(6){
+    text-align: right;
+}
