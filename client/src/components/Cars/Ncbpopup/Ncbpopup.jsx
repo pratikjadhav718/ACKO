@@ -3,7 +3,7 @@ import style from "./ncb.module.css"
 import close from "./Close.svg"
 
 function Ncbpopup({ popupp, setpopupp }) {
-  console.log(popupp);
+  
   return popupp ? (
     <div className={style.ncbpopupbody}>
       <div className={style.congradiv}>

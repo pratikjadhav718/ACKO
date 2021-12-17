@@ -121,7 +121,7 @@ function Cardetail() {
         <p style={{ textAlign: "center" }}>We Promise!!</p>
       </div>
 
-      <Link to="/cars/policy">
+      <Link to="/cars/expiry">
         <div>
           <button
             onClick={async () => {

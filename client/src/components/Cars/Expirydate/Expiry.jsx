@@ -3,10 +3,12 @@ import style from "./expiry.module.css";
 import calender from "./Calender.svg";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import axios from "axios"
+import {Link} from "react-router-dom"
 
 function Expiry() {
-  const [selectDateTP, setSelectDateTP] = useState(null);
-  const [selectDateOD, setSelectDateOD] = useState(null);
+  const [selectDateTP, setSelectDateTP] = useState("");
+  const [selectDateOD, setSelectDateOD] = useState("");
 
   return (
     <div className={style.expirybody}>
@@ -61,10 +63,20 @@ function Expiry() {
           />
         </div>
       </div>
-      <div style={{ marginTop: "25px" }}>
-        <button className={style.expirycont}>Continue</button>
-      </div>
-      <div style={{ marginTop: "20px",width:"400px" }}>
+      <Link to="/cars/policy" >
+    
+        <div style={{ marginTop: "25px" }}>
+          <button className={style.expirycont} onClick={async () => {
+            const id = localStorage.getItem("ackoid");
+            const data = {
+              tpdate: selectDateTP,
+              oddate: selectDateOD
+            }
+            await axios.patch(`http://localhost:8080/cars/${id}`,data);
+          }} >Continue</button>
+        </div>
+      </Link>
+      <div style={{ marginTop: "20px", width: "400px" }}>
         <p className={style.expirypara}>
           Cars bought after Sept 2018 come with a bundled policy covering the
           car for 1year and third part for 3 years in case of an accident.
