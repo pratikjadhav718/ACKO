@@ -331,8 +331,8 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .insideLastClass > :nth-child(1) > :nth-child(1) {
   display: grid;
-  grid-template-columns: 242px 78px;
-  grid-gap: 23px;
+  grid-template-columns: 242px 84px;
+  grid-gap: 20px;
 }
 /* own damage plan */
 .insideLastClass
@@ -433,4 +433,5 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 12px;
   cursor: pointer;
   margin-top: 8px;
+  margin-left: 6px;
 }

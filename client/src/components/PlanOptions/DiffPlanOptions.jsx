@@ -8,7 +8,6 @@ import {
   emiSvg,
   mapSvg,
   needHelpSvg,
-  sliderThumb,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
 import { useState } from "react";
@@ -55,12 +54,21 @@ export const DifferentPlanOptions = () => {
   );
 
   const handleSliderChange = (e) => {
-    console.log(e.target.value);
     setInsuredValue(Number(e.target.value).toFixed(2));
     setOwnDamagePlan((insuredValue * 0.549322709 * 1000).toFixed(0));
+    setsmartSaverZeroDepreciationPlan(
+      (insuredValue * 0.7803984 * 1000).toFixed(0)
+    );
+    setzeroDepreciationPlan((insuredValue * 1.176494 * 1000).toFixed(0));
   };
   const [ownDamagePlan, setOwnDamagePlan] = useState(
     (insuredValue * 0.549322709 * 1000).toFixed(0)
+  );
+
+  const [smartSaverZeroDepreciationPlan, setsmartSaverZeroDepreciationPlan] =
+    useState((insuredValue * 0.7803984 * 1000).toFixed(0));
+  const [zeroDepreciationPlan, setzeroDepreciationPlan] = useState(
+    (insuredValue * 1.176494 * 1000).toFixed(0)
   );
   return (
     <div className="App">
@@ -390,10 +398,10 @@ export const DifferentPlanOptions = () => {
                 </div>
                 <div>
                   <div>
-                    ₹ 5,185 <span> + GST</span>
+                    ₹ {smartSaverZeroDepreciationPlan} <span> + GST</span>
                   </div>
                   <div>
-                    ₹ 10,679 <span> + GST</span>
+                    ₹ {(ownDamagePlan * 2.0595).toFixed(0)} <span> + GST</span>
                   </div>
                   <button>Select</button>
                 </div>
@@ -415,10 +423,11 @@ export const DifferentPlanOptions = () => {
                 </div>
                 <div>
                   <div>
-                    ₹ 7,817 <span> + GST</span>
+                    ₹ {zeroDepreciationPlan} <span> + GST</span>
                   </div>
                   <div>
-                    ₹ 13,705 <span> + GST</span>
+                    ₹ {(zeroDepreciationPlan * 1.753569784).toFixed(0)}
+                    <span> + GST</span>
                   </div>
                   <button>Select</button>
                 </div>
