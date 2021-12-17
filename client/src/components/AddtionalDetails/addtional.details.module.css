@@ -243,3 +243,33 @@ hr.dottedline{
     height: 40px;
     
 }
+
+.startoptions {
+    display: flex;
+}
+
+.tomorrowbtndiv {
+    background : #F4F7FE;
+    border-radius: 4px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.tomorrowbtn {
+    border: none;
+    background: #f4f4f4;
+    margin-left: 30px;
+}
+
+.calenderdiv {
+    background : #F4F7FE;
+    border-radius: 4px;
+    margin-left: 10px;
+    height: 30px;
+}
+
+.calender {
+    border: none;
+    background: #f4f4f4;
+    margin-left: 30px;
+}
