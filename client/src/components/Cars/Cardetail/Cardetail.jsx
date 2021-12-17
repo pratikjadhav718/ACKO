@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "./cardetail.module.css";
 import buttonpen from "./Button pen.svg";
 import ecosport from "./Eco sport.svg";
 import carwithstar from "./Car with star.svg"
+import axios from "axios"
+import {Link} from "react-router-dom"
+
 function Cardetail() {
+
+const [cng,setCng]=useState("")
+
+const [mobile,setMobile]=useState("")
+
   return (
     <div className={style.cardetailbody}>
       <div className={style.cardetailtopbody}>
@@ -69,12 +77,26 @@ function Cardetail() {
       >
         Do you have external CNG kit
       </div>
-      <div className={style.labeldiv} >
+      <div className={style.labeldiv}>
         <label>
-          <input type="radio" /> Yes
+          <input
+            type="radio"
+            name="same"
+            onClick={() => {
+              setCng("Yes");
+            }}
+          />{" "}
+          Yes
         </label>
-        <label style={{marginLeft:"30px"}}>
-          <input type="radio" /> No
+        <label style={{ marginLeft: "30px" }}>
+          <input
+            type="radio"
+            name="same"
+            onClick={() => {
+              setCng("No");
+            }}
+          />{" "}
+          No
         </label>
       </div>
       <p
@@ -88,14 +110,35 @@ function Cardetail() {
       >
         Mobile Number
       </p>
-      <input className={style.detailinp} placeholder="90000900000" />
+      <input
+        className={style.detailinp}
+        onChange={(e) => {
+          setMobile(e.target.value);
+        }}
+        placeholder="90000900000"
+      />
       <div className={style.cardepara}>
         <p>We'll only use it to send you important policy updates. No spam,</p>
         <p style={{ textAlign: "center" }}>We Promise!!</p>
       </div>
 
       <div>
-        <button className={style.deebtn}>Continue</button>
+        <Link to="cars/policy" >
+    
+          <button
+            onClick={async () => {
+              const id = localStorage.getItem("ackoid");
+              const data = {
+                cngkit: cng,
+                mobile: mobile,
+              };
+              await axios.patch(`http://localhost:8080/cars/${id}`, data);
+            }}
+            className={style.deebtn}
+          >
+            Continue
+          </button>
+        </Link>
       </div>
       <div className={style.lastflexdiv}>
         <img src={carwithstar} alt="" />
