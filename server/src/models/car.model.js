@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 const carSchema = new mongoose.Schema({
-    number: { type: String, required: false },
+    number: { type: String, required: false,unique:true },
     pincode: { type: Number, required: false },
     year: { type: Number, required: false },
     month: { type: String, required: false },
