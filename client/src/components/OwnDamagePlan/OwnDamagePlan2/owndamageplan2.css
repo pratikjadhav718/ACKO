@@ -1,9 +1,9 @@
 .owndamageplandiv22 {
-    border: 1px solid black;
+    border: 1px solid #DCDDE9;
     max-width: 500px;
     min-width: 300px;
     width: 368px;
-    height: 384px;
+    height: 430px;
     margin-top: 32px;
     margin-left: auto;
 }
@@ -67,4 +67,31 @@
 
 .owndamageplanprices2 > :nth-child(6){
     text-align: right;
+}
+
+.owndamageplanprices2 > :nth-child(1) {
+    color: #5C5D65;
+    display: flex;
+}
+
+
+.pricetables {
+    font-size: 16px;
+    font-weight: 600;
+    /* // lineHeight: "12px" */
+}
+
+.owndamageplanfinalprice {
+    display: grid;
+    grid-template-columns: 242px 78px;
+    grid-gap: 23px;
+    padding: 10px;
+}
+
+.owndamageplanfinalprice > :nth-child(2){
+    text-align: right;
+}
+
+.owndamageplanfinalprice > :nth-child(2) {
+    font-size: 18px;
 }

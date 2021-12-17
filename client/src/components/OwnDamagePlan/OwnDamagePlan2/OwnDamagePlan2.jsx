@@ -1,6 +1,7 @@
 import "./owndamageplan2.css";
-
+import ticmark from "./ticmark.svg"
 export const OwnDamagePlan2 = () => {
+    
     return (
         <div className="owndamageplandiv22">
             <div className="owndamagetopdiv">
@@ -25,11 +26,23 @@ export const OwnDamagePlan2 = () => {
                 ADDONS
             </p>
             <div className="owndamageplanprices2">
-                <div style={{
-                    fontSize: "12px",
-                    lineHeight: "10px"
-                }}>
-                    PA Cover
+                
+                <div>
+                    <div style={{
+                        marginTop: "0px",
+                        lineHeight: "10px"
+                    }}>
+                        <img src={ticmark} alt="" />
+                    </div>
+
+                    <div style={{
+                        fontSize: "12px",
+                        lineHeight: "10px",
+                        marginLeft: "5px"
+                        
+                    }}>
+                        PA Cover
+                    </div>
                 </div>
 
                 <div style={{
@@ -47,10 +60,22 @@ export const OwnDamagePlan2 = () => {
                     Net Premium
                 </div>
 
-                <div>- ₹ {"4,049"}</div>
-                <div>GST</div>
-                <div>₹ 729</div>
+                <div className="pricetables">- ₹ {"4,049"}</div>
+                <div className="pricetables">GST</div>
+                <div className="pricetables">₹ 729</div>
             </div>
+
+            <hr style={{
+                width: "90%",
+                margin: "auto",
+                color: "#DCDDE9"
+            }}/>
+
+            <div className="owndamageplanfinalprice">
+                <div className="pricetables">Total</div>
+                <div className="pricetables">₹ 4,778</div>
+            </div>
+
         </div>
     )
 }

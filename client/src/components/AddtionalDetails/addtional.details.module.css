@@ -285,6 +285,7 @@ hr.dottedline{
 }
 
 .divnote {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: 30% 70%;
 }
