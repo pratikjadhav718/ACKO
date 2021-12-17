@@ -27,9 +27,15 @@ function Useofcar() {
       >
         <div
           onClick={async () => {
-            const data = { useofcar: "Personal use" };
-            const res = await axios.post("http://localhost:8080/cars", data);
-             console.log(res.data._id);
+            try {
+              const data = { useofcar: "Personal use" };
+              const res = await axios.post("http://localhost:8080/cars", data);
+              // console.log(res.data._id);
+              const id = res.data._id;
+              localStorage.setItem("ackoid", id)
+            } catch (err) {
+              console.log(err.message);
+            }
           }}
           className={style.personalcardiv}
         >
@@ -71,7 +77,9 @@ function Useofcar() {
             try {
               const data = { useofcar: "Commercial use" };
               const res = await axios.post("http://localhost:8080/cars", data);
-              console.log(res.data._id);
+              // console.log(res.data._id);
+                  const id = res.data._id;
+                  localStorage.setItem("ackoid", id);
             } catch (err) {
               console.log(err.message);
             }
