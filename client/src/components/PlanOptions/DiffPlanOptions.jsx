@@ -14,7 +14,7 @@ import { images } from "./assets/imgs";
 
 const Container = styled.div`
   //background-color: green;
-  height: 400px;
+  //height: 400px;
   width: 52.2222222%;
   margin: auto;
   margin-top: 64px;
@@ -29,7 +29,7 @@ const InContleft = styled.div`
 `;
 const InContright = styled.div`
   background-color: #ffffff;
-  height: 400px;
+  // height: 400px;
   width: 368px;
   margin-left: 10.9%;
   border: 1px solid #dcdee9;
@@ -340,29 +340,24 @@ export const DifferentPlanOptions = () => {
             <div></div>
             <div></div>
           </div>
+
           <div className={styles.insidemainclass}>
             <div>
-              <div>3 Plans for your Ecosport</div>
-              <div>
-                {" "}
-                <span>{emiSvg}</span> starting from ₹208
-              </div>
-              <div>
-                {" "}
-                <img src={recommended} alt="" />{" "}
-              </div>
               <div>
                 <div>
-                  <div>Own Damage Plan</div>
-                  <div>Recommended if you already have a third party plan</div>
+                  <div>Smart Saver Zero Depreciation Plan</div>
+                  <div>
+                    Gives you all the benefits of Bumper to bumper cover at a
+                    discounted price
+                  </div>
                   <div>See Details</div>
                 </div>
                 <div>
                   <div>
-                    ₹ 3,650 <span> + GST</span>
+                    ₹ 5,185 <span> + GST</span>
                   </div>
                   <div>
-                    ₹ 8,913 <span> + GST</span>
+                    ₹ 10,679 <span> + GST</span>
                   </div>
                   <button>Select</button>
                 </div>
@@ -371,29 +366,23 @@ export const DifferentPlanOptions = () => {
             <div></div>
             <div></div>
           </div>
-          <div className={styles.insidemainclass}>
+          <div className={styles.insideLastClass}>
             <div>
-              <div>3 Plans for your Ecosport</div>
-              <div>
-                {" "}
-                <span>{emiSvg}</span> starting from ₹208
-              </div>
-              <div>
-                {" "}
-                <img src={recommended} alt="" />{" "}
-              </div>
               <div>
                 <div>
-                  <div>Own Damage Plan</div>
-                  <div>Recommended if you already have a third party plan</div>
+                  <div>Zero Depreciation Plan</div>
+                  <div>
+                    Includes all benefits of Own Damage plan and covers full
+                    cost of car parts during claims.
+                  </div>
                   <div>See Details</div>
                 </div>
                 <div>
                   <div>
-                    ₹ 3,650 <span> + GST</span>
+                    ₹ 7,817 <span> + GST</span>
                   </div>
                   <div>
-                    ₹ 8,913 <span> + GST</span>
+                    ₹ 13,705 <span> + GST</span>
                   </div>
                   <button>Select</button>
                 </div>
