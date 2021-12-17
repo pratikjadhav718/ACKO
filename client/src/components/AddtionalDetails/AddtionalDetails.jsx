@@ -5,6 +5,7 @@ import { useState } from "react";
 import calendericon from "./calender.svg"
 import noteicon from "./note.svg"
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
+import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -114,8 +115,8 @@ export const AddtionalDetails = () => {
                         <OwnDamagePlan1 />
                     </div>
 
-                    <div className={style.owndamageplandiv2}>
-
+                    <div >
+                        <OwnDamagePlan2 />
                     </div>
 
                 </div>

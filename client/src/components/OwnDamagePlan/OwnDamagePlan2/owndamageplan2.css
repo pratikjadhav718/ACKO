@@ -1,0 +1,25 @@
+.owndamageplandiv22 {
+    border: 1px solid black;
+    max-width: 500px;
+    min-width: 300px;
+    width: 368px;
+    height: 284px;
+    margin-top: 32px;
+    margin-left: auto;
+}
+
+
+.owndamageplan2title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 17.09px;
+    margin-left: 20px;
+}
+
+.owndamageplan2subtitle {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 0px;
+    margin-left: 20px;
+    color: #63ADF4;
+}
