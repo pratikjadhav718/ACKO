@@ -12,10 +12,14 @@ import {
   consumablesSvg,
   emiSvg,
   mapSvg,
+  ncbProtectSvg,
   needHelpSvg,
+  passengerAccidentSvg,
+  personalAccidentSvg,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
 import { useState } from "react";
+import { SingleAdditionalCover } from "./SingleAdditionalCovers";
 
 const Container = styled.div`
   //background-color: green;
@@ -359,6 +363,7 @@ export const AdditionalCovers = () => {
                     style={{
                       fontSize: "8px",
                       textAlign: "center",
+                      marginBottom: "5px",
                     }}
                   >
                     4 out of 5 users select an IDV within this range
@@ -366,6 +371,34 @@ export const AdditionalCovers = () => {
                 </div>
               </div>
             </div>
+            <div>
+              <div> Additional Covers</div>
+              <SingleAdditionalCover
+                svg={personalAccidentSvg}
+                heading="Personal Accident Cover @"
+                price="399"
+                body={"Rs. 15 lakh coverage against accidental injury or death"}
+                add={false}
+              ></SingleAdditionalCover>
+            </div>
+            <SingleAdditionalCover
+              svg={ncbProtectSvg}
+              heading="NCB Protect @"
+              price="175"
+              body={
+                "Get yourself extra cushioning by keeping your no claim bonus intact even in the event of a claim. Applicable only for 1 claim."
+              }
+              add={false}
+            ></SingleAdditionalCover>
+            <SingleAdditionalCover
+              svg={passengerAccidentSvg}
+              heading="Personal Accident Cover for Passengers @"
+              price="250"
+              body={
+                "Protect your loved ones in cause of unfortunate accidents. Coverage upto INR 1 Lakh per passenger."
+              }
+              add={false}
+            ></SingleAdditionalCover>
           </div>
         </InContright>
       </Container>
