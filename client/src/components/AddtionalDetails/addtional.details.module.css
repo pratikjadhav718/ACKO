@@ -11,11 +11,11 @@
 }
 
 .detailsmaindiv {
-    border: 1px solid black;
+    border: 1px solid #DCDDE9;
     max-width: 500px;
     min-width: 300px;
     height: 481px;
-    width: 304px;
+    width: 368px;
     margin-top: 10px;
     margin-left: 24%;
 
@@ -29,10 +29,10 @@
 
 
 .noticediv {
-    border: 1px solid black;
+    border: 1px solid #DCDDE9;
     max-width: 500px;
     min-width: 300px;
-    width: 256px;
+    width: 368px;
     height: 188px;
     margin-top: 48px;
     margin-left: 24%;
@@ -55,7 +55,7 @@
 
 .termsandconditions {
     font-size: 12px;
-    width: 258px;
+    width: 368px;
     height: 20px;
     margin-top: 48px;
     margin-left: 24%;
@@ -109,7 +109,13 @@
 }
 
 hr.dottedline{
-    border-top: 1px dotted red;
+    /* border-top: 1px dotted #DCDDE9; */
+    border:none;
+    border-top:1px dotted gray;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+    width:70%;
 }
 
 .title {
@@ -150,6 +156,7 @@ hr.dottedline{
 .fullnamediv {
     /* width: 100%; */
     display: block;
+    
 }
 
 .nameinput {
@@ -158,7 +165,7 @@ hr.dottedline{
     height: 40px;
     margin-top: 24px;
 
-    border: 1px solid #9364ED;
+    border: 1px solid #DCDDE9;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -166,7 +173,7 @@ hr.dottedline{
 .nameinput:focus{
     outline: none !important;
     border-color: #9364ED;
-    box-shadow: 0 0 10px #9364ED;
+    box-shadow: 0 0 10px #DCDDE9;
 }
 
 .emailinput {
@@ -174,7 +181,7 @@ hr.dottedline{
     height: 40px;
     margin-top: 24px;
 
-    border: 1px solid #9364ED;
+    border: 1px solid #DCDDE9;
     box-sizing: border-box;
     border-radius: 4px;
 }
@@ -182,7 +189,7 @@ hr.dottedline{
 .emailinput:focus {
     outline: none !important;
     border-color: #9364ED;
-    box-shadow: 0 0 10px #9364ED;
+    box-shadow: 0 0 10px #DCDDE9;
 }
 
 .mobilinput {
@@ -190,7 +197,7 @@ hr.dottedline{
     height: 40px;
     margin-top: 24px;
 
-    border: 1px solid #9364ED;
+    border: 1px solid #DCDDE9;
     box-sizing: border-box;
     border-radius: 4px;    
 }
@@ -198,13 +205,14 @@ hr.dottedline{
 .mobilinput:focus {
     outline: none !important;
     border-color: #9364ED;
-    box-shadow: 0 0 10px #9364ED;
+    box-shadow: 0 0 10px #DCDDE9;
 }
 
 .dropdowndiv {
     width: 100%;
     height: 40px;
     margin-top: 24px;
+    border: 1px solid DCDDE9;
 }
 
 .dropdown {

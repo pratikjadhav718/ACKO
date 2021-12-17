@@ -92,7 +92,7 @@ export const AddtionalDetails = () => {
                             <hr style={{
                                 width: "90%",
                                 margin: "auto",
-                                color: "#DCDDE9"
+                                color: "#e9eaf2"
                             }}/>
                             <div className={style.divnote}>
                                 <div className={style.divnoteicons}>
