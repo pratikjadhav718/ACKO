@@ -12,7 +12,8 @@ const carSchema = new mongoose.Schema({
   tpdate: { type: String, required: false },
   oddate: { type: String, required: false },
   cngkit: { type: String, required: false },
-  mobile: { type: Number, required: false }
+  mobile: { type: Number, required: false },
+  ncb: { type: Number, required: false }
 });
 
 

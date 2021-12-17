@@ -1,6 +1,8 @@
 import React from 'react'
 import style from "./ncb.module.css"
 import close from "./Close.svg"
+import axios from "axios"
+import {Link} from "react-router-dom"
 
 function Ncbpopup({ popupp, setpopupp }) {
   
@@ -18,9 +20,16 @@ function Ncbpopup({ popupp, setpopupp }) {
       </div>
       <div className={style.ncbdiv}>Your NCB has been increased to 20%</div>
       <div>
-        
-          <button className={style.popupbtn}>Continue</button>
-      
+        <Link to="/plans" >
+       
+          <button onClick={async () => {
+            const id = localStorage.getItem("ackoid");
+            const data = {
+              ncb:20
+            }
+            await axios.patch(`http://localhost:8080/cars/${id}`,data);
+          }} className={style.popupbtn}>Continue</button>
+        </Link>
       </div>
     </div>
   ) : (
