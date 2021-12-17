@@ -390,15 +390,34 @@ export const AdditionalCovers = () => {
               }
               add={false}
             ></SingleAdditionalCover>
-            <SingleAdditionalCover
-              svg={passengerAccidentSvg}
-              heading="Personal Accident Cover for Passengers @"
-              price="250"
-              body={
-                "Protect your loved ones in cause of unfortunate accidents. Coverage upto INR 1 Lakh per passenger."
-              }
-              add={false}
-            ></SingleAdditionalCover>
+            <div>
+              <SingleAdditionalCover
+                svg={passengerAccidentSvg}
+                heading="Personal Accident Cover for Passengers @"
+                price="250"
+                body={
+                  "Protect your loved ones in cause of unfortunate accidents. Coverage upto INR 1 Lakh per passenger."
+                }
+                add={false}
+              ></SingleAdditionalCover>
+              <div>
+                <button>
+                  {" "}
+                  <span> 3 more covers</span> <span> ⌄</span>{" "}
+                </button>
+              </div>
+              <div>
+                <div>
+                  ₹{ownDamagePlan} <span>+GST</span>
+                </div>
+                <div>
+                  ₹ {(ownDamagePlan * 2.44301924).toFixed(0)} <span>+GST</span>{" "}
+                </div>
+                <div>
+                  <button>Buy Now</button>
+                </div>
+              </div>
+            </div>
           </div>
         </InContright>
       </Container>

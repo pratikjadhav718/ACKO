@@ -210,360 +210,80 @@ input[type="range"]::-webkit-slider-thumb {
   font-size: 10px;
   line-height: 10px;
 }
-/*
-.insideContRight {
-  margin: 22px 12px 24px 12px;
-  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #dcdde9;
-  padding-bottom: 16px;
-}
-.insideContRight > :nth-child(1) > :nth-child(1) {
+.insideContRight > :last-child > :nth-child(2) > button {
+  height: 24px;
+  background-color: #e7f5fd;
+  border-radius: 10px;
   font-style: normal;
   font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  border: none;
+  color: #3f8fd7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.insideContRight > :last-child > :nth-child(2) > button > :nth-child(2) {
   font-size: 18px;
-  line-height: 22px;
+  margin-top: -5px;
 }
-.insideContRight > :nth-child(1) > :nth-child(2) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 12px;
-  margin-top: 6px;
-
-  color: #454f5a;
-}
-.insideContRight > :nth-child(1) > :nth-child(3) {
-  margin-top: 14px;
-}
-.insideContRight > :nth-child(1) > :nth-child(4) {
-  margin-top: 8px;
+.insideContRight > :last-child > :nth-child(3) {
   display: grid;
-  grid-template-columns: 242px 78px;
-  grid-gap: 23px;
+  grid-template-columns: 75px 70px 107px;
 }
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(1)
-  > :nth-child(1) {
+.insideContRight > :last-child > :nth-child(3) > :nth-child(1) {
   font-style: normal;
   font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
+  font-size: 16px;
+  line-height: 20px;
 }
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(1)
-  > :nth-child(2) {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #575b68;
-  margin-top: 4px;
-}
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(1)
-  > :nth-child(3) {
+.insideContRight > :last-child > :nth-child(3) > :nth-child(1) > span {
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  margin-top: 22px;
-  color: #3f8fd7;
-  cursor: pointer;
-}
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(2)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-}
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(2)
-  > :nth-child(1)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 10px;
 }
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(2)
-  > :nth-child(2) {
-  margin-top: 3px;
+.insideContRight > :last-child > :nth-child(3) > :nth-child(2) {
   font-style: normal;
   font-weight: bold;
   font-size: 10px;
   line-height: 10px;
   color: rgba(87, 91, 104, 0.56);
   text-decoration: line-through;
-  text-align: right;
+  margin-left: 8px;
 }
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(2)
-  > :nth-child(2)
-  > :nth-child(1) {
+.insideContRight > :last-child > :nth-child(3) > :nth-child(2) > span {
   font-style: normal;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 8px;
   line-height: 10px;
 }
-.insideContRight
-  > :nth-child(1)
-  > :nth-child(4)
-  > :nth-child(2)
-  > :nth-child(3) {
-  width: 78px;
-  height: 24px;
+.insideContRight > :last-child > :nth-child(3) > :nth-child(3) {
+  margin-left: 52px;
+}
+.insideContRight > :last-child > :nth-child(3) > :nth-child(3) > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 32px;
+
+  width: 116px;
+  height: 32px;
+
+  /* Secondary Colour/Button */
+
   background-color: #522ed3;
   border-radius: 4px;
-  color: white;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+
+  text-align: center;
+
+  color: #ffffff;
   border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  cursor: pointer;
-  margin-top: 8px;
 }
-.insidemainclass {
-  margin: 16px 12px 12px;
-  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  border-bottom: 1px solid #dcdde9;
-  padding-bottom: 16px;
-  margin-bottom: 0px;
-}
-.insidemainclass > :nth-child(1) > :nth-child(1) {
-  display: grid;
-  grid-template-columns: 242px 78px;
-  grid-gap: 23px;
-}
-
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2) {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #575b68;
-  margin-top: 4px;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(3) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  margin-top: 22px;
-  color: #3f8fd7;
-  cursor: pointer;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(1)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(2) {
-  margin-top: 3px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-  color: rgba(87, 91, 104, 0.56);
-  text-decoration: line-through;
-  text-align: right;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(2)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-}
-.insidemainclass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(3) {
-  width: 78px;
-  height: 24px;
-  background-color: #522ed3;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  cursor: pointer;
-  margin-top: 8px;
-}
-
-.insideLastClass {
-  margin: 16px 12px 12px;
-  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
-
-  padding-bottom: 16px;
-  margin-bottom: 0px;
-}
-.insideLastClass > :nth-child(1) > :nth-child(1) {
-  display: grid;
-  grid-template-columns: 242px 84px;
-  grid-gap: 20px;
-}
-
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2) {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 12px;
-  color: #575b68;
-  margin-top: 4px;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(3) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  margin-top: 22px;
-  color: #3f8fd7;
-  cursor: pointer;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 15px;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(1)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(2) {
-  margin-top: 3px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-  color: rgba(87, 91, 104, 0.56);
-  text-decoration: line-through;
-  text-align: right;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(2)
-  > :nth-child(1) {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 10px;
-  line-height: 10px;
-}
-.insideLastClass
-  > :nth-child(1)
-  > :nth-child(1)
-  > :nth-child(2)
-  > :nth-child(3) {
-  width: 78px;
-  height: 24px;
-  background-color: #522ed3;
-  border-radius: 4px;
-  color: white;
-  border: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 12px;
-  cursor: pointer;
-  margin-top: 8px;
-  margin-left: 6px;
-}
-*/
