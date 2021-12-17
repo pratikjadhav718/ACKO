@@ -411,11 +411,18 @@ export const AdditionalCovers = () => {
                   ₹{ownDamagePlan} <span>+GST</span>
                 </div>
                 <div>
-                  ₹ {(ownDamagePlan * 2.44301924).toFixed(0)} <span>+GST</span>{" "}
+                  <div>
+                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
+                    <span>+GST</span>{" "}
+                  </div>
                 </div>
                 <div>
                   <button>Buy Now</button>
                 </div>
+              </div>
+              <div>
+                {" "}
+                <span>{emiSvg}</span> starting from ₹208
               </div>
             </div>
           </div>
@@ -424,159 +431,3 @@ export const AdditionalCovers = () => {
     </div>
   );
 };
-
-// unused code
-
-/**
- *   <div style={{ display: "flex" }}>
-              <span
-                style={{
-                  fontStyle: "normal",
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  lineHeight: "16px",
-                  marginTop: "16px",
-                  // float: "left",
-                  marginLeft: "16px",
-                }}
-              >
-                Insured Declared Value (IDV)
-              </span>
-              <span
-                style={{
-                  fontStyle: "normal",
-                  fontWeight: "500",
-                  fontSize: "14px",
-                  lineHeight: "18px",
-                  marginLeft: "103px",
-                  marginTop: "16px",
-                  marginRight: "32px",
-                  color: "#3F8FD8",
-                }}
-              >
-                {" "}
-                ₹{insuredValue} L
-              </span>
-            </div>
-            <div style={{ display: "flex" }}>
-              <span
-                style={{
-                  fontStyle: "normal",
-                  width: "105px",
-                  fontWeight: "500",
-                  fontSize: "12px",
-                  lineHeight: "14px",
-                  marginTop: "16px",
-                  // float: "left",
-                  marginLeft: "16px",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "12px",
-                    lineHeight: "12px",
-                  }}
-                >
-                  {riskValues.high}L
-                </div>{" "}
-                <div
-                  style={{
-                    fontSize: "10px",
-                    lineHeight: "10px",
-                  }}
-                >
-                  HIGH RISK
-                </div>
-              </span>
-              <span
-                style={{
-                  fontStyle: "normal",
-                  fontWeight: "500",
-                  width: "150px",
-                  fontSize: "14px",
-                  lineHeight: "16px",
-                  marginLeft: "220px",
-                  marginTop: "16px",
-
-                  color: "#3F8FD8",
-                }}
-              >
-                <div
-                  style={{
-                    fontSize: "12px",
-                    lineHeight: "12px",
-                  }}
-                >
-                  {riskValues.low}L
-                </div>{" "}
-                <div
-                  style={{
-                    fontSize: "10px",
-                    lineHeight: "10px",
-                  }}
-                >
-                  LOW RISK
-                </div>
-              </span>
-            </div>
-            <div
-              style={{
-                height: "16px",
-                marginLeft: "16px",
-                marginRight: "32px",
-                marginTop: "8px",
-              }}
-            >
-              <input
-                min={riskValues.high}
-                max={riskValues.low}
-                onChange={handleSliderChange}
-                step={0.01}
-                type="range"
-              />
-            </div>
-            <div
-              style={{
-                //height: "16px",
-                marginLeft: "16px",
-                marginRight: "32px",
-                marginTop: "8px",
-
-                display: "grid",
-                justifyContent: "right",
-              }}
-            >
-              <div
-                style={{
-                  width: "100px",
-                  marginTop: "-5px",
-                }}
-              >
-                <div
-                  style={{
-                    border: "1px solid #3EB753",
-                    borderTopColor: "white",
-                    height: "6px",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    width: "0",
-                    height: "0",
-                    margin: "auto",
-                    borderLeft: "10px solid transparent",
-                    borderRight: "10px solid transparent",
-                    borderTop: "10px solid #3EB753",
-                  }}
-                ></div>
-                <div
-                  style={{
-                    fontSize: "8px",
-                    textAlign: "center",
-                  }}
-                >
-                  4 out of 5 users select an IDV within this range
-                </div>
-              </div>
-            </div>
- */
