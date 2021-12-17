@@ -7,6 +7,8 @@ import downarrow from "./Down arrow.svg"
 import Petrolpopup from '../Petrolpopup/Petrolpopup'
 import Typecarpopup from '../Typecarpopup/Typecarpopup'
 import Gearpopup from '../Gearpopup/Gearpopup'
+import axios from "axios"
+import {Link} from "react-router-dom"
 function Cartype() {
 
     const [carr, setCar] = useState("Ford Ecosport");
@@ -30,9 +32,9 @@ function Cartype() {
           <p>{carr}</p>
           <img
             onClick={() => {
-              setCarpopup(!carpopup)
-              setPetrolpopup(false)
-              setGearpopup(false)
+              setCarpopup(!carpopup);
+              setPetrolpopup(false);
+              setGearpopup(false);
             }}
             className={style.imagearrow}
             src={downarrow}
@@ -46,9 +48,9 @@ function Cartype() {
           <p>{fuel}</p>
           <img
             onClick={() => {
-              setPetrolpopup(!petrolpopup)
-              setCarpopup(false)
-              setGearpopup(false)
+              setPetrolpopup(!petrolpopup);
+              setCarpopup(false);
+              setGearpopup(false);
             }}
             className={style.imagearrow}
             src={downarrow}
@@ -64,15 +66,36 @@ function Cartype() {
         <div className={style.cartypeflex}>
           <img src={gear} alt="" />
           <p>{gearr}</p>
-                <img onClick={() => {
-            setGearpopup(!gearpopup)
-            setPetrolpopup(false)
-            setCarpopup(false)
-          }} className={style.imagearrow} src={downarrow} alt="" />
+          <img
+            onClick={() => {
+              setGearpopup(!gearpopup);
+              setPetrolpopup(false);
+              setCarpopup(false);
+            }}
+            className={style.imagearrow}
+            src={downarrow}
+            alt=""
+          />
         </div>
         <hr />
         <Gearpopup gearpopup={gearpopup} setGearpopup={setGearpopup} />
-        <button className={style.cartypebtn}>Continue</button>
+        <Link to="/cars/cardetail" >
+        
+          <button
+            onClick={async () => {
+              const id = localStorage.getItem("ackoid");
+              const data = {
+                name: carr,
+                fuel: fuel,
+                gear: gearr
+              };
+              await axios.patch(`http://localhost:8080/cars/${id}`,data);
+            }}
+            className={style.cartypebtn}
+          >
+            Continue
+          </button>
+        </Link>
       </div>
     );
 }
