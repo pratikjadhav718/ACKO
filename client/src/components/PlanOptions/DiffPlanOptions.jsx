@@ -11,6 +11,7 @@ import {
   sliderThumb,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
+import { useState } from "react";
 
 const Container = styled.div`
   //background-color: green;
@@ -41,10 +42,26 @@ export const DifferentPlanOptions = () => {
     vehicleName: "Ford Ecosport",
     NCB: "20%",
     registrationMonthYear: "Nov, 2020",
-    insuredDeclaredValue: 6.65,
-    pincode: "400607",
+    carValue: 12.55,
+  };
+  const pincode = 400607;
+  const riskValues = {
+    high: (carDetails.carValue * 0.294023904).toFixed(2),
+    low: carDetails.carValue.toFixed(2),
   };
 
+  const [insuredValue, setInsuredValue] = useState(
+    (riskValues.low / 2).toFixed(2)
+  );
+
+  const handleSliderChange = (e) => {
+    console.log(e.target.value);
+    setInsuredValue(Number(e.target.value).toFixed(2));
+    setOwnDamagePlan((insuredValue * 0.549322709 * 1000).toFixed(0));
+  };
+  const [ownDamagePlan, setOwnDamagePlan] = useState(
+    (insuredValue * 0.549322709 * 1000).toFixed(0)
+  );
   return (
     <div className="App">
       <Header></Header>
@@ -124,7 +141,7 @@ export const DifferentPlanOptions = () => {
                 {" "}
                 <div style={{ display: "flex", color: "#8A909F" }}>
                   {" "}
-                  {mapSvg} <span className={styles.vehicle}> 400607 </span>
+                  {mapSvg} <span className={styles.vehicle}> {pincode} </span>
                 </div>
               </div>
             </div>
@@ -182,14 +199,14 @@ export const DifferentPlanOptions = () => {
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "18px",
-                  marginLeft: "20px",
+                  marginLeft: "38px",
                   marginTop: "16px",
                   marginRight: "32px",
                   color: "#3F8FD8",
                 }}
               >
                 {" "}
-                ₹{carDetails.insuredDeclaredValue} L
+                ₹{insuredValue} L
               </span>
             </div>
             <div style={{ display: "flex" }}>
@@ -211,7 +228,7 @@ export const DifferentPlanOptions = () => {
                     lineHeight: "12px",
                   }}
                 >
-                  3.69L
+                  {riskValues.high}L
                 </div>{" "}
                 <div
                   style={{
@@ -241,7 +258,7 @@ export const DifferentPlanOptions = () => {
                     lineHeight: "12px",
                   }}
                 >
-                  12.55L
+                  {riskValues.low}L
                 </div>{" "}
                 <div
                   style={{
@@ -261,7 +278,13 @@ export const DifferentPlanOptions = () => {
                 marginTop: "8px",
               }}
             >
-              <input type="range" />
+              <input
+                min={riskValues.high}
+                max={riskValues.low}
+                onChange={handleSliderChange}
+                step={0.01}
+                type="range"
+              />
             </div>
             <div
               style={{
@@ -340,10 +363,11 @@ export const DifferentPlanOptions = () => {
                 </div>
                 <div>
                   <div>
-                    ₹ 3,650 <span> + GST</span>
+                    ₹ {ownDamagePlan} <span> + GST</span>
                   </div>
                   <div>
-                    ₹ 8,913 <span> + GST</span>
+                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
+                    <span> + GST</span>
                   </div>
                   <button>Select</button>
                 </div>

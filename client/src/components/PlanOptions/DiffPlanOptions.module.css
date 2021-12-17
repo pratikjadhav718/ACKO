@@ -57,7 +57,7 @@ input[type="range"]::-webkit-slider-thumb {
   height: 48px;
 }
 .needHelpMain > :nth-child(2) > :first-child {
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   font-weight: bold;
   line-height: 14px;
@@ -65,7 +65,7 @@ input[type="range"]::-webkit-slider-thumb {
 .needHelpMain > :nth-child(2) > :nth-child(2) {
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   margin-top: 8px;
   color: #9296a5;
@@ -73,7 +73,7 @@ input[type="range"]::-webkit-slider-thumb {
 .needHelpMain > :nth-child(2) > :nth-child(3) {
   font-style: normal;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 12px;
   margin-top: 8px;
   color: #3f8fd7;
@@ -178,6 +178,7 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 10px;
   color: rgba(87, 91, 104, 0.56);
   text-decoration: line-through;
+  text-align: right;
 }
 .insideContRight
   > :nth-child(1)
@@ -289,6 +290,7 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 10px;
   color: rgba(87, 91, 104, 0.56);
   text-decoration: line-through;
+  text-align: right;
 }
 .insidemainclass
   > :nth-child(1)
@@ -401,6 +403,7 @@ input[type="range"]::-webkit-slider-thumb {
   line-height: 10px;
   color: rgba(87, 91, 104, 0.56);
   text-decoration: line-through;
+  text-align: right;
 }
 .insideLastClass
   > :nth-child(1)
