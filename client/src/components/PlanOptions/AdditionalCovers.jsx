@@ -35,7 +35,7 @@ const InContright = styled.div`
   border: 1px solid #dcdee9;
 `;
 
-export const DifferentPlanOptions = () => {
+export const AdditionalCovers = () => {
   const carDetails = {
     liscencePlate: "MH04KL5359",
     vehicleName: "Ford Ecosport",
