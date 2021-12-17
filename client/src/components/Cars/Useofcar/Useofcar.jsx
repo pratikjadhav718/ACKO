@@ -4,6 +4,7 @@ import percar from "./personelcar.svg";
 import colorcar from "./colourcar.svg";
 import caronhand from "./Car on hand.svg";
 import { Link } from "react-router-dom";
+import axios from "axios"
 
 function Useofcar() {
   return (
@@ -24,7 +25,14 @@ function Useofcar() {
         style={{ textDecoration: "none", color: "black" }}
         to="/cars/pincode"
       >
-        <div className={style.personalcardiv}>
+        <div
+          onClick={async () => {
+            const data = { useofcar: "Personal use" };
+            const res = await axios.post("http://localhost:8080/cars", data);
+             console.log(res.data._id);
+          }}
+          className={style.personalcardiv}
+        >
           <div>
             <img src={percar} style={{ marginTop: "20px" }} alt=""></img>
           </div>
@@ -54,8 +62,22 @@ function Useofcar() {
           </div>
         </div>
       </Link>
-      <Link style={{ textDecoration: "none", color: "black" }} to="/cars/pincode" >
-        <div className={style.personalcardiv}>
+      <Link
+        style={{ textDecoration: "none", color: "black" }}
+        to="/cars/pincode"
+      >
+        <div
+          onClick={async () => {
+            try {
+              const data = { useofcar: "Commercial use" };
+              const res = await axios.post("http://localhost:8080/cars", data);
+              console.log(res.data._id);
+            } catch (err) {
+              console.log(err.message);
+            }
+          }}
+          className={style.personalcardiv}
+        >
           <div>
             <img src={colorcar} style={{ marginTop: "20px" }} alt=""></img>
           </div>

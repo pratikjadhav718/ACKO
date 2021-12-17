@@ -4,7 +4,7 @@ const router = express.Router();
 
 router.get("/", async (req, res) => {
     try {
-        const data = await Car.find().lean().exec();
+        const data = await Car.find();
         return res.status(200).send({ data })
     } catch (err) {
         return res.status(400).send(err.message)
@@ -27,7 +27,7 @@ router.get("/:id", async (req, res) => {
         return res.status(200).send(data)
     }
     catch (err) {
-        return res.status(400).send(err.message)
+        return res.status(400).send(err)
     }
 })
 
