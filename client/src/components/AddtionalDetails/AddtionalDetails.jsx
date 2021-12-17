@@ -3,6 +3,7 @@ import style from "./addtional.details.module.css";
 import DatePicker from "react-datepicker";
 import { useState } from "react";
 import calendericon from "./calender.svg"
+import noteicon from "./note.svg"
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -86,11 +87,19 @@ export const AddtionalDetails = () => {
                             </div>
                             <br />
                             <hr />
+                            <div className={style.divnote}>
+                                <div className={style.divnoteicons}>
+                                    <img src={noteicon} alt="" />
+                                </div>
+                                <div className={style.note}>
+                                    <b className={style.fontwidth}>Please note :</b> Previous year policy document is required in case of claim within 30 days of the Acko Policy start date
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div className={style.termsandconditions}>
-                        <p> By tapping on continue I declare that i have provided correct details and have read Acko’s T&C.</p>
+                        <p> By tapping on continue I declare that i have provided correct details and have read Acko’s <a href="">T&C</a>.</p>
                     </div>
 
                     <div className={style.continuebtndiv}>
