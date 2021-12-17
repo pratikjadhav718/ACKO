@@ -422,7 +422,8 @@ export const AdditionalCovers = () => {
               </div>
               <div>
                 {" "}
-                <span>{emiSvg}</span> starting from ₹208
+                <span>{emiSvg}</span> starting from ₹208{" "}
+                <span>{"View Plans >"} </span>
               </div>
             </div>
           </div>

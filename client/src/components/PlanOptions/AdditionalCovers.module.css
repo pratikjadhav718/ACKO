@@ -209,6 +209,7 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: bold;
   font-size: 10px;
   line-height: 10px;
+  cursor: pointer;
 }
 .insideContRight > :last-child > :nth-child(2) > button {
   height: 24px;
@@ -223,6 +224,7 @@ input[type="range"]::-webkit-slider-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .insideContRight > :last-child > :nth-child(2) > button > :nth-child(2) {
   font-size: 18px;
@@ -231,7 +233,7 @@ input[type="range"]::-webkit-slider-thumb {
 .insideContRight > :last-child > :nth-child(3) {
   margin-top: 13px;
   display: grid;
-  grid-template-columns: 75px 70px 107px;
+  grid-template-columns: 75px 73px 104px;
 }
 .insideContRight > :last-child > :nth-child(3) > :nth-child(1) {
   font-style: normal;
@@ -274,8 +276,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 116px;
   height: 32px;
 
-  /* Secondary Colour/Button */
-
+  cursor: pointer;
   background-color: #522ed3;
   border-radius: 4px;
 
@@ -294,6 +295,18 @@ input[type="range"]::-webkit-slider-thumb {
   font-weight: bold;
   font-size: 12px;
   line-height: 12px;
-
+  margin-top: 17px;
   color: #454f5a;
+  display: flex;
+  grid-gap: 4px;
+}
+.insideContRight > :last-child > :nth-child(4) > :last-child {
+  margin-left: 4px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+  cursor: pointer;
+  color: #3f8fd7;
 }
