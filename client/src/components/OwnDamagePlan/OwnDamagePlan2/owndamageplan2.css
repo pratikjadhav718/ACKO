@@ -23,3 +23,28 @@
     margin-left: 20px;
     color: #63ADF4;
 }
+
+.owndamageplanprices1 {
+    /* background-color: blueviolet; */
+    display: grid;
+    grid-template-columns: 242px 78px;
+    grid-gap: 23px;
+    padding: 10px;
+}
+
+.owndamageplanprices1 > :nth-child(2){
+    /* background-color: burlywood; */
+    text-align: right;
+    /* border: 1px solid aqua; */
+}
+
+.owndamageplanprices1 > :nth-child(4){
+    text-align: right;
+    /* border: 1px solid aqua; */
+}
+
+.owndamageplanprices1 > :nth-child(6) {
+    /* background-color: brown; */
+    /* border: 1px solid aqua; */
+    text-align: right;
+}
