@@ -1,5 +1,7 @@
 import React,{useState} from 'react'
 import style from "./month.module.css"
+import axios from 'axios'
+import {Link} from "react-router-dom"
 
 function Month() {
     const [value, setValue] = useState("");
@@ -9,7 +11,7 @@ function Month() {
       const name = e.target.name;
       setValue(name);
     };
-    console.log(value);
+  
 
     return (
       <div className={style.yearbody}>
@@ -71,10 +73,18 @@ function Month() {
               Dec
             </button>
           </div>
-         
         </div>
 
-        <button className={style.yearbtn}>Continue</button>
+      <Link to="/cars/cartype" > <button
+          className={style.yearbtn}
+          onClick={async () => {
+            const id = localStorage.getItem("ackoid");
+            const data = { month: value };
+            await axios.patch(`http://localhost:8080/cars/${id}`, data);
+          }}
+        >
+          Continue
+        </button></Link>
       </div>
     );
 }

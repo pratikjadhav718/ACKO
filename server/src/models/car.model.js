@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const carSchema = new mongoose.Schema({
     number: { type: String, required: false},
     pincode: { type: Number, required: false },
-    year: { type: Number, required: false },
+    year: { type: String, required: false },
     month: { type: String, required: false },
     name: { type: String, required: false },
     fuel: { type: String, required: false },

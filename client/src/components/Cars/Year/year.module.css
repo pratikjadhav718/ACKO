@@ -50,8 +50,10 @@ color: white;
   cursor: pointer;
 }
 
-.yearflexdiv>div :hover{
+.yearflexdiv >div :hover{
 color:#522ED3 ;
+
+
 }
 
 
