@@ -180,6 +180,7 @@ export const AdditionalCovers = () => {
               />
             </div>
           </div>
+          {/* second row */}
           <div
             style={{
               border: "1px solid #dcdee9",
@@ -187,7 +188,115 @@ export const AdditionalCovers = () => {
             }}
             className={styles.fontType}
           >
-            <div style={{ display: "flex" }}>
+            {/* until here second row */}
+          </div>
+          <div className={styles.needHelpMain}>
+            <div>{needHelpSvg}</div>
+            <div>
+              <div>Need help with something?</div>
+              <div>
+                Request a callback, sit back relax! Our experts will help you
+                with all your queries
+              </div>
+              <div>Talk to an expert {">"} </div>
+            </div>
+          </div>
+        </InContleft>
+        <InContright>
+          <div className={styles.insideContRight}>
+            <div>
+              <div>3 Plans for your Ecosport</div>
+              <div>
+                {" "}
+                <span>{emiSvg}</span> starting from ₹208
+              </div>
+              <div>
+                {" "}
+                <img src={recommended} alt="" />{" "}
+              </div>
+              <div>
+                <div>
+                  <div>Own Damage Plan</div>
+                  <div>Recommended if you already have a third party plan</div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ {ownDamagePlan} <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
+                    <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <div className={styles.insidemainclass}>
+            <div>
+              <div>
+                <div>
+                  <div>Smart Saver Zero Depreciation Plan</div>
+                  <div>
+                    Gives you all the benefits of Bumper to bumper cover at a
+                    discounted price
+                  </div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ {smartSaverZeroDepreciationPlan} <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ {(ownDamagePlan * 2.0595).toFixed(0)} <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className={styles.insideLastClass}>
+            <div>
+              <div>
+                <div>
+                  <div>Zero Depreciation Plan</div>
+                  <div>
+                    Includes all benefits of Own Damage plan and covers full
+                    cost of car parts during claims.
+                  </div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ {zeroDepreciationPlan} <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ {(zeroDepreciationPlan * 1.753569784).toFixed(0)}
+                    <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </InContright>
+      </Container>
+    </div>
+  );
+};
+
+// unused code
+
+/**
+ *   <div style={{ display: "flex" }}>
               <span
                 style={{
                   fontStyle: "normal",
@@ -338,106 +447,4 @@ export const AdditionalCovers = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div className={styles.needHelpMain}>
-            <div>{needHelpSvg}</div>
-            <div>
-              <div>Need help with something?</div>
-              <div>
-                Request a callback, sit back relax! Our experts will help you
-                with all your queries
-              </div>
-              <div>Talk to an expert {">"} </div>
-            </div>
-          </div>
-        </InContleft>
-        <InContright>
-          <div className={styles.insideContRight}>
-            <div>
-              <div>3 Plans for your Ecosport</div>
-              <div>
-                {" "}
-                <span>{emiSvg}</span> starting from ₹208
-              </div>
-              <div>
-                {" "}
-                <img src={recommended} alt="" />{" "}
-              </div>
-              <div>
-                <div>
-                  <div>Own Damage Plan</div>
-                  <div>Recommended if you already have a third party plan</div>
-                  <div>See Details</div>
-                </div>
-                <div>
-                  <div>
-                    ₹ {ownDamagePlan} <span> + GST</span>
-                  </div>
-                  <div>
-                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
-                    <span> + GST</span>
-                  </div>
-                  <button>Select</button>
-                </div>
-              </div>
-            </div>
-            <div></div>
-            <div></div>
-          </div>
-
-          <div className={styles.insidemainclass}>
-            <div>
-              <div>
-                <div>
-                  <div>Smart Saver Zero Depreciation Plan</div>
-                  <div>
-                    Gives you all the benefits of Bumper to bumper cover at a
-                    discounted price
-                  </div>
-                  <div>See Details</div>
-                </div>
-                <div>
-                  <div>
-                    ₹ {smartSaverZeroDepreciationPlan} <span> + GST</span>
-                  </div>
-                  <div>
-                    ₹ {(ownDamagePlan * 2.0595).toFixed(0)} <span> + GST</span>
-                  </div>
-                  <button>Select</button>
-                </div>
-              </div>
-            </div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={styles.insideLastClass}>
-            <div>
-              <div>
-                <div>
-                  <div>Zero Depreciation Plan</div>
-                  <div>
-                    Includes all benefits of Own Damage plan and covers full
-                    cost of car parts during claims.
-                  </div>
-                  <div>See Details</div>
-                </div>
-                <div>
-                  <div>
-                    ₹ {zeroDepreciationPlan} <span> + GST</span>
-                  </div>
-                  <div>
-                    ₹ {(zeroDepreciationPlan * 1.753569784).toFixed(0)}
-                    <span> + GST</span>
-                  </div>
-                  <button>Select</button>
-                </div>
-              </div>
-            </div>
-            <div></div>
-            <div></div>
-          </div>
-        </InContright>
-      </Container>
-    </div>
-  );
-};
+ */
