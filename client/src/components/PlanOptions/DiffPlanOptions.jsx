@@ -19,12 +19,12 @@ const Container = styled.div`
   margin: auto;
   margin-top: 64px;
   display: flex;
-  grid-gap: 80px;
+  grid-gap: 16px;
 `;
 const InContleft = styled.div`
   background-color: #ffffff;
   height: 400px;
-  width: 304px;
+  width: 368px;
   border: 1px solid #dcdee9;
 `;
 const InContright = styled.div`
@@ -207,7 +207,7 @@ export const DifferentPlanOptions = () => {
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "18px",
-                  marginLeft: "38px",
+                  marginLeft: "103px",
                   marginTop: "16px",
                   marginRight: "32px",
                   color: "#3F8FD8",
@@ -254,7 +254,7 @@ export const DifferentPlanOptions = () => {
                   width: "150px",
                   fontSize: "14px",
                   lineHeight: "16px",
-                  marginLeft: "155px",
+                  marginLeft: "220px",
                   marginTop: "16px",
 
                   color: "#3F8FD8",
