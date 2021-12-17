@@ -2,15 +2,14 @@ import React, { useState } from "react";
 import style from "./cardetail.module.css";
 import buttonpen from "./Button pen.svg";
 import ecosport from "./Eco sport.svg";
-import carwithstar from "./Car with star.svg"
-import axios from "axios"
-import {Link} from "react-router-dom"
+import carwithstar from "./Car with star.svg";
+import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Cardetail() {
+  const [cng, setCng] = useState("");
 
-const [cng,setCng]=useState("")
-
-const [mobile,setMobile]=useState("")
+  const [mobile, setMobile] = useState("");
 
   return (
     <div className={style.cardetailbody}>
@@ -85,7 +84,7 @@ const [mobile,setMobile]=useState("")
             onClick={() => {
               setCng("Yes");
             }}
-          />{" "}
+          />
           Yes
         </label>
         <label style={{ marginLeft: "30px" }}>
@@ -95,7 +94,7 @@ const [mobile,setMobile]=useState("")
             onClick={() => {
               setCng("No");
             }}
-          />{" "}
+          />
           No
         </label>
       </div>
@@ -122,9 +121,8 @@ const [mobile,setMobile]=useState("")
         <p style={{ textAlign: "center" }}>We Promise!!</p>
       </div>
 
-      <div>
-        <Link to="cars/policy" >
-    
+      <Link to="/cars/policy">
+        <div>
           <button
             onClick={async () => {
               const id = localStorage.getItem("ackoid");
@@ -138,8 +136,8 @@ const [mobile,setMobile]=useState("")
           >
             Continue
           </button>
-        </Link>
-      </div>
+        </div>
+      </Link>
       <div className={style.lastflexdiv}>
         <img src={carwithstar} alt="" />
         <p>Great car! Now let us offer you really great insurance for it</p>
