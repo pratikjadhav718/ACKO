@@ -4,6 +4,7 @@ import DatePicker from "react-datepicker";
 import { useState } from "react";
 import calendericon from "./calender.svg"
 import noteicon from "./note.svg"
+import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -108,28 +109,20 @@ export const AddtionalDetails = () => {
                 </div>
 
                 <div className={style.flexdiv2}>
-                    <div className={style.owndamageplandiv1}>
 
+                    <div >
+                        <OwnDamagePlan1 />
                     </div>
 
                     <div className={style.owndamageplandiv2}>
 
                     </div>
+
                 </div>
             </div>
-
+            <br />
             <div>
-                {/* <div className={style.noticediv}>
-
-                </div> */}
-                {/* <hr className="hrclass" /> */}
-                {/* <div className={style.termsandconditions}>
-                <p> By tapping on continue I declare that i have provided correct details and have read Acko’s T&C.</p>
-                </div> */}
-
-                {/* <div className={style.continuebtndiv}>
-                    <button className={style.continuebtn}>Continue</button>
-                </div> */}
+                {/* <OwnDamagePlan1 /> */}
             </div>
 
         </div>

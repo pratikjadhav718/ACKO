@@ -26,7 +26,7 @@
     top: 88px; */
 }
 
-.owndamageplandiv1 {
+/* .owndamageplandiv1 {
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
@@ -34,13 +34,7 @@
     height: 56px;
     margin-left: auto;
     margin-top: 32px;    
-
-    /* position: absolute;
-    width: 240px;
-    height: 56px;
-    left: 728px;
-    top: 120px; */
-}
+} */
 
 .owndamageplandiv2 {
     border: 1px solid black;
@@ -340,3 +334,4 @@ hr.dottedline{
 .fontwidth {
     font-weight: bold;
 }
+
