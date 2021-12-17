@@ -187,3 +187,18 @@ export const needHelpSvg = (
     <circle cx="12.8746" cy="4.62656" r="0.44486" fill="#FFB320" />
   </svg>
 );
+export const emiSvg = (
+  <svg
+    width="15"
+    height="10"
+    viewBox="0 0 15 10"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <rect width="15" height="10" rx="2" fill="#8788A0" />
+    <path
+      d="M5.96484 5.76758H4.83984V6.5293H6.16016V7H4.25391V4.15625H6.15625V4.63086H4.83984V5.30859H5.96484V5.76758ZM7.26953 4.15625L8 6.21875L8.72656 4.15625H9.49609V7H8.9082V6.22266L8.9668 4.88086L8.19922 7H7.79688L7.03125 4.88281L7.08984 6.22266V7H6.50391V4.15625H7.26953ZM10.6309 7H10.0449V4.15625H10.6309V7Z"
+      fill="white"
+    />
+  </svg>
+);

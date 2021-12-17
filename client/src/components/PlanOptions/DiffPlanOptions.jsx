@@ -1,9 +1,11 @@
 import styled from "styled-components";
 import Header from "../Header/Header";
 import styles from "./DiffPlanOptions.module.css";
+import recommended from "./assets/recommended.svg";
 import {
   calendarSvg,
   carSvg,
+  emiSvg,
   mapSvg,
   needHelpSvg,
   sliderThumb,
@@ -121,7 +123,7 @@ export const DifferentPlanOptions = () => {
                   paddingRight: "18px",
                   paddingTop: "16px",
                   paddingBottom: "4px",
-                  fontSize: "10px",
+                  fontSize: "12px",
                 }}
                 className={styles.editLink}
               >
@@ -154,7 +156,7 @@ export const DifferentPlanOptions = () => {
                   fontStyle: "normal",
                   fontWeight: "500",
                   fontSize: "12px",
-                  lineHeight: "14px",
+                  lineHeight: "16px",
                   marginTop: "16px",
                   // float: "left",
                   marginLeft: "16px",
@@ -168,7 +170,7 @@ export const DifferentPlanOptions = () => {
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "18px",
-                  marginLeft: "45px",
+                  marginLeft: "20px",
                   marginTop: "16px",
                   marginRight: "32px",
                   color: "#3F8FD8",
@@ -306,7 +308,101 @@ export const DifferentPlanOptions = () => {
             </div>
           </div>
         </InContleft>
-        <InContright></InContright>
+        <InContright>
+          <div className={styles.insideContRight}>
+            <div>
+              <div>3 Plans for your Ecosport</div>
+              <div>
+                {" "}
+                <span>{emiSvg}</span> starting from ₹208
+              </div>
+              <div>
+                {" "}
+                <img src={recommended} alt="" />{" "}
+              </div>
+              <div>
+                <div>
+                  <div>Own Damage Plan</div>
+                  <div>Recommended if you already have a third party plan</div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ 3,650 <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ 8,913 <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className={styles.insidemainclass}>
+            <div>
+              <div>3 Plans for your Ecosport</div>
+              <div>
+                {" "}
+                <span>{emiSvg}</span> starting from ₹208
+              </div>
+              <div>
+                {" "}
+                <img src={recommended} alt="" />{" "}
+              </div>
+              <div>
+                <div>
+                  <div>Own Damage Plan</div>
+                  <div>Recommended if you already have a third party plan</div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ 3,650 <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ 8,913 <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+          <div className={styles.insidemainclass}>
+            <div>
+              <div>3 Plans for your Ecosport</div>
+              <div>
+                {" "}
+                <span>{emiSvg}</span> starting from ₹208
+              </div>
+              <div>
+                {" "}
+                <img src={recommended} alt="" />{" "}
+              </div>
+              <div>
+                <div>
+                  <div>Own Damage Plan</div>
+                  <div>Recommended if you already have a third party plan</div>
+                  <div>See Details</div>
+                </div>
+                <div>
+                  <div>
+                    ₹ 3,650 <span> + GST</span>
+                  </div>
+                  <div>
+                    ₹ 8,913 <span> + GST</span>
+                  </div>
+                  <button>Select</button>
+                </div>
+              </div>
+            </div>
+            <div></div>
+            <div></div>
+          </div>
+        </InContright>
       </Container>
     </div>
   );
