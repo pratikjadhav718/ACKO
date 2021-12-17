@@ -15,11 +15,11 @@ import { images } from "./assets/imgs";
 const Container = styled.div`
   //background-color: green;
   //height: 400px;
-  width: 52.2222222%;
+  width: 752px;
   margin: auto;
   margin-top: 64px;
   display: flex;
-  justify-content: left;
+  grid-gap: 80px;
 `;
 const InContleft = styled.div`
   background-color: #ffffff;
@@ -31,11 +31,20 @@ const InContright = styled.div`
   background-color: #ffffff;
   // height: 400px;
   width: 368px;
-  margin-left: 10.9%;
+  // margin-left: 10.9%;
   border: 1px solid #dcdee9;
 `;
 
 export const DifferentPlanOptions = () => {
+  const carDetails = {
+    liscencePlate: "MH04KL5359",
+    vehicleName: "Ford Ecosport",
+    NCB: "20%",
+    registrationMonthYear: "Nov, 2020",
+    insuredDeclaredValue: 6.65,
+    pincode: "400607",
+  };
+
   return (
     <div className="App">
       <Header></Header>
@@ -67,22 +76,8 @@ export const DifferentPlanOptions = () => {
                   {carSvg}{" "}
                   <span className={styles.vehicle}>
                     {" "}
-                    MH04KL5359 Ford Ecosport{" "}
+                    {carDetails.liscencePlate} {carDetails.vehicleName}
                   </span>
-                </div>
-              </div>
-              <div
-                style={{
-                  paddingLeft: "16px",
-                  paddingTop: "4px",
-                  paddingBottom: "4px",
-                }}
-              >
-                {" "}
-                <div style={{ display: "flex", color: "#8A909F" }}>
-                  {" "}
-                  {calendarSvg}{" "}
-                  <span className={styles.vehicle}> NCB - 20% </span>
                 </div>
               </div>
               <div
@@ -98,7 +93,24 @@ export const DifferentPlanOptions = () => {
                   {calendarSvg}{" "}
                   <span className={styles.vehicle}>
                     {" "}
-                    Registration in Nov, 2020{" "}
+                    NCB - {carDetails.NCB}{" "}
+                  </span>
+                </div>
+              </div>
+              <div
+                style={{
+                  paddingLeft: "16px",
+                  paddingTop: "4px",
+                  paddingBottom: "4px",
+                }}
+              >
+                {" "}
+                <div style={{ display: "flex", color: "#8A909F" }}>
+                  {" "}
+                  {calendarSvg}{" "}
+                  <span className={styles.vehicle}>
+                    {" "}
+                    Registration in {carDetails.registrationMonthYear}
                   </span>
                 </div>
               </div>
@@ -177,14 +189,14 @@ export const DifferentPlanOptions = () => {
                 }}
               >
                 {" "}
-                ₹6.65 L
+                ₹{carDetails.insuredDeclaredValue} L
               </span>
             </div>
             <div style={{ display: "flex" }}>
               <span
                 style={{
                   fontStyle: "normal",
-                  width: "100px",
+                  width: "105px",
                   fontWeight: "500",
                   fontSize: "12px",
                   lineHeight: "14px",
@@ -195,7 +207,7 @@ export const DifferentPlanOptions = () => {
               >
                 <div
                   style={{
-                    fontSize: "10px",
+                    fontSize: "12px",
                     lineHeight: "12px",
                   }}
                 >
@@ -203,7 +215,7 @@ export const DifferentPlanOptions = () => {
                 </div>{" "}
                 <div
                   style={{
-                    fontSize: "8px",
+                    fontSize: "10px",
                     lineHeight: "10px",
                   }}
                 >
@@ -217,7 +229,7 @@ export const DifferentPlanOptions = () => {
                   width: "150px",
                   fontSize: "14px",
                   lineHeight: "16px",
-                  marginLeft: "174px",
+                  marginLeft: "155px",
                   marginTop: "16px",
 
                   color: "#3F8FD8",
@@ -225,7 +237,7 @@ export const DifferentPlanOptions = () => {
               >
                 <div
                   style={{
-                    fontSize: "10px",
+                    fontSize: "12px",
                     lineHeight: "12px",
                   }}
                 >
@@ -233,7 +245,7 @@ export const DifferentPlanOptions = () => {
                 </div>{" "}
                 <div
                   style={{
-                    fontSize: "8px",
+                    fontSize: "10px",
                     lineHeight: "10px",
                   }}
                 >
