@@ -5,6 +5,10 @@ const cors = require("cors");
 const app = express();
 app.use(cors());
 
+const carController = require("./controllers/car.controller");
+
+app.use("/cars", carController);
+
 
 app.get("/", (req, res) => {
     return res.send("Hello")
