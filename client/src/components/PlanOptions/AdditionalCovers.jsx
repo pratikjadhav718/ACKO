@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import Header from "../Header/Header";
-import styles from "./DiffPlanOptions.module.css";
+import styles from "./AdditionalCovers.module.css";
 import recommended from "./assets/recommended.svg";
 import {
   calendarSvg,
@@ -188,6 +188,15 @@ export const AdditionalCovers = () => {
             }}
             className={styles.fontType}
           >
+            <div className={styles.secondRowMain}>
+              <div>Send Me The Quote</div>
+              <div>
+                {" "}
+                Don’t miss out on these amazing prices, we will remind youbefore
+                your current policy expires.
+              </div>
+              <div></div>
+            </div>
             {/* until here second row */}
           </div>
           <div className={styles.needHelpMain}>

@@ -44,6 +44,30 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: rgb(0 0 0 / 9%) 0px 1px 8px;
   cursor: pointer;
 }
+
+/* new........... */
+
+.secondRowMain {
+  margin: 16px;
+}
+
+.secondRowMain > :nth-child(1) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  margin-top: 16px;
+}
+.secondRowMain > :nth-child(2) {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 3px;
+  color: #8a909f;
+}
+/* end of new........... */
+
 .needHelpMain {
   margin-left: 14px;
   margin-top: 14px;
