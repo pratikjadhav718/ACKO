@@ -3,8 +3,13 @@ import Header from "../Header/Header";
 import styles from "./AdditionalCovers.module.css";
 import recommended from "./assets/recommended.svg";
 import {
+  accidentsSvg,
   calendarSvg,
+  carBurnSvg,
+  carFloodSvg,
   carSvg,
+  carTheftSvg,
+  consumablesSvg,
   emiSvg,
   mapSvg,
   needHelpSvg,
@@ -23,7 +28,7 @@ const Container = styled.div`
 `;
 const InContleft = styled.div`
   background-color: #ffffff;
-  height: 400px;
+  height: 335px;
   width: 368px;
   border: 1px solid #dcdee9;
 `;
@@ -214,87 +219,153 @@ export const AdditionalCovers = () => {
         <InContright>
           <div className={styles.insideContRight}>
             <div>
-              <div>3 Plans for your Ecosport</div>
+              <div>Own Damage Plan</div>
               <div>
                 {" "}
-                <span>{emiSvg}</span> starting from ₹208
-              </div>
-              <div>
-                {" "}
-                <img src={recommended} alt="" />{" "}
-              </div>
-              <div>
                 <div>
-                  <div>Own Damage Plan</div>
-                  <div>Recommended if you already have a third party plan</div>
-                  <div>See Details</div>
+                  {" "}
+                  {accidentsSvg} <span> Accidents</span>{" "}
                 </div>
                 <div>
-                  <div>
-                    ₹ {ownDamagePlan} <span> + GST</span>
-                  </div>
-                  <div>
-                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
-                    <span> + GST</span>
-                  </div>
-                  <button>Select</button>
+                  {" "}
+                  {carBurnSvg} <span> Fire</span>{" "}
+                </div>
+                <div>
+                  {" "}
+                  {carTheftSvg} <span> Theft</span>
+                </div>
+                <div>
+                  {" "}
+                  {carFloodSvg} <span> Calamities </span>
+                </div>
+                <div>
+                  {" "}
+                  {consumablesSvg} <span> Consumables </span>
                 </div>
               </div>
-            </div>
-            <div></div>
-            <div></div>
-          </div>
+              <div> Insured Declared Value (IDV) ₹{insuredValue}L</div>
+              <div>Amount you will recieve in case of total damage/theft</div>
 
-          <div className={styles.insidemainclass}>
-            <div>
-              <div>
-                <div>
-                  <div>Smart Saver Zero Depreciation Plan</div>
-                  <div>
-                    Gives you all the benefits of Bumper to bumper cover at a
-                    discounted price
+              <div style={{ display: "flex" }}>
+                <span
+                  style={{
+                    fontStyle: "normal",
+                    width: "125px",
+                    fontWeight: "500",
+                    fontSize: "12px",
+                    lineHeight: "14px",
+                    marginTop: "16px",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      lineHeight: "12px",
+                    }}
+                  >
+                    {riskValues.high}L
+                  </div>{" "}
+                  <div
+                    style={{
+                      fontSize: "10px",
+                      lineHeight: "10px",
+                    }}
+                  >
+                    HIGH RISK
                   </div>
-                  <div>See Details</div>
-                </div>
-                <div>
-                  <div>
-                    ₹ {smartSaverZeroDepreciationPlan} <span> + GST</span>
+                </span>
+                <span
+                  style={{
+                    fontStyle: "normal",
+                    fontWeight: "500",
+                    width: "150px",
+                    fontSize: "14px",
+                    lineHeight: "16px",
+                    marginLeft: "235px",
+                    marginTop: "16px",
+
+                    color: "#3F8FD8",
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: "12px",
+                      lineHeight: "12px",
+                    }}
+                  >
+                    {riskValues.low}L
+                  </div>{" "}
+                  <div
+                    style={{
+                      fontSize: "10px",
+                      lineHeight: "10px",
+                    }}
+                  >
+                    LOW RISK
                   </div>
-                  <div>
-                    ₹ {(ownDamagePlan * 2.0595).toFixed(0)} <span> + GST</span>
+                </span>
+              </div>
+
+              <div
+                style={{
+                  height: "16px",
+                  marginTop: "8px",
+                }}
+              >
+                <input
+                  min={riskValues.high}
+                  max={riskValues.low}
+                  onChange={handleSliderChange}
+                  step={0.01}
+                  type="range"
+                />
+              </div>
+
+              <div
+                style={{
+                  //height: "16px",
+                  marginLeft: "16px",
+                  marginRight: "32px",
+                  marginTop: "8px",
+
+                  display: "grid",
+                  justifyContent: "right",
+                }}
+              >
+                <div
+                  style={{
+                    width: "100px",
+                    marginTop: "-5px",
+                  }}
+                >
+                  <div
+                    style={{
+                      border: "1px solid #3EB753",
+                      borderTopColor: "white",
+                      height: "6px",
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      width: "0",
+                      height: "0",
+                      margin: "auto",
+                      borderLeft: "10px solid transparent",
+                      borderRight: "10px solid transparent",
+                      borderTop: "10px solid #3EB753",
+                    }}
+                  ></div>
+                  <div
+                    style={{
+                      fontSize: "8px",
+                      textAlign: "center",
+                    }}
+                  >
+                    4 out of 5 users select an IDV within this range
                   </div>
-                  <button>Select</button>
                 </div>
               </div>
             </div>
-            <div></div>
-            <div></div>
-          </div>
-          <div className={styles.insideLastClass}>
-            <div>
-              <div>
-                <div>
-                  <div>Zero Depreciation Plan</div>
-                  <div>
-                    Includes all benefits of Own Damage plan and covers full
-                    cost of car parts during claims.
-                  </div>
-                  <div>See Details</div>
-                </div>
-                <div>
-                  <div>
-                    ₹ {zeroDepreciationPlan} <span> + GST</span>
-                  </div>
-                  <div>
-                    ₹ {(zeroDepreciationPlan * 1.753569784).toFixed(0)}
-                    <span> + GST</span>
-                  </div>
-                  <button>Select</button>
-                </div>
-              </div>
-            </div>
-            <div></div>
-            <div></div>
           </div>
         </InContright>
       </Container>
