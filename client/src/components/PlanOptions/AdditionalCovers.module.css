@@ -164,9 +164,7 @@ input[type="range"]::-webkit-slider-thumb {
   color: #575b68;
 }
 .insideContRight > :nth-child(n) {
-  padding-left: 10px;
   padding-top: 7px;
-  padding-right: 10px;
 }
 .insideContRight > :nth-child(2) > :nth-child(1) {
   font-style: normal;
@@ -176,7 +174,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 .singleCover {
   display: grid;
-  grid-template-columns: 14px 255px 44px;
+  grid-template-columns: 14px 265px 44px;
   margin-top: 14px;
   padding-bottom: 14px;
 }
