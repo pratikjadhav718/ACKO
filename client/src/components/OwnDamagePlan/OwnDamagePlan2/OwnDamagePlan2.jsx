@@ -25,15 +25,31 @@ export const OwnDamagePlan2 = () => {
                 ADDONS
             </p>
             <div className="owndamageplanprices2">
-                <div>
-                    Own Damage Premium
+                <div style={{
+                    fontSize: "12px",
+                    lineHeight: "10px"
+                }}>
+                    PA Cover
                 </div>
-                <div>₹ 3,650</div>
 
-                <div>NCB Discount</div>
-                <div>- ₹ {"5454"}</div>
-                <div>Consumables Premium</div>
-                <div>₹ 141</div>
+                <div style={{
+                    fontSize: "12px",
+                    lineHeight: "10px"
+                }}>
+                    ₹ 141
+                </div>
+
+                <div style={{
+                    fontSize: "16px",
+                    // lineHeight: "12px"
+                    fontWeight: "600"
+                }}>
+                    Net Premium
+                </div>
+
+                <div>- ₹ {"4,049"}</div>
+                <div>GST</div>
+                <div>₹ 729</div>
             </div>
         </div>
     )
