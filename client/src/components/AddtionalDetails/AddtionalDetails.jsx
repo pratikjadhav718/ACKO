@@ -2,7 +2,7 @@ import Header from "../Header/Header";
 import style from "./addtional.details.module.css";
 import DatePicker from "react-datepicker";
 import { useState } from "react";
-
+import calendericon from "./calender.svg"
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -12,7 +12,7 @@ export const AddtionalDetails = () => {
             <Header />
 
             <div className={style.flexdiv}>
-                <div>
+                <div className={style.flexdiv1}>
                     <div className={style.detailsmaindiv}>
                         <div className={style.topdottedline}>
                             <hr className={style.dottedline}/>
@@ -75,7 +75,18 @@ export const AddtionalDetails = () => {
                     </div>
 
                     <div className={style.noticediv}>
-
+                        <div>
+                            <div className={style.divnotice}>
+                                <div className={style.notic}>
+                                    You will recieve your policy instantly as you make the payment, and your policy will start at 12 am, from your choosen date.
+                                </div>
+                                <div className={style.divnoticicon}>
+                                    <img src={calendericon} alt="" />
+                                </div>
+                            </div>
+                            <br />
+                            <hr />
+                        </div>
                     </div>
 
                     <div className={style.termsandconditions}>
@@ -87,7 +98,7 @@ export const AddtionalDetails = () => {
                     </div>
                 </div>
 
-                <div>
+                <div className={style.flexdiv2}>
                     <div className={style.owndamageplandiv1}>
 
                     </div>
