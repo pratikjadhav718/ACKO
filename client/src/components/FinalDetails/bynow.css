@@ -1,0 +1,52 @@
+.bynowmaindiv {
+    width: 100%;
+    min-height: 60px;
+    box-shadow: 0px 2px 0px #f6f7fb;
+    background: #ffffff;
+
+    display: flex;
+    grid-gap: 17px;
+    
+    /* border: 1px solid red; */
+}
+
+.bynowmaindiv > :nth-child(1) {
+    margin-left: 23.88%;
+    margin-top: 10px;
+    width: 178px;
+    height: 32px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid blueviolet;
+    background: #522ED3;
+    border-radius: 8px;
+    padding: auto;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.bynowmaindiv > :nth-child(1) > :nth-child(1) {
+    margin: auto;
+}
+.bynowmaindiv > :nth-child(1) > :nth-child(2) {
+    margin: auto;
+}
+
+
+.bynowmaindiv > :nth-child(2) {
+    margin-top: 15px;
+}
+
+.bynowmaindiv > :nth-child(3) {
+    margin-top: 15px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}

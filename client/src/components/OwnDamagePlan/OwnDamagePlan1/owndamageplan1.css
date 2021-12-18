@@ -23,15 +23,27 @@
 .titleOne {
     line-height: 12px;
     font-size: 14px;
-    font-weight: bold;
+    font-weight: 700;
     margin: auto;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px
     
 }
 
 .yourcarname {
+    margin-top: 10px;
     line-height: 12px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 500;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .twotwo {
