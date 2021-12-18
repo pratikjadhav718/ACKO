@@ -96,7 +96,8 @@ hr.dottedline{
 .title {
     width: 303px;
     height: 28px;
-    margin-top: 23px;
+    /* margin-top: 23px; */
+    margin-left: 10px;
 
     font-family: Helvetica Neue;
     font-style: normal;
