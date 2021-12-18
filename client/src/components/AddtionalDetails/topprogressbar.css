@@ -1,0 +1,84 @@
+.containertwo {
+    width: 368px;
+    /* height: 50px; */
+    /* border: 1px solid black; */
+    margin: auto;
+    /* margin-top: 100px; */
+    position: relative; 
+}
+.box2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.box2 > div {
+    text-align: center;
+    font-size: 10px;
+}
+
+.containerone {
+    width: 368px;
+    /* height: 50px; */
+    border: 1px solid white;
+    margin: auto;
+    margin-top: 0px;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* background:  #009938; */
+    opacity: 0.7;
+    position: absolute;
+}
+
+.overlap {
+    /* background:  #0057e3; */
+    z-index: 9;
+    /* margin: 30px; */
+}
+
+.hrdiv {
+    margin-top: 25px;
+    margin-left: 19.6%;
+    margin-right: 19.6%;
+    border: none;
+    border-top: 1px dotted gray;
+    color:#fff;
+    background-color:#fff;
+    height:1px;
+}
+.oneo {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* border: 1px solid red; */
+}
+.innerdiv {
+    text-align: center;
+    color: white;
+    
+    /* border: 1px solid blueviolet; */
+}
+
+.innerclass {
+    
+    border-radius: 50%;
+    /* width: 20px; */
+    /* margin-left: 20px; */
+    align-items: center;
+}
+
+.innerclass > p {
+    /* border: 1px solid brown; */
+    width: 20px;
+    margin-left: 45%;
+    background-color: #62B560;
+    margin-top: 0px;
+    margin-bottom: auto;
+    font-weight: 600;
+    border-radius: 50%;
+}

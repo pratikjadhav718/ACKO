@@ -6,6 +6,7 @@ import calendericon from "./calender.svg"
 import noteicon from "./note.svg"
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
+import { TopProgressBar } from "./TopProgressBar";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -18,7 +19,8 @@ export const AddtionalDetails = () => {
                 <div className={style.flexdiv1}>
                     <div className={style.detailsmaindiv}>
                         <div className={style.topdottedline}>
-                            <hr className={style.dottedline}/>
+                            {/* <hr className={style.dottedline}/> */}
+                            <TopProgressBar />
                         </div>
                         <div className={style.title}>
                             Answer a few more questions
