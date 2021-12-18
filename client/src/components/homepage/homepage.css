@@ -120,17 +120,19 @@ ul {
   display: flex;
   background-color: rgb(74, 31, 158);
   border-radius: 10px;
-  padding: 4px 0;
+  padding-top: 5px;
   width: 300px;
   justify-content: space-around;
 }
 .nav_login {
   background-color: var(--light-green);
   color: var(--white);
-  height: 25px;
+  height: 24px;
   border: none;
   border-radius: 8px;
   width: 75px;
+  margin-top:2px;
+  font-weight: bold;
 }
 
 .nav_claim > p {

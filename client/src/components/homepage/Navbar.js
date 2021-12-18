@@ -24,7 +24,7 @@ const  Navbar = () => {
                 <div className="navlinks_div nav_right">
              <ul class="navlinks">
                     <li><a href="#"><div className="nav_claim">
-                        <p>Claim, edit, renew & more</p>
+                        <p style={{marginTop:"3px"}}>Claim, edit, renew & more</p>
                         <button className="nav_login">Login</button>
                     </div></a>
                     </li>
