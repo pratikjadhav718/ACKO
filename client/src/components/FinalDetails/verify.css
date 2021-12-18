@@ -1,3 +1,82 @@
-.tet {
-    background-color: gray;
+
+
+.verifymaindiv > :nth-child(2) > p {
+    font-weight: 600;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.verifymaindiv > :nth-child(3) > p {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;   
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 7px;
+}
+
+.verifymaindiv > :nth-child(4) > p {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;   
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.carownerdetails {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 12px;
+}
+.carownerdetails > div {
+    font-family: Helvetica Neue;
+    font-style: normal;
+}
+
+.carownerdetails > :nth-child(1) {
+    font-size: 12px;
+    line-height: 14px;
+}
+.carownerdetails > :nth-child(2) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.carownerdetails > :nth-child(3) {
+    font-size: 12px;
+    line-height: 14px;
+}
+.carownerdetails > :nth-child(4) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.carownerdetails > :nth-child(3) {
+    font-size: 12px;
+    line-height: 14px;
+}
+.carownerdetails > :nth-child(4) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.carownerdetails > :nth-child(5) {
+    font-size: 12px;
+    line-height: 14px;
+}
+.carownerdetails > :nth-child(6) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
+.verifymaindiv > :nth-child(6) > p {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;   
+    font-size: 14px;
+    line-height: 16px;
 }

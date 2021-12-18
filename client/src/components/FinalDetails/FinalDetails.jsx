@@ -4,7 +4,7 @@ import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1"
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { Verify } from "./Verify";
 const Container = styled.div`
-//   background-color: green;
+  // background-color: green;
   //height: 400px;
   width: 792px;
   margin: auto;
