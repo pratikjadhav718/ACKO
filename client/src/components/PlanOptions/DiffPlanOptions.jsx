@@ -247,7 +247,7 @@ export const DifferentPlanOptions = () => {
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "18px",
-                  marginLeft: "103px",
+                  marginLeft: "100px",
                   marginTop: "16px",
                   marginRight: "32px",
                   color: "#3F8FD8",
@@ -294,7 +294,7 @@ export const DifferentPlanOptions = () => {
                   width: "150px",
                   fontSize: "14px",
                   lineHeight: "16px",
-                  marginLeft: "220px",
+                  marginLeft: "210px",
                   marginTop: "16px",
 
                   color: "#3F8FD8",

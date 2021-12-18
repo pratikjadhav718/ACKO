@@ -136,7 +136,7 @@ export const AdditionalCovers = () => {
             style={{
               border: "1px solid #dcdee9",
               display: "flex",
-              justifyContent: "left",
+              justifyContent: "space-between",
             }}
           >
             <div
@@ -226,16 +226,18 @@ export const AdditionalCovers = () => {
                   <span style={{ color: "#528ae2" }}> Edit</span>{" "}
                 </a>
               </div>
-              <img
-                style={{
-                  width: "135px",
-                  height: "60px",
-                  marginTop: "16px",
-                  float: "right",
-                }}
-                src={images.ecosport}
-                alt=""
-              />
+              <div>
+                <img
+                  style={{
+                    width: "135px",
+                    height: "60px",
+                    marginTop: "16px",
+                    float: "right",
+                  }}
+                  src={images.ecosport}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           {/* second row */}

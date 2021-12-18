@@ -145,9 +145,7 @@ input[type="range"]::-webkit-slider-thumb {
 .insideContRight > :nth-child(1) > :nth-child(2) svg {
   margin-bottom: -4px;
 }
-.insideContRight > :nth-child(1) > :nth-child(2) span {
-  /* margin-top: -29px; */
-}
+
 .insideContRight > :nth-child(1) > :nth-child(3) {
   font-style: normal;
   font-weight: bold;
