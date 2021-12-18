@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./expiry.module.css";
 import calender from "./Calender.svg";
 import DatePicker from "react-datepicker";
@@ -7,10 +7,20 @@ import axios from "axios"
 import {Link} from "react-router-dom"
 
 function Expiry() {
-  const [selectDateTP, setSelectDateTP] = useState("");
-  const [selectDateOD, setSelectDateOD] = useState("");
- 
-  
+  let [selectDateTP, setSelectDateTP] = useState("");
+  let [selectDateOD, setSelectDateOD] = useState("");
+  let tp = ""
+    let od=""
+  useEffect(() => {
+    selectDateTP = selectDateTP.toString();
+    selectDateOD = selectDateOD.toString();
+    for (let i = 4; i < 15; i++) {
+      tp += selectDateTP[i];
+      od += selectDateOD[i];
+    }
+    console.log(tp, od);
+  }, [selectDateTP, selectDateOD]);
+
 
   return (
     <div className={style.expirybody}>
@@ -65,17 +75,21 @@ function Expiry() {
           />
         </div>
       </div>
-      <Link to="/cars/policy" >
-    
+      <Link to="/cars/policy">
         <div style={{ marginTop: "25px" }}>
-          <button className={style.expirycont} onClick={async () => {
-            const id = localStorage.getItem("ackoid");
-            const data = {
-              tpdate: selectDateTP,
-              oddate: selectDateOD
-            }
-            await axios.patch(`http://localhost:8080/cars/${id}`,data);
-          }} >Continue</button>
+          <button
+            className={style.expirycont}
+            onClick={async () => {
+              const id = localStorage.getItem("ackoid");
+              const data = {
+                tpdate: tp,
+                oddate: od,
+              };
+              await axios.patch(`http://localhost:8080/cars/${id}`, data);
+            }}
+          >
+            Continue
+          </button>
         </div>
       </Link>
       <div style={{ marginTop: "20px", width: "400px" }}>

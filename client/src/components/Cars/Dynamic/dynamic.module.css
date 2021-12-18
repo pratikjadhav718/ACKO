@@ -2,7 +2,7 @@
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 350px;
+    height: 360px;
     overflow-x: auto;
    border-radius: 8px;
    background: #FFFFFF;
@@ -20,6 +20,7 @@ justify-content: space-between;
 font-weight: 500;
 font-size: 14px;
 line-height: 16px;
+
 }
 
 .img11{
@@ -27,8 +28,13 @@ margin-left: 10px;
 }
 
 .img22{
-margin-right: 10px;
+margin-left: -20px;
+margin-top: 15px;
 width: 12px;
 cursor: pointer;
+position: absolute;
+
 }
+
+
 

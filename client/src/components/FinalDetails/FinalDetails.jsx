@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1"
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { Verify } from "./Verify";
+import Header from "../Header/Header";
 const Container = styled.div`
-//   background-color: green;
+  // background-color: green;
   //height: 400px;
   width: 792px;
   margin: auto;
@@ -14,7 +15,7 @@ const Container = styled.div`
 `;
 const InContleft = styled.div`
   background-color: #ffffff;
-  height: 400px;
+  // height: 400px;
   width: 368px;
   border: 1px solid #dcdee9;
 `;
@@ -31,7 +32,7 @@ export const FinalDetails = () => {
 
     return (
         <div className={style.test123}>
-
+            <Header />
             <Container>
                 <InContleft>
                     <Verify />
