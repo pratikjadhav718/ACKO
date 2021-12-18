@@ -15,7 +15,7 @@ function Dynamic() {
   useEffect(() => {
     getData();
   }, []);
-  console.log(dataaa);
+  // console.log(dataaa);
   const getData = async () => {
     const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
     setData([data]);
@@ -32,10 +32,8 @@ function Dynamic() {
 
               <Link className={style.link} to="/cars/carnumber">
                 <img className={style.img22} src={buttonpen} alt="" />
-                      </Link>
-            
-                  </div>
-               
+              </Link>
+            </div>
           )}
           {e.pincode && (
             <div>
@@ -60,16 +58,20 @@ function Dynamic() {
           {e.oddate && (
             <div>
               <img className={style.img11} src={date} alt="" />
-              <p>{e.oddate}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <p>OD Expiry- {e.oddate}</p>
+              <Link to="/cars/expiry">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
 
           {e.tpdate && (
             <div>
               <img className={style.img11} src={date} alt="" />
-              <p>{e.tpdate}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <p>TP Expiry- {e.tpdate}</p>
+              <Link to="/cars/expiry">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
 
@@ -77,7 +79,9 @@ function Dynamic() {
             <div>
               <img className={style.img11} src={calender} alt="" />
               <p>Registration Year -{e.year}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <Link to="/cars/year">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
 
@@ -85,7 +89,9 @@ function Dynamic() {
             <div>
               <img className={style.img11} src={calender} alt="" />
               <p>Registration Month -{e.month}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <Link to="/cars/month">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
         </div>
