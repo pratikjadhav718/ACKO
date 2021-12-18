@@ -9,6 +9,7 @@ import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { TopProgressBar } from "./TopProgressBar";
 import { MoreDetails } from "./MoreDetails";
 import { OtpPopup } from "./OtpPopup";
+import { Pop } from "./Pop";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -18,7 +19,7 @@ export const AddtionalDetails = () => {
     if(OtpPopup){
         return (
             <div>
-                alfdkndi
+                <Pop />
             </div>
         )
     }
@@ -32,7 +33,7 @@ export const AddtionalDetails = () => {
 
             {/* <MoreDetails /> */}
 
-            
+            {/* <Pop /> */}
 
             <div className={style.flexdiv}>
                 <div className={style.flexdiv1}>
@@ -139,7 +140,7 @@ export const AddtionalDetails = () => {
                     </div>
 
                     <div className={style.continuebtndiv}>
-                        <button className={style.continuebtn}>Continue</button>
+                        <button onClick={()=>{setOtpPopup(true)}} className={style.continuebtn}>Continue</button>
                     </div>
                 </div>
 
