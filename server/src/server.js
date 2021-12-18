@@ -7,13 +7,14 @@ app.use(cors());
 app.use(express.json());
 
 const carController = require("./controllers/car.controller");
+const userController = require("./controllers/user.controller");
 
 app.use("/cars", carController);
-
+app.use("/user", userController);
 
 app.get("/", (req, res) => {
-    return res.send("Hello")
-})
+  return res.send("Hello");
+});
 
 const port = process.env.PORT || 8080;
 

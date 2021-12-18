@@ -10,8 +10,10 @@ import {
   needHelpSvg,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
+import Cardetail from "../Cars/Cardetail/Cardetail";
 
 const Container = styled.div`
   //background-color: green;
@@ -37,13 +39,37 @@ const InContright = styled.div`
 `;
 
 export const DifferentPlanOptions = () => {
-  const carDetails = {
-    liscencePlate: "MH04KL5359",
-    vehicleName: "Ford Ecosport",
-    NCB: "20%",
-    registrationMonthYear: "Nov, 2020",
+  var data;
+  const [carDetails, setCarDetails] = useState({
+    liscencePlate: "",
+    vehicleName: "",
+    NCB: "",
+    registrationMonthYear: "",
     carValue: 12.55,
-  };
+    pincode: "",
+  });
+  useEffect(() => {
+    try {
+      let id = localStorage.getItem("ackoid");
+      const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
+        console.log(res.data);
+        data = res.data;
+        console.log(data);
+        setCarDetails({
+          liscencePlate: data.number,
+          vehicleName: data.name,
+          NCB: data.ncb,
+          registrationMonthYear: data.month + "," + data.year,
+          pincode: data.pincode,
+          carValue: 12.55,
+          mobile: data.mobile,
+        });
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
+
   const pincode = 400607;
 
   const history = useHistory();
@@ -76,6 +102,8 @@ export const DifferentPlanOptions = () => {
   );
 
   const handleSelectClick = () => {
+    localStorage.setItem("currentPremium", ownDamagePlan);
+    localStorage.setItem("currentIDV", insuredValue);
     history.push("/additionalCovers");
   };
 
@@ -88,7 +116,7 @@ export const DifferentPlanOptions = () => {
             style={{
               border: "1px solid #dcdee9",
               display: "flex",
-              justifyContent: "left",
+              justifyContent: "space-between",
             }}
           >
             <div
@@ -127,7 +155,7 @@ export const DifferentPlanOptions = () => {
                   {calendarSvg}{" "}
                   <span className={styles.vehicle}>
                     {" "}
-                    NCB - {carDetails.NCB}{" "}
+                    NCB - {carDetails.NCB}%{" "}
                   </span>
                 </div>
               </div>
@@ -158,7 +186,8 @@ export const DifferentPlanOptions = () => {
                 {" "}
                 <div style={{ display: "flex", color: "#8A909F" }}>
                   {" "}
-                  {mapSvg} <span className={styles.vehicle}> {pincode} </span>
+                  {mapSvg}{" "}
+                  <span className={styles.vehicle}> {carDetails.pincode} </span>
                 </div>
               </div>
             </div>
@@ -177,16 +206,18 @@ export const DifferentPlanOptions = () => {
                   <span style={{ color: "#528ae2" }}> Edit</span>{" "}
                 </a>
               </div>
-              <img
-                style={{
-                  width: "135px",
-                  height: "60px",
-                  marginTop: "16px",
-                  float: "right",
-                }}
-                src={images.ecosport}
-                alt=""
-              />
+              <div>
+                <img
+                  style={{
+                    width: "135px",
+                    height: "60px",
+                    marginTop: "16px",
+                    float: "right",
+                  }}
+                  src={images.ecosport}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           <div
@@ -216,7 +247,7 @@ export const DifferentPlanOptions = () => {
                   fontWeight: "500",
                   fontSize: "14px",
                   lineHeight: "18px",
-                  marginLeft: "103px",
+                  marginLeft: "100px",
                   marginTop: "16px",
                   marginRight: "32px",
                   color: "#3F8FD8",
@@ -263,7 +294,7 @@ export const DifferentPlanOptions = () => {
                   width: "150px",
                   fontSize: "14px",
                   lineHeight: "16px",
-                  marginLeft: "220px",
+                  marginLeft: "210px",
                   marginTop: "16px",
 
                   color: "#3F8FD8",
