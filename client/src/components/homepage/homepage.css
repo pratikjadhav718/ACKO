@@ -86,7 +86,6 @@ navbar */
 .navlinks {
   display: flex;
   justify-content: space-around;
-  width: 50%;
 }
 .navlinks_div > ul > li > a {
   text-decoration: none;
