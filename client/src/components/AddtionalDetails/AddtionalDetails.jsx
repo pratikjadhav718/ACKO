@@ -22,11 +22,13 @@ export const AddtionalDetails = () => {
   
 
     const handleClickk =async () => {
+        setOtpPopup(true);
         const data = {
             username: username,
             email:mail
         }
         await axios.patch(`http://localhost:8080/cars/${id}`,data);
+        
 }
 
 
