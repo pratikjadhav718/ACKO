@@ -415,3 +415,23 @@ ul {
   margin: auto;
   width: 70%;
 }
+
+/* nav collapse */
+.nav_collapse{
+  background-color: var(--light-gray);
+  position: absolute;
+  z-index: 3;
+  color: rgb(99, 96, 96);
+  margin-left: 50px;
+}
+
+.col2{
+  padding-left: 40px;
+}
+.col2>button{
+  padding:8px 16px;
+  border: none;
+  border-radius:8px;
+ border: 1px solid rgb(99, 96, 96);;
+ }
+
