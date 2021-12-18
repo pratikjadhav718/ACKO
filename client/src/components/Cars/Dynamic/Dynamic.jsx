@@ -94,6 +94,16 @@ function Dynamic() {
               </Link>
             </div>
           )}
+
+          {e.mobile && (
+            <div>
+              <img className={style.img11} src={calender} alt="" />
+              <p>Mobile -{e.mobile}</p>
+              <Link to="/cars/cardetail">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
+            </div>
+          )}
         </div>
       ))}
     </div>
