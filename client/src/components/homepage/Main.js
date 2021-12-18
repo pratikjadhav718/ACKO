@@ -71,8 +71,8 @@ const Main = () => {
                <div className='home_main_mid_divs'>
                <div className='main_quote'><img src={gift} ></img>
                <div>
-               <p>Looking to insure your new car?</p>
-               <p style={{fontSize:"small", color:"#cebeef"}}>Save big with our zero commission insurance</p>
+               <div>Looking to insure your new car?</div>
+               <div style={{fontSize:"small", color:"#cebeef"}}>Save big with our zero commission insurance</div>
                </div>
                
                <button className='main_quote_btn'>Get a quote</button>
