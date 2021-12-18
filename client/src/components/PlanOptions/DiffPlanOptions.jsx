@@ -53,6 +53,7 @@ export const DifferentPlanOptions = () => {
       const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
         console.log(res.data);
         data = res.data;
+        console.log(data);
         setCarDetails({
           liscencePlate: data.number,
           vehicleName: data.name,
@@ -98,6 +99,8 @@ export const DifferentPlanOptions = () => {
   );
 
   const handleSelectClick = () => {
+    localStorage.setItem("currentPremium", ownDamagePlan);
+    localStorage.setItem("currentIDV", insuredValue);
     history.push("/additionalCovers");
   };
 
@@ -110,7 +113,7 @@ export const DifferentPlanOptions = () => {
             style={{
               border: "1px solid #dcdee9",
               display: "flex",
-              justifyContent: "left",
+              justifyContent: "space-between",
             }}
           >
             <div
@@ -199,16 +202,18 @@ export const DifferentPlanOptions = () => {
                   <span style={{ color: "#528ae2" }}> Edit</span>{" "}
                 </a>
               </div>
-              <img
-                style={{
-                  width: "135px",
-                  height: "60px",
-                  marginTop: "16px",
-                  float: "right",
-                }}
-                src={images.ecosport}
-                alt=""
-              />
+              <div>
+                <img
+                  style={{
+                    width: "135px",
+                    height: "60px",
+                    marginTop: "16px",
+                    float: "right",
+                  }}
+                  src={images.ecosport}
+                  alt=""
+                />
+              </div>
             </div>
           </div>
           <div

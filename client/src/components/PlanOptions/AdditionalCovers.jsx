@@ -54,6 +54,7 @@ export const AdditionalCovers = () => {
     carValue: 12.55,
   };
   const pincode = 400607;
+
   const history = useHistory();
   const riskValues = {
     high: (carDetails.carValue * 0.294023904).toFixed(2),
@@ -61,7 +62,7 @@ export const AdditionalCovers = () => {
   };
 
   const [insuredValue, setInsuredValue] = useState(
-    (riskValues.low / 2).toFixed(2)
+    Number(localStorage.getItem("currentIDV"))
   );
 
   const handleSliderChange = (e) => {
@@ -73,7 +74,7 @@ export const AdditionalCovers = () => {
     setzeroDepreciationPlan((insuredValue * 1.176494 * 1000).toFixed(0));
   };
   const [ownDamagePlan, setOwnDamagePlan] = useState(
-    (insuredValue * 0.549322709 * 1000).toFixed(0)
+    Number(localStorage.getItem("currentPremium"))
   );
 
   const [smartSaverZeroDepreciationPlan, setsmartSaverZeroDepreciationPlan] =
@@ -332,6 +333,7 @@ export const AdditionalCovers = () => {
                   onChange={handleSliderChange}
                   step={0.01}
                   type="range"
+                  value={insuredValue}
                 />
               </div>
 
