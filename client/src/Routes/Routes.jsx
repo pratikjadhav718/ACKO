@@ -14,6 +14,7 @@ import Routeyear from "../components/Cars/Year/Routeyear";
 import Routemonth from "../components/Cars/Month/Routemonth";
 import Routecartype from "../components/Cars/Cartype/Routecartype";
 import { AdditionalCovers } from "../components/PlanOptions/AdditionalCovers";
+import { FinalDetails } from "../components/FinalDetails/FinalDetails";
 function Routes() {
   return (
     <>
@@ -61,6 +62,10 @@ function Routes() {
         </Route>
         <Route path="/addtional-details">
           <AddtionalDetails />
+        </Route>
+
+        <Route path="/final-details">
+          <FinalDetails />
         </Route>
 
         <Route>

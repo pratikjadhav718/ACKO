@@ -2,5 +2,33 @@
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 400px;
+    height: 350px;
+    overflow-x: auto;
+   border-radius: 8px;
+   background: #FFFFFF;
+   border: 1px solid #C2CAD2;
 }
+
+.dynamicsecbody >div{
+display: flex;
+justify-content: space-between;
+}
+
+.dynamicsecbody p{
+ color: #000000;
+ font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+}
+
+.img11{
+margin-left: 10px;
+}
+
+.img22{
+margin-right: 10px;
+width: 12px;
+cursor: pointer;
+}
+
