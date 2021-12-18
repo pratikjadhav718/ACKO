@@ -35,7 +35,7 @@ body {
   width: 100%;
   background-color: var(--violet);
   color: var(--white);
-  top: 70px;
+  top: 20px;
   padding-bottom: 70px;
   position: relative;
 }
@@ -179,6 +179,7 @@ ul {
   position: relative;
   width: 100%;
   height: 81px;
+  font-weight: bold;
 }
 .custom-search-input {
   width: 100%;
@@ -190,6 +191,7 @@ ul {
   box-sizing: border-box;
   outline: none;
   background-color: var(--light-gray);
+  font-size: large;
 }
 .custom-search-botton {
   position: absolute;
@@ -204,6 +206,8 @@ ul {
   padding: 0px 15px;
   border-radius: 10px;
   z-index: 2;
+  font-weight: bold;
+  font-size:14px;
 }
 /* input:focus ~ .floating-label,
   input:not(:focus):valid ~ .floating-label{
