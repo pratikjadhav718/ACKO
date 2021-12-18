@@ -1,5 +1,7 @@
 .payimgg{
-    width: 400px;
+    width: 600px;
+margin-left: 30%;
+    
 }
 
 .paybtn{
@@ -8,5 +10,8 @@ border-radius: 4px;
 width: 176px;
 height: 32px;
 padding: 8px 64px;
-margin: 50px auto;
+align-items: center;
+border: none;
+cursor: pointer;
+
 }
