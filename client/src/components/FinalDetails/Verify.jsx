@@ -52,7 +52,61 @@ export const Verify = () => {
                 <p>
                     Car Details
                 </p>
-            </div>    
+            </div>
+
+            <div className="detailsofcar">
+                
+                <div>
+                    Car Number
+                </div>
+                <div>
+                    MH04KL5359
+                </div>
+
+                <div>
+                    Make Model
+                </div>
+                <div>
+                    Ford Ecosport
+                </div>
+
+                <div>
+                    Variant
+                </div>
+                <div>
+                    Titanium AT
+                </div>
+
+                <div>
+                    Fuel Type
+                </div>
+                <div>
+                    Petrol
+                </div>
+
+                <div>
+                    Insured Value
+                </div>
+                <div>
+                    IDV : 6.65 Lakh
+                </div>
+
+                <div>
+                    Purchase Year
+                </div>
+                <div>
+                    2020
+                </div>
+
+                <div>
+                    PA Cover
+                </div>
+                <div>
+                    Included
+                </div>
+
+            </div>
+
         </div>
     )
 }

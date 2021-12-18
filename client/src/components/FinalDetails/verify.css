@@ -80,3 +80,24 @@
     font-size: 14px;
     line-height: 16px;
 }
+
+.detailsofcar {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 12px;
+}
+
+.detailsofcar {
+    font-family: Helvetica Neue;
+    font-style: normal;
+}
+
+.detailsofcar > :nth-child(odd) {
+    font-size: 12px;
+    line-height: 14px;
+}
+.detailsofcar > :nth-child(even) {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+}
