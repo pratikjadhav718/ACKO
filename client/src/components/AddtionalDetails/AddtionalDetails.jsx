@@ -8,15 +8,31 @@ import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { TopProgressBar } from "./TopProgressBar";
 import { MoreDetails } from "./MoreDetails";
+import { OtpPopup } from "./OtpPopup";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
+
+
+    const [OtpPopup, setOtpPopup] = useState(false);
+
+    if(OtpPopup){
+        return (
+            <div>
+                alfdkndi
+            </div>
+        )
+    }
+
 
     return (
         <div className={style.maindiv}>
 
+            {/* <OtpPopup OtpPopup={OtpPopup} setOtpPopup={setOtpPopup} /> */}
             <Header />
 
             {/* <MoreDetails /> */}
+
+            
 
             <div className={style.flexdiv}>
                 <div className={style.flexdiv1}>
@@ -40,8 +56,16 @@ export const AddtionalDetails = () => {
                             <input type="email" placeholder="Email" className={style.emailinput}/>
                         </div>
 
+                        <div className={style.instuction1}>
+                            Ensure you never miss out on important policy updates by entering you most-used email
+                        </div>
+
                         <div className={style.mobilediv}>
                             <input type="number" placeholder="Mobile Number" className={style.mobilinput}/>
+                        </div>
+
+                        <div className={style.instuction2}>
+                            OTP will be sent to the given number
                         </div>
 
                         <div className={style.dropdowndiv}>
