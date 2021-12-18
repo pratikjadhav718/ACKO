@@ -196,12 +196,12 @@ input[type="range"]::-webkit-slider-thumb {
   color: #8a909f;
 }
 .singleCover > :nth-child(3) > button {
-  width: 44px;
+  width: 51px;
   height: 18px;
-  border: 1px solid #4090d7;
+
   box-sizing: border-box;
   border-radius: 4px;
-  color: #408fd7;
+
   background-color: white;
   font-style: normal;
   font-weight: bold;

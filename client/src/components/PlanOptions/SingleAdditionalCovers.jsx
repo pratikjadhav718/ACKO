@@ -20,7 +20,13 @@ export const SingleAdditionalCover = (props) => {
       </div>
       <div>
         {" "}
-        <button onClick={handleclick}>
+        <button
+          style={{
+            color: selected ? "#E74D31" : "#4090d7",
+            border: selected ? "1px solid #E74D31" : "1px solid #4090d7",
+          }}
+          onClick={handleclick}
+        >
           {selected ? "Remove" : "Add"}
         </button>{" "}
       </div>
