@@ -1,4 +1,4 @@
-*{
+* {
   font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   /* font-size: 18px; */
   box-sizing: border-box;
@@ -16,7 +16,6 @@
   --light-green: #44cb86;
   --ligth-pin: #cebeef;
 }
-
 
 /* div>div>div{
     border: solid 2px indigo;
@@ -117,7 +116,7 @@ ul {
   display: flex;
   background-color: rgb(74, 31, 158);
   border-radius: 10px;
-  padding-top: 5px;
+  padding: 5px 0;
   width: 300px;
   justify-content: space-around;
 }
@@ -128,7 +127,6 @@ ul {
   border: none;
   border-radius: 8px;
   width: 75px;
-  margin-top:2px;
   font-weight: bold;
 }
 
@@ -205,7 +203,7 @@ ul {
   border-radius: 10px;
   z-index: 2;
   font-weight: bold;
-  font-size:14px;
+  font-size: 14px;
 }
 /* input:focus ~ .floating-label,
   input:not(:focus):valid ~ .floating-label{
@@ -272,7 +270,7 @@ ul {
 .car1 {
   color: var(--violet);
   background-color: var(--white);
-  margin-bottom: 8px;;
+  margin-bottom: 8px;
   text-align: center;
 }
 .car1 > img {
@@ -310,7 +308,7 @@ ul {
   text-align: left;
   justify-content: space-between;
   border: solid 1px var(--ligth-pin);
-  padding:10px;
+  padding: 10px;
   border-radius: 10px;
 }
 .main_quote_btn {
@@ -349,7 +347,7 @@ ul {
 }
 
 .home_sub {
-   padding-top: 70px;
+  padding-top: 70px;
   height: 319px;
   display: flex;
   justify-content: space-between;
