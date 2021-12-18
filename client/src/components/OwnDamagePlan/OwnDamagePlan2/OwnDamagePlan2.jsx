@@ -6,7 +6,9 @@ export const OwnDamagePlan2 = () => {
 
     const id2 = localStorage.getItem("ackoUserId");
 
-      const [data, setData] = useState("");
+    const [data, setData] = useState("");
+    const conspre=141
+
 
         const getData = async () => {
           const {data} = await axios.get(`http://localhost:8080/user/${id2}`);
@@ -28,9 +30,9 @@ export const OwnDamagePlan2 = () => {
           <div>₹ {data.premium} </div>
 
           <div>NCB Discount</div>
-          <div>- ₹ {"5454"}</div>
+          <div>- ₹ {data.ncbDiscountAmount}</div>
           <div>Consumables Premium</div>
-          <div>₹ {data.ncbDiscountAmount}</div>
+          <div>₹ {conspre}</div>
         </div>
         <p className="addonsdivstyle">ADDONS</p>
         <div className="owndamageplanprices2">
@@ -61,7 +63,7 @@ export const OwnDamagePlan2 = () => {
               lineHeight: "10px",
             }}
           >
-            ₹ 141
+            ₹ {data.paCover}
           </div>
 
           <div
