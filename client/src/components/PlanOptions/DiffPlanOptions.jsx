@@ -11,6 +11,7 @@ import {
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 const Container = styled.div`
   //background-color: green;
@@ -44,6 +45,9 @@ export const DifferentPlanOptions = () => {
     carValue: 12.55,
   };
   const pincode = 400607;
+
+  const history = useHistory();
+
   const riskValues = {
     high: (carDetails.carValue * 0.294023904).toFixed(2),
     low: carDetails.carValue.toFixed(2),
@@ -70,6 +74,11 @@ export const DifferentPlanOptions = () => {
   const [zeroDepreciationPlan, setzeroDepreciationPlan] = useState(
     (insuredValue * 1.176494 * 1000).toFixed(0)
   );
+
+  const handleSelectClick = () => {
+    history.push("/additionalCovers");
+  };
+
   return (
     <div className="App">
       <Header></Header>
@@ -378,7 +387,7 @@ export const DifferentPlanOptions = () => {
                     ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
                     <span> + GST</span>
                   </div>
-                  <button>Select</button>
+                  <button onClick={handleSelectClick}>Select</button>
                 </div>
               </div>
             </div>

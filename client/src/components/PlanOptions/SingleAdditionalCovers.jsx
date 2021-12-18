@@ -1,6 +1,13 @@
 import styles from "./AdditionalCovers.module.css";
-
+import { useState } from "react";
 export const SingleAdditionalCover = (props) => {
+  const [selected, setSelected] = useState(false);
+
+  const handleclick = () => {
+    setSelected((props) => !props);
+  };
+  console.log(selected);
+
   return (
     <div className={styles.singleCover}>
       <div>{props.svg}</div>
@@ -13,7 +20,9 @@ export const SingleAdditionalCover = (props) => {
       </div>
       <div>
         {" "}
-        <button>{props.add ? "Remove" : "Add"}</button>{" "}
+        <button onClick={handleclick}>
+          {selected ? "Remove" : "Add"}
+        </button>{" "}
       </div>
     </div>
   );
