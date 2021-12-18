@@ -1,7 +1,6 @@
 import React from 'react'
 import style from "./paysuccessfull.module.css"
 import Header from "../Header/Header"
-import pay from "./paymentgif.png"
 import {Link} from "react-router-dom"
 
 function Paysuccessfull() {
