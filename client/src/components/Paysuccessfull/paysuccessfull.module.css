@@ -1,0 +1,12 @@
+.payimgg{
+    width: 400px;
+}
+
+.paybtn{
+    background: #522ED3;
+border-radius: 4px;
+width: 176px;
+height: 32px;
+padding: 8px 64px;
+margin: 50px auto;
+}

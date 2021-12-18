@@ -7,11 +7,11 @@ function Paysuccessfull() {
     return (
         <div>
             <Header></Header>
-            <img src={pay} alt='' />
+            <img className={style.payimgg} src={pay} alt='' />
             <button onClick={() => {
                 localStorage.removeItem("ackoid");
-                localStorage.removeItem("ackoid");
-            }} >Continue</button>
+                localStorage.removeItem("ackoUserId");
+            }} className={style.paybtn} >Continue</button>
         </div>
     )
 }

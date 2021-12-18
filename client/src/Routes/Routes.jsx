@@ -16,6 +16,7 @@ import Routecartype from "../components/Cars/Cartype/Routecartype";
 import { AdditionalCovers } from "../components/PlanOptions/AdditionalCovers";
 import { FinalDetails } from "../components/FinalDetails/FinalDetails";
 import Home from "../components/homepage/Home";
+import Paysuccessfull from "../components/Paysuccessfull/Paysuccessfull";
 function Routes() {
   return (
     <>
@@ -72,7 +73,9 @@ function Routes() {
         <Route path="/final-details">
           <FinalDetails />
         </Route>
-
+        <Route path='/successfull' exact >
+          <Paysuccessfull/>
+</Route>
         <Route>
           <h1>404:Page not found</h1>
         </Route>
