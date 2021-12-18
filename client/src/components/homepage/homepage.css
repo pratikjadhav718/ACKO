@@ -231,7 +231,7 @@ font-size:14px;
     display:flex;
     justify-content:space-between;
     margin: auto;
-    width:80%;
+    width:100%;
 }
 
 .main_underline_sub:nth-child(1){
