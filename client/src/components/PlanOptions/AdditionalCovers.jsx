@@ -21,6 +21,7 @@ import { images } from "./assets/imgs";
 import { useEffect, useState } from "react";
 import { SingleAdditionalCover } from "./SingleAdditionalCovers";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 
 const Container = styled.div`
   //background-color: green;
@@ -90,6 +91,19 @@ export const AdditionalCovers = () => {
     setAdded((props) => Number(props) + Number(price));
   };
   totalPrice = +ownDamagePlan + +added;
+  const sendData = () => {
+    axios
+      .post(`http://localhost:8080/user`, {
+        selectedPlan: "Own Damage Plan",
+        mobile: "",
+        premium: +ownDamagePlan,
+        paCover: +added,
+        ncbPercentage: "",
+      })
+      .then((res) => {
+        localStorage.setItem("ackoUserId", res.data._id);
+      });
+  };
   return (
     <div className="App">
       <Header></Header>
@@ -430,6 +444,7 @@ export const AdditionalCovers = () => {
                 <div>
                   <button
                     onClick={() => {
+                      sendData();
                       history.push("./addtional-details");
                     }}
                   >
