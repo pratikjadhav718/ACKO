@@ -14,7 +14,7 @@ const  Navbar = () => {
          
          <div className="navlinks_div nav_left">
          <ul class="navlinks">
-            <li> <a href="#"><img src={logo} alt="logo"></img></a></li>            
+            <li> <a href="/"><img src={logo} alt="logo"></img></a></li>            
                     <li><a href="#">Product</a></li>
                     <li><a href="#">Resources</a></li>
                 </ul>
