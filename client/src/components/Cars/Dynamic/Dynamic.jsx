@@ -6,6 +6,7 @@ import calender from "./Cal.svg";
 import car from "./car.svg";
 import date from "./Date.svg";
 import location from "./Location.svg";
+import {Link} from "react-router-dom"
 
 function Dynamic() {
   const id = localStorage.getItem("ackoid");
@@ -29,14 +30,20 @@ function Dynamic() {
               <img className={style.img11} src={car} alt="" />
               <p>{e.number}</p>
 
-              <img className={style.img22} src={buttonpen} alt="" />
-            </div>
+              <Link className={style.link} to="/cars/carnumber">
+                <img className={style.img22} src={buttonpen} alt="" />
+                      </Link>
+            
+                  </div>
+               
           )}
           {e.pincode && (
             <div>
               <img className={style.img11} src={location} alt="" />
               <p>{e.pincode}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <Link className={style.link} to="/cars/pincode">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
 
@@ -44,7 +51,9 @@ function Dynamic() {
             <div>
               <img className={style.img11} src={car} alt="" />
               <p>{e.name}</p>
-              <img className={style.img22} src={buttonpen} alt="" />
+              <Link className={style.link} to="/cars/cartype">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
             </div>
           )}
 
@@ -67,7 +76,7 @@ function Dynamic() {
           {e.year && (
             <div>
               <img className={style.img11} src={calender} alt="" />
-              <p>{e.year}</p>
+              <p>Registration Year -{e.year}</p>
               <img className={style.img22} src={buttonpen} alt="" />
             </div>
           )}
@@ -75,7 +84,7 @@ function Dynamic() {
           {e.month && (
             <div>
               <img className={style.img11} src={calender} alt="" />
-              <p>{e.month}</p>
+              <p>Registration Month -{e.month}</p>
               <img className={style.img22} src={buttonpen} alt="" />
             </div>
           )}
