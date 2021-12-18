@@ -69,17 +69,17 @@ const Main = () => {
                    </div>
 
                <div className='home_main_mid_divs'>
-               <div className='main_quote'><img src={gift}></img>
+               <div className='main_quote'><img src={gift} ></img>
                <div>
                <p>Looking to insure your new car?</p>
-               <p>Save big with our zero commission insurance</p>
+               <p style={{fontSize:"small", color:"#cebeef"}}>Save big with our zero commission insurance</p>
                </div>
                
                <button className='main_quote_btn'>Get a quote</button>
                </div>
                </div>
 
-               <div className='home_main_mid_divs'><img src={save} alt='save' className='home_save'></img></div>
+               <div className='home_main_mid_divs'><img src={save} alt='save' className='home_save' style={{width:"100%"}}></img></div>
 
                <div className='home_main_mid_divs'>
                <div className='main_underline3'>

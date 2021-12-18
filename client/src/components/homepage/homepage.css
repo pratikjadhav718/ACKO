@@ -5,6 +5,8 @@
   margin: 0;
   padding: 0;
   font-weight: bold;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -27,14 +29,14 @@ body {
 }
 
 .home_main {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: var(--violet);
   color: var(--white);
-  top: 50px;
+  top: 70px;
+  padding-bottom: 70px;
   position: relative;
 }
 
@@ -84,7 +86,7 @@ navbar */
 .navlinks {
   display: flex;
   justify-content: space-around;
-  width: 33.33%;
+  width: 50%;
 }
 .navlinks_div > ul > li > a {
   text-decoration: none;
@@ -166,6 +168,7 @@ ul {
 /* main session */
 .home_main_mid_p1 {
   font-size: 40px;
+  font-weight: bolder;
 }
 .home_main_mid_p2 {
   font-size: 18px;
@@ -230,6 +233,7 @@ ul {
 
 .main_underline_sub:nth-child(1) {
   border: 1.4px solid white;
+  background-color: var(--white);
 }
 .main_underline {
   width: 100%;
@@ -239,6 +243,7 @@ ul {
 }
 .main_underline_sub {
   border: 1.4px solid var(--ligth-pin);
+  background-color: var(--ligth-pin);
   width: 33.33%;
 }
 
@@ -264,9 +269,12 @@ ul {
 .car1 {
   color: var(--violet);
   background-color: var(--white);
+  margin-bottom: 8px;;
+  text-align: center;
 }
 .car1 > img {
   margin: 7px;
+  width: 39px;
 }
 .car_divis,
 .main_underline {
@@ -287,16 +295,20 @@ ul {
   align-items: center;
 }
 .main_underline_sub2 {
-  /* border: 1.4px solid var(--ligth-pin); */
+  border: 1.2px solid var(--ligth-pin);
   width: 33%;
   max-height: 1.4px;
   background-color: var(--ligth-pin);
+  color: var(--ligth-pin);
 }
 
 .main_quote {
   display: flex;
   text-align: left;
   justify-content: space-between;
+  border: solid 1px var(--ligth-pin);
+  padding:10px;
+  border-radius: 10px;
 }
 .main_quote_btn {
   float: right;
@@ -334,6 +346,7 @@ ul {
 }
 
 .home_sub {
+   padding-top: 70px;
   height: 319px;
   display: flex;
   justify-content: space-between;
