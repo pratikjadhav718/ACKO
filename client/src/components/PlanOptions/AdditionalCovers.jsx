@@ -22,6 +22,7 @@ import { useEffect, useState } from "react";
 import { SingleAdditionalCover } from "./SingleAdditionalCovers";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
+import Cardetail from "../Cars/Cardetail/Cardetail";
 
 const Container = styled.div`
   //background-color: green;
@@ -47,14 +48,36 @@ const InContright = styled.div`
 `;
 
 export const AdditionalCovers = () => {
-  const carDetails = {
-    liscencePlate: "MH04KL5359",
-    vehicleName: "Ford Ecosport",
-    NCB: "20%",
-    registrationMonthYear: "Nov, 2020",
+  var data;
+  const [carDetails, setCarDetails] = useState({
+    liscencePlate: "",
+    vehicleName: "",
+    NCB: "",
+    registrationMonthYear: "",
+    pincode: "",
     carValue: 12.55,
-  };
-  const pincode = 400607;
+  });
+  useEffect(() => {
+    try {
+      let id = localStorage.getItem("ackoid");
+      const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
+        console.log(res.data);
+        data = res.data;
+        console.log(data);
+        setCarDetails({
+          liscencePlate: data.number,
+          vehicleName: data.name,
+          NCB: data.ncb,
+          registrationMonthYear: data.month + "," + data.year,
+          pincode: data.pincode,
+          carValue: 12.55,
+          mobile: data.mobile,
+        });
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
 
   const history = useHistory();
   const riskValues = {
@@ -95,10 +118,10 @@ export const AdditionalCovers = () => {
     axios
       .post(`http://localhost:8080/user`, {
         selectedPlan: "Own Damage Plan",
-        mobile: "",
-        premium: +ownDamagePlan,
+        mobile: carDetails.mobile,
+        premium: +ownDamagePlan + (ownDamagePlan * 20) / 80,
         paCover: +added,
-        ncbPercentage: "",
+        ncbDiscountAmount: (+ownDamagePlan * 20) / 80,
       })
       .then((res) => {
         localStorage.setItem("ackoUserId", res.data._id);
@@ -152,7 +175,7 @@ export const AdditionalCovers = () => {
                   {calendarSvg}{" "}
                   <span className={styles.vehicle}>
                     {" "}
-                    NCB - {carDetails.NCB}{" "}
+                    NCB - {carDetails.NCB}%
                   </span>
                 </div>
               </div>
@@ -183,7 +206,8 @@ export const AdditionalCovers = () => {
                 {" "}
                 <div style={{ display: "flex", color: "#8A909F" }}>
                   {" "}
-                  {mapSvg} <span className={styles.vehicle}> {pincode} </span>
+                  {mapSvg}{" "}
+                  <span className={styles.vehicle}> {carDetails.pincode} </span>
                 </div>
               </div>
             </div>

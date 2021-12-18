@@ -46,6 +46,7 @@ export const DifferentPlanOptions = () => {
     NCB: "",
     registrationMonthYear: "",
     carValue: 12.55,
+    pincode: "",
   });
   useEffect(() => {
     try {
@@ -57,9 +58,11 @@ export const DifferentPlanOptions = () => {
         setCarDetails({
           liscencePlate: data.number,
           vehicleName: data.name,
-          NCB: data.ncb + "%",
+          NCB: data.ncb,
           registrationMonthYear: data.month + "," + data.year,
+          pincode: data.pincode,
           carValue: 12.55,
+          mobile: data.mobile,
         });
       });
     } catch (err) {
@@ -152,7 +155,7 @@ export const DifferentPlanOptions = () => {
                   {calendarSvg}{" "}
                   <span className={styles.vehicle}>
                     {" "}
-                    NCB - {carDetails.NCB}{" "}
+                    NCB - {carDetails.NCB}%{" "}
                   </span>
                 </div>
               </div>
@@ -183,7 +186,8 @@ export const DifferentPlanOptions = () => {
                 {" "}
                 <div style={{ display: "flex", color: "#8A909F" }}>
                   {" "}
-                  {mapSvg} <span className={styles.vehicle}> {pincode} </span>
+                  {mapSvg}{" "}
+                  <span className={styles.vehicle}> {carDetails.pincode} </span>
                 </div>
               </div>
             </div>
