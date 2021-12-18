@@ -6,6 +6,7 @@ import calender from "./Cal.svg";
 import car from "./car.svg";
 import date from "./Date.svg";
 import location from "./Location.svg";
+import phone from "./phon.svg"
 import {Link} from "react-router-dom"
 
 function Dynamic() {
@@ -25,6 +26,17 @@ function Dynamic() {
     <div className={style.dynamicbody}>
       {dataaa.map((e) => (
         <div className={style.dynamicsecbody} key={e._id}>
+          {e.useofcar && (
+            <div>
+              <img className={style.img11} src={car} alt="" />
+              <p>{e.useofcar}</p>
+
+              <Link className={style.link} to="/cars/useofcar">
+                <img className={style.img22} src={buttonpen} alt="" />
+              </Link>
+            </div>
+          )}
+
           {e.number && (
             <div>
               <img className={style.img11} src={car} alt="" />
@@ -97,7 +109,12 @@ function Dynamic() {
 
           {e.mobile && (
             <div>
-              <img className={style.img11} src={calender} alt="" />
+              <img
+                style={{ width: "15px" }}
+                className={style.img11}
+                src={phone}
+                alt=""
+              />
               <p>Mobile -{e.mobile}</p>
               <Link to="/cars/cardetail">
                 <img className={style.img22} src={buttonpen} alt="" />

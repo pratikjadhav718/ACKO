@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import style from "./cardetail.module.css";
 import buttonpen from "./Button pen.svg";
 import ecosport from "./Eco sport.svg";
@@ -11,6 +11,19 @@ function Cardetail() {
 
   const [mobile, setMobile] = useState("");
 
+  const [dat,setDat]=useState("")
+
+  const id = localStorage.getItem("ackoid");
+
+ useEffect(() => {
+   getData();
+ }, []);
+ 
+ const getData = async () => {
+   const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
+   setDat(data);
+ };
+
   return (
     <div className={style.cardetailbody}>
       <div className={style.cardetailtopbody}>
@@ -18,7 +31,7 @@ function Cardetail() {
           <div
             style={{
               fontStyle: "normal",
-              fontWeight: "500",
+              fontWeight: "bold",
               fontSize: "24px",
               lineHeight: "28px",
             }}
@@ -38,13 +51,16 @@ function Cardetail() {
               marginLeft: "10px",
             }}
           >
-            TN74MD12
+            {dat.number}
           </div>
 
-          <div className={style.editflexdiv}>
+          <div style={{}} className={style.editflexdiv}>
             {/* car Name */}
-            <p>DFEWFDCCECEWDEDEW</p>
-            <img src={buttonpen} alt="" />
+            <p>{dat.name}</p>
+            <Link to="/cars/cartype" >
+             
+              <img style={{width:"15px"}}  src={buttonpen} alt="" />
+            </Link>
           </div>
           {/* car detail */}
           <p
@@ -56,7 +72,7 @@ function Cardetail() {
               color: " #5C5D65",
             }}
           >
-            Titanium AT-(423432)-PETROL
+            {dat.gear}-{dat.fuel}
           </p>
         </div>
         <div className={style.cardetailrighttopbody}>
