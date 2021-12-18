@@ -15,10 +15,15 @@ import Routemonth from "../components/Cars/Month/Routemonth";
 import Routecartype from "../components/Cars/Cartype/Routecartype";
 import { AdditionalCovers } from "../components/PlanOptions/AdditionalCovers";
 import { FinalDetails } from "../components/FinalDetails/FinalDetails";
+import Home from "../components/homepage/Home";
 function Routes() {
   return (
     <>
       <Switch>
+      <Route path="/" exact>
+          <Home />
+        </Route>
+
         <Route path="/cars/useofcar" exact>
           <Routeuseofcar />
         </Route>
