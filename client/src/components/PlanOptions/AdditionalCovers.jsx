@@ -18,8 +18,9 @@ import {
   personalAccidentSvg,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SingleAdditionalCover } from "./SingleAdditionalCovers";
+import { useHistory } from "react-router-dom";
 
 const Container = styled.div`
   //background-color: green;
@@ -53,6 +54,7 @@ export const AdditionalCovers = () => {
     carValue: 12.55,
   };
   const pincode = 400607;
+  const history = useHistory();
   const riskValues = {
     high: (carDetails.carValue * 0.294023904).toFixed(2),
     low: carDetails.carValue.toFixed(2),
@@ -79,6 +81,14 @@ export const AdditionalCovers = () => {
   const [zeroDepreciationPlan, setzeroDepreciationPlan] = useState(
     (insuredValue * 1.176494 * 1000).toFixed(0)
   );
+
+  const [added, setAdded] = useState(0);
+  let totalPrice = ownDamagePlan;
+
+  const AdditionalCoverSelected = (price) => {
+    setAdded((props) => Number(props) + Number(price));
+  };
+  totalPrice = +ownDamagePlan + +added;
   return (
     <div className="App">
       <Header></Header>
@@ -378,7 +388,7 @@ export const AdditionalCovers = () => {
                 heading="Personal Accident Cover @"
                 price="399"
                 body={"Rs. 15 lakh coverage against accidental injury or death"}
-                add={false}
+                add={AdditionalCoverSelected}
               ></SingleAdditionalCover>
             </div>
             <SingleAdditionalCover
@@ -388,7 +398,7 @@ export const AdditionalCovers = () => {
               body={
                 "Get yourself extra cushioning by keeping your no claim bonus intact even in the event of a claim. Applicable only for 1 claim."
               }
-              add={false}
+              add={AdditionalCoverSelected}
             ></SingleAdditionalCover>
             <div>
               <SingleAdditionalCover
@@ -398,7 +408,7 @@ export const AdditionalCovers = () => {
                 body={
                   "Protect your loved ones in cause of unfortunate accidents. Coverage upto INR 1 Lakh per passenger."
                 }
-                add={false}
+                add={AdditionalCoverSelected}
               ></SingleAdditionalCover>
               <div>
                 <button>
@@ -408,16 +418,21 @@ export const AdditionalCovers = () => {
               </div>
               <div>
                 <div>
-                  ₹{ownDamagePlan} <span>+GST</span>
+                  ₹{totalPrice} <span>+GST</span>
                 </div>
                 <div>
                   <div>
-                    ₹ {(ownDamagePlan * 2.44301924).toFixed(0)}{" "}
-                    <span>+GST</span>{" "}
+                    ₹ {(totalPrice * 2.44301924).toFixed(0)} <span>+GST</span>{" "}
                   </div>
                 </div>
                 <div>
-                  <button>Buy Now</button>
+                  <button
+                    onClick={() => {
+                      history.push("./addtional-details");
+                    }}
+                  >
+                    Buy Now
+                  </button>
                 </div>
               </div>
               <div>

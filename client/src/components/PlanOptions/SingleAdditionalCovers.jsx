@@ -5,8 +5,9 @@ export const SingleAdditionalCover = (props) => {
 
   const handleclick = () => {
     setSelected((props) => !props);
+
+    selected ? props.add(-props.price) : props.add(props.price);
   };
-  console.log(selected);
 
   return (
     <div className={styles.singleCover}>
