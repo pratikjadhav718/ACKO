@@ -1,7 +1,7 @@
 import Header from "../Header/Header";
 import style from "./addtional.details.module.css";
 import DatePicker from "react-datepicker";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import calendericon from "./calender.svg"
 import noteicon from "./note.svg"
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
@@ -14,10 +14,11 @@ export const AddtionalDetails = () => {
 
 
     const id = localStorage.getItem("ackoid");
-    const id2 = localStorage.getItem("ackoUserId");
+    
 
     const [username, setUsername] = useState("");
-    const [mail,setMail]=useState("")
+    const [mail, setMail] = useState("")
+  
 
     const handleClickk =async () => {
         const data = {
@@ -26,8 +27,6 @@ export const AddtionalDetails = () => {
         }
         await axios.patch(`http://localhost:8080/cars/${id}`,data);
 }
-
-
 
 
 
