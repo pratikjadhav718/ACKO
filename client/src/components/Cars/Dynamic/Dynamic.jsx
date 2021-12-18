@@ -15,7 +15,7 @@ function Dynamic() {
   const [dataaa, setData] = useState([]);
   useEffect(() => {
     getData();
-  }, []);
+  }, [dataaa]);
   // console.log(dataaa);
   const getData = async () => {
     const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
