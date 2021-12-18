@@ -1,14 +1,18 @@
-
+.verifymaindiv{
+    /* border: 1px solid #DCDDE9; */
+}
 
 .verifymaindiv > :nth-child(2) > p {
     font-weight: 600;
     font-family: Helvetica Neue;
     font-style: normal;
     font-size: 20px;
+    margin-top: 8px;
 }
 
 .verifymaindiv > :nth-child(3) > p {
     font-family: Helvetica Neue;
+    margin-top: 8px;
     font-style: normal;
     font-weight: 500;   
     font-size: 12px;
@@ -22,9 +26,12 @@
     font-weight: 700;   
     font-size: 14px;
     line-height: 16px;
+    margin-top: 32px;
+    font-weight: 700;
 }
 
 .carownerdetails {
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 12px;
@@ -34,17 +41,18 @@
     font-style: normal;
 }
 
-.carownerdetails > :nth-child(1) {
+.carownerdetails > :nth-child(odd) {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 400;
 }
-.carownerdetails > :nth-child(2) {
+.carownerdetails > :nth-child(even) {
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
 }
 
-.carownerdetails > :nth-child(3) {
+/* .carownerdetails > :nth-child(3) {
     font-size: 12px;
     line-height: 14px;
 }
@@ -73,15 +81,18 @@
     font-size: 12px;
     line-height: 14px;
 }
+*/
 .verifymaindiv > :nth-child(6) > p {
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: 700;   
     font-size: 14px;
     line-height: 16px;
-}
+    margin-top: 24px;
+} 
 
 .detailsofcar {
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 12px;
@@ -95,6 +106,7 @@
 .detailsofcar > :nth-child(odd) {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 400;
 }
 .detailsofcar > :nth-child(even) {
     font-weight: bold;

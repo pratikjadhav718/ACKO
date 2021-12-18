@@ -1,0 +1,41 @@
+.offersmaindiv {
+    border: 1px solid #DCDDE9;
+    max-width: 500px;
+    min-width: 300px;
+    width: 368px;
+    height: 80px;
+    margin-left: auto;
+    margin-top: 32px;
+    background: #F4F5F7;
+    /* padding: 16px; */
+
+    display: grid;
+    grid-template-columns: 60% 40%; 
+}
+
+.offersmaindiv > p{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.offersmaindiv > :nth-child(4){
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    margin: auto;
+    color: #528AE3;
+}
+
+.offersmaindiv > input {
+    width: 158;
+    height: 24px;
+    background: #F4F6F7;
+    border-radius: 4px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+}

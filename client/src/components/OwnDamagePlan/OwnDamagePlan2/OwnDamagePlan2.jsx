@@ -19,10 +19,7 @@ export const OwnDamagePlan2 = () => {
                 <div>Consumables Premium</div>
                 <div>₹ 141</div>
             </div>
-            <p style={{
-                marginLeft:"10px",
-                fontWeight:"700"
-            }}>
+            <p className="addonsdivstyle">
                 ADDONS
             </p>
             <div className="owndamageplanprices2">
@@ -53,9 +50,9 @@ export const OwnDamagePlan2 = () => {
                 </div>
 
                 <div style={{
-                    fontSize: "16px",
+                    // fontSize: "16px",
                     // lineHeight: "12px"
-                    fontWeight: "600"
+                    // fontWeight: "600"
                 }}>
                     Net Premium
                 </div>

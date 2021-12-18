@@ -1,4 +1,4 @@
-.home_home {
+*{
   font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
   /* font-size: 18px; */
   box-sizing: border-box;
@@ -17,9 +17,6 @@
   --ligth-pin: #cebeef;
 }
 
-body {
-  background-color: var(--light-gray);
-}
 
 /* div>div>div{
     border: solid 2px indigo;
@@ -36,7 +33,7 @@ body {
   background-color: var(--violet);
   color: var(--white);
   top: 20px;
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   position: relative;
 }
 
@@ -170,6 +167,7 @@ ul {
 .home_main_mid_p1 {
   font-size: 40px;
   font-weight: bolder;
+  margin-bottom: 18px;
 }
 .home_main_mid_p2 {
   font-size: 18px;

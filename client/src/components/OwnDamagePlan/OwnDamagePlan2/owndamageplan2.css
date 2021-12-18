@@ -14,40 +14,71 @@
     font-weight: 700;
     line-height: 17.09px;
     margin-left: 20px;
+    margin-top: 16px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .owndamageplan2subtitle {
+    margin-top: 4px;
     font-size: 12px;
     font-weight: 700;
     line-height: 0px;
     margin-left: 20px;
     color: #63ADF4;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #63ADF4;
+}
+
+.addonsdivstyle {
+    margin-left: 10px;
+    margin-top: 16px;
+    
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .owndamageplanprices1 {
     /* background-color: blueviolet; */
+    margin-top: 16px;
     display: grid;
     grid-template-columns: 242px 78px;
     grid-gap: 23px;
     padding: 10px;
 }
 
-.owndamageplanprices1 > :nth-child(2){
-    /* background-color: burlywood; */
-    text-align: right;
-    /* border: 1px solid aqua; */
+.owndamageplanprices1 > :nth-child(odd) {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
 }
 
-.owndamageplanprices1 > :nth-child(4){
-    text-align: right;
-    /* border: 1px solid aqua; */
+.owndamageplanprices1 > :nth-child(even){
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    /* display: flex; */
 }
 
-.owndamageplanprices1 > :nth-child(6) {
-    /* background-color: brown; */
-    /* border: 1px solid aqua; */
-    text-align: right;
-}
+
 
 
 .owndamageplanprices2 {
@@ -55,9 +86,29 @@
     grid-template-columns: 242px 78px;
     grid-gap: 23px;
     padding: 10px;
+    margin-top: 9px;
 }
 
-.owndamageplanprices2 > :nth-child(2){
+.owndamageplanprices2 > :nth-child(odd){
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.owndamageplanprices2 > :nth-child(even) {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    
+    align-items: center;
+    text-align: center;
+}
+
+/* .owndamageplanprices2 > :nth-child(2){
     text-align: right;
 }
 
@@ -67,7 +118,7 @@
 
 .owndamageplanprices2 > :nth-child(6){
     text-align: right;
-}
+} */
 
 .owndamageplanprices2 > :nth-child(1) {
     color: #5C5D65;
