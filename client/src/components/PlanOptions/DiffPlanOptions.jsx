@@ -10,8 +10,10 @@ import {
   needHelpSvg,
 } from "./assets/svgs";
 import { images } from "./assets/imgs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
+import Cardetail from "../Cars/Cardetail/Cardetail";
 
 const Container = styled.div`
   //background-color: green;
@@ -37,13 +39,33 @@ const InContright = styled.div`
 `;
 
 export const DifferentPlanOptions = () => {
-  const carDetails = {
-    liscencePlate: "MH04KL5359",
-    vehicleName: "Ford Ecosport",
-    NCB: "20%",
-    registrationMonthYear: "Nov, 2020",
+  var data;
+  const [carDetails, setCarDetails] = useState({
+    liscencePlate: "",
+    vehicleName: "",
+    NCB: "",
+    registrationMonthYear: "",
     carValue: 12.55,
-  };
+  });
+  useEffect(() => {
+    try {
+      let id = localStorage.getItem("ackoid");
+      const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
+        console.log(res.data);
+        data = res.data;
+        setCarDetails({
+          liscencePlate: data.number,
+          vehicleName: data.name,
+          NCB: data.ncb + "%",
+          registrationMonthYear: data.month + "," + data.year,
+          carValue: 12.55,
+        });
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
+
   const pincode = 400607;
 
   const history = useHistory();
