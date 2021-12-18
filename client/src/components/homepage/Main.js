@@ -57,7 +57,7 @@ const Main = () => {
   <input type="text" className="custom-search-input" autocapitalize="uppercase" placeholder='Enter your car number'/>
   {/* <span className="floating-label">Your email address</span>
   </input> */}
-  <button className="custom-search-botton" type="submit">Insure now {'->'}</button>  
+  <button className="custom-search-botton" type="submit">Insure now <i class="fas fa-arrow-right"></i></button>  
     </div>
         </div>
         <div className='home_main_mid_divs'>
