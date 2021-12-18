@@ -2,7 +2,8 @@
     border: 1px solid black;
     max-width: 500px;
     min-width: 300px;
-    height: 360px;
+    min-height: auto;
+    max-height: 400px;
     overflow-x: auto;
    border-radius: 8px;
    background: #FFFFFF;

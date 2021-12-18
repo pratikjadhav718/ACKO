@@ -18,7 +18,7 @@ function Expiry() {
       tp += selectDateTP[i];
       od += selectDateOD[i];
     }
-    console.log(tp, od);
+    // console.log(tp, od);
   }, [selectDateTP, selectDateOD]);
 
 
