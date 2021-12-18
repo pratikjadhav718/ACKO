@@ -2,22 +2,38 @@
     /* border: 1px solid black; */
     margin: 10px;
     padding: 10px;
-    height: 1000px;
+    /* height: 1000px; */
 }
-
+/* 
 .flexdiv {
     display: flex;
     justify-content: space-around;
+    width: 792px;
+} */
+.flexdiv {
+    width: 792px;
+    margin: auto;
+    margin-top: 64px;
+    display: flex;
+    grid-gap: 56px;
+}
+
+.flexdiv1 {
+    width: 368px;
+}
+
+.flexdiv2 {
+    width: 368px;
 }
 
 .detailsmaindiv {
-    border: 1px solid #DCDDE9;
+    /* border: 1px solid #DCDDE9; */
     max-width: 500px;
     min-width: 300px;
     height: 481px;
     width: 368px;
     margin-top: 10px;
-    margin-left: 24%;
+    /* margin-left: 24%; */
 }
 
 
@@ -29,7 +45,7 @@
     width: 368px;
     height: 188px;
     margin-top: 48px;
-    margin-left: 24%;
+    /* margin-left: 24%; */
 }
 
 
@@ -39,13 +55,19 @@
     width: 368px;
     height: 20px;
     margin-top: 48px;
-    margin-left: 24%;
+    /* margin-left: 24%; */
 
     font-family: Helvetica Neue;
     font-style: normal;
     font-weight: bold;
     /* font-size: 8px; */
     line-height: 12px;
+
+    /* font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 10px; */
 
     color: #000000;
 }
@@ -246,21 +268,27 @@ hr.dottedline{
 /* Notice  and Note*/
 
 .divnotice {
-    display: grid;
-    grid-template-columns: 70% 30%;
+    display: flex;
+    /* grid-template-columns: 70% 30%; */
     /* border: 1px solid greenyellow; */
 
     margin-top: 24px;
+    margin-left: 24px;
 }
 
 .notic {
     line-height: 12px;
-    margin-left: 24px;
-    width: 167px;
+    /* margin-left: 24px; */
+    width: 197px;
     height: 50px;
     font-size: 12px;
     /* align-items: center; */
     /* border: 1px solid red; */
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
 }
 
 .divnoticicon {
@@ -272,9 +300,10 @@ hr.dottedline{
 }
 
 .divnote {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 30% 70%;
+    margin-top: 16px;
+    display: flex;
+    /* grid-template-columns: 30% 70%; */
+    margin-left: 24px;
 }
 
 .divnoteicons {
@@ -289,6 +318,11 @@ hr.dottedline{
     width: 167px;
     height: 50px;
     font-size: 12px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
 }
 
 .fontwidth {

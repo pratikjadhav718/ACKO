@@ -1,5 +1,7 @@
 .verifymaindiv{
     /* border: 1px solid #DCDDE9; */
+    /* background: white; */
+    padding-left: 10px;
 }
 
 .verifymaindiv > :nth-child(2) > p {

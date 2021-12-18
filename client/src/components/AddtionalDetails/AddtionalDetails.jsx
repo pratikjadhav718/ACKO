@@ -7,6 +7,7 @@ import noteicon from "./note.svg"
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { TopProgressBar } from "./TopProgressBar";
+import { MoreDetails } from "./MoreDetails";
 export const AddtionalDetails = () => {
     const [selectDate, setSelectDate] = useState(null);
 
@@ -14,6 +15,8 @@ export const AddtionalDetails = () => {
         <div className={style.maindiv}>
 
             <Header />
+
+            {/* <MoreDetails /> */}
 
             <div className={style.flexdiv}>
                 <div className={style.flexdiv1}>

@@ -18,13 +18,13 @@ const Container = styled.div`
   grid-gap: 56px;
 `;
 const InContleft = styled.div`
-  background-color: #ffffff;
+  // background-color: #ffffff;
   // height: 400px;
   width: 368px;
   // border: 1px solid #dcdee9;
 `;
 const InContright = styled.div`
-  background-color: #ffffff;
+  // background-color: #ffffff;
   // height: 400px;
   width: 368px;
   // margin-left: 10.9%;
