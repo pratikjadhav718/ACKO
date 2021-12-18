@@ -370,6 +370,7 @@ ul {
   text-align: center;
   width: 100%;
   background-color: var(--white);
+  padding-bottom:50px;
 }
 .home_main_child1 {
   width: 33%;
