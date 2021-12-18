@@ -21,8 +21,8 @@ const Sub = () => {
 <img src={e1} style={{marginRight:"20px"}}></img>
   </div>
   <div>
-  <p style={{fontSize:"small", marginTop:"0px"}}>Rahul Gupta</p>
-  <p style={{fontSize:"x-small", fontWeight:"normal"}}>Delhi</p>
+  <div style={{fontSize:"small", marginTop:"0px"}}>Rahul Gupta</div>
+  <div style={{fontSize:"x-small", fontWeight:"normal"}}>Delhi</div>
   </div>
   </div>
   
@@ -44,8 +44,8 @@ Thank you so much for the amazing service, Special thanks to Mr. Rais Shaikh.</d
 <img src={e2} style={{marginRight:"20px"}}></img>
   </div>
   <div>
-  <p style={{fontSize:"small", marginTop:"0px"}}>Somnath Mane</p>
-  <p style={{fontSize:"x-small", fontWeight:"normal"}}>Pune</p>
+  <div style={{fontSize:"small", marginTop:"0px"}}>Somnath Mane</div>
+  <div style={{fontSize:"x-small", fontWeight:"normal"}}>Pune</div>
   </div>
   
   </div>
@@ -66,8 +66,8 @@ Hassle free insurance & quick response. Absolutely best insurance company ever</
 <img src={e3} style={{marginRight:"20px"}}></img>
   </div>
   <div>
-  <p style={{fontSize:"small",marginTop:"0px"}}>Vinil Kumar</p>
-  <p style={{fontSize:"x-small", fontWeight:"normal"}}>Hyderabad</p>
+  <div style={{fontSize:"small",marginTop:"0px"}}>Vinil Kumar</div>
+  <div style={{fontSize:"x-small", fontWeight:"normal"}}>Hyderabad</div>
   </div>
   </div>
   
