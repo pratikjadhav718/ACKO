@@ -16,6 +16,7 @@ const carSchema = new mongoose.Schema({
   ncb: { type: Number, required: false },
   username: { type: String, required: false },
   email: { type: String, required: false },
+  total: { type: Number, required: false },
 });
 
 
