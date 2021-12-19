@@ -5,19 +5,25 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const ByNow = () => {
-  const id = localStorage.getItem("ackoid");
+//   const id = localStorage.getItem("ackoid");
 
-  const [data, setData] = useState("");
+//   const [data, setData] = useState("");
 
-  const getData = async () => {
-    const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
-    setData(data);
-    console.log(data);
-  };
+//   const getData = async () => {
+//     const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
+//     setData(data);
+//     console.log(data);
+//   };
 
-  useEffect(() => {
-    getData();
-  }, []);
+//   useEffect(() => {
+//     getData();
+//   }, []);
+    var total
+    useEffect(() => {
+         total = localStorage.getItem("totalacko");
+        console.log("local", total);
+    },[])
+
 
   return (
     <div className="bynowmaindiv">
@@ -26,7 +32,7 @@ export const ByNow = () => {
         to="/cardPayment"
       >
         <div>
-          <div>₹ {data.total}</div>
+          <div>{total}</div>
           <div>Buy Now</div>
         </div>
       </Link>

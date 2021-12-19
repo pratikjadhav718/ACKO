@@ -4,38 +4,59 @@ import "./owndamageplan2.css";
 import ticmark from "./ticmark.svg"
 export const OwnDamagePlan2 = () => {
 
-  const id=localStorage.getItem("ackoid")
+  const id1=localStorage.getItem("ackoid")
 
-    const id2 = localStorage.getItem("ackoUserId");
 
-    const [data, setData] = useState("");
+  const [data, setData] = useState("");
+
+
+
   const conspre = 141
-
-
-
-
-        useEffect(() => {
-          getData();
-          patchData()
-        }, []);
-      const netpre =
-    data.premium - data.ncbDiscountAmount + conspre + data.paCover;
-  const gst = 0.15 * netpre
-  var total = netpre + gst
- localStorage.setItem("totalacko",total)
-  const ans={total:total}
- 
   
-        const getData = async () => {
-          const { data } = await axios.get(`http://localhost:8080/user/${id2}`);
-          setData(data);
- 
-  };
 
-  const patchData = async () => {
-    await axios.patch(`http://localhost:8080/cars/${id}`,ans);
-  }
- 
+
+    const [paymentValues, setPaymentValues] = useState({
+      netPreminum: "",
+      gst: "",
+      total: "",
+    });
+  
+  // const getData =async () => {
+  //   const { data } = await axios.get(`http://localhost:8080/cars/${id1}`);
+  //   setData(data)
+  //   console.log(data.ncbDiscountAmount);
+  // }
+console.log(data);
+  
+  useEffect(() => {
+    try {
+      let id = localStorage.getItem("ackoUserId");
+      const res = axios.get(`http://localhost:8080/user/${id}`).then((res) => {
+        // console.log(res.data);
+      let  data = res.data;
+        
+        setData(data)
+        setPaymentValues({
+          netPreminum: data.premium.toFixed(0),
+          gst:
+           Math.round( (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+            (15 / 100)),
+          total: Math.round(
+            data.premium -
+              data.ncbDiscountAmount +
+              141 +
+              data.paCover +
+              (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+                (15 / 100)
+          ),
+        });
+      })
+    
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
+ localStorage.setItem("totalacko", paymentValues.total);
     return (
       <div className="owndamageplandiv22">
         <div className="owndamagetopdiv">
@@ -44,7 +65,7 @@ export const OwnDamagePlan2 = () => {
         </div>
         <div className="owndamageplanprices1">
           <div>Own Damage Premium</div>
-          <div>₹ {data.premium} </div>
+          <div>₹ {paymentValues.netPreminum} </div>
 
           <div>NCB Discount</div>
           <div>- ₹ {data.ncbDiscountAmount}</div>
@@ -95,9 +116,9 @@ export const OwnDamagePlan2 = () => {
             Net Premium
           </div>
 
-          <div className="pricetables"> ₹ { netpre}</div>
+          <div className="pricetables"> ₹ {paymentValues.netPreminum}</div>
           <div className="pricetables">GST</div>
-          <div className="pricetables">₹ { gst}</div>
+          <div className="pricetables">₹ {paymentValues.gst}</div>
         </div>
 
         <hr
@@ -110,7 +131,7 @@ export const OwnDamagePlan2 = () => {
 
         <div className="owndamageplanfinalprice">
           <div className="pricetables">Total</div>
-          <div className="pricetables">₹ { total}</div>
+          <div className="pricetables">₹ {paymentValues.total}</div>
         </div>
       </div>
     );
