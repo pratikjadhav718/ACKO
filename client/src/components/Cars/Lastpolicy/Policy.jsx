@@ -26,7 +26,8 @@ function Policy({ setpopupp }) {
             const data = {
               ncb:0
             }
-            await axios.patch(`http://localhost:8080/cars/${id}`,data);
+            // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+             await axios.patch(`https://acko.herokuapp.com/${id}`, data);
           }} >Yes</button>
         </Link>
       <button

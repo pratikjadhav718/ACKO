@@ -10,7 +10,8 @@ export const Pop = () => {
     const id = localStorage.getItem("ackoid")
     
     const getData = async() => {
-        const { data } = await axios.get(`http://localhost:8080/cars/${id}`)
+        // const { data } = await axios.get(`http://localhost:8080/cars/${id}`)
+       const { data } = await axios.get(`https://acko.herokuapp.com/${id}`);
 setData(data)
     }
 

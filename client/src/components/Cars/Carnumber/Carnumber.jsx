@@ -43,7 +43,8 @@ const [number,setNumber]=useState("")
               onClick={async () => {
                 const id = localStorage.getItem("ackoid");
                 const data = { number: number };
-                await axios.patch(`http://localhost:8080/cars/${id}`,data);
+                // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+                 await axios.patch(`https://acko.herokuapp.com/${id}`, data);
               }}
               className={style.pinbtn}
             >

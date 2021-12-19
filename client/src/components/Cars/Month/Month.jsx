@@ -80,7 +80,8 @@ function Month() {
           onClick={async () => {
             const id = localStorage.getItem("ackoid");
             const data = { month: value };
-            await axios.patch(`http://localhost:8080/cars/${id}`, data);
+            // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+             await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
           }}
         >
           Continue

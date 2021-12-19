@@ -114,7 +114,8 @@ function Year() {
             onClick={async () => {
               const id = localStorage.getItem("ackoid");
               const data = { year: value };
-              await axios.patch(`http://localhost:8080/cars/${id}`, data);
+              // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+            await axios.patch(`https://acko.herokuapp.com/${id}`, data);
             }}
           >
             Continue

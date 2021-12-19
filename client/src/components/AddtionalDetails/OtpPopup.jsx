@@ -30,7 +30,8 @@ export const OtpPopup = ({ OtpPopup, setOtpPopup }) => {
                 const data = {
                   ncb:20
                 }
-                await axios.patch(`http://localhost:8080/cars/${id}`,data);
+              // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+                await axios.patch(`https://acko.herokuapp.com/${id}`, data);
               }} className={style.popupbtn}>Continue</button>
             </Link>
           </div>
