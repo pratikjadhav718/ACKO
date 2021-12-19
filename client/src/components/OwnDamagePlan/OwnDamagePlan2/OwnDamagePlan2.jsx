@@ -33,30 +33,32 @@ export const OwnDamagePlan2 = () => {
   useEffect(() => {
     try {
       let id = localStorage.getItem("ackoUserId");
-      const res = axios.get(`http://localhost:8080/user/${id}`).then((res) => {
-        // console.log(res.data);
-      let  data = res.data;
-        
-        // setData(data)
-        setPaymentValues({
-          netPreminum: data.premium.toFixed(0),
-          gst: Math.round(
-            (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
-              (15 / 100)
-          ),
-          total: Math.round(
-            data.premium -
-              data.ncbDiscountAmount +
-              141 +
-              data.paCover +
+      //`http://localhost:8080/user/${id}`
+      const res = axios
+        .get(`https://acko.herokuapp.com/user/${id}`)
+        .then((res) => {
+          // console.log(res.data);
+          let data = res.data;
+
+          // setData(data)
+          setPaymentValues({
+            netPreminum: data.premium.toFixed(0),
+            gst: Math.round(
               (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
                 (15 / 100)
-          ),
-          ncbDiscountAmount: data.ncbDiscountAmount,
-          paCover: data.paCover,
+            ),
+            total: Math.round(
+              data.premium -
+                data.ncbDiscountAmount +
+                141 +
+                data.paCover +
+                (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+                  (15 / 100)
+            ),
+            ncbDiscountAmount: data.ncbDiscountAmount,
+            paCover: data.paCover,
+          });
         });
-      })
-    
     } catch (err) {
       console.log(err.message);
     }

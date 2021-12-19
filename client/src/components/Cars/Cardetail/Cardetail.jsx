@@ -21,7 +21,7 @@ function Cardetail() {
  
  const getData = async () => {
   //  const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
-      const { data } = await axios.get(`https://acko.herokuapp.com/${id}`);
+      const { data } = await axios.get(`https://acko.herokuapp.com/cars/${id}`);
    setDat(data);
  };
 
@@ -148,7 +148,7 @@ function Cardetail() {
                 mobile: mobile,
               };
               // await axios.patch(`http://localhost:8080/cars/${id}`, data);
-               await axios.patch(`https://acko.herokuapp.com/${id}`, data);
+               await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
             }}
             className={style.deebtn}
           >

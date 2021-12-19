@@ -28,7 +28,7 @@ function Ncbpopup({ popupp, setpopupp }) {
               ncb:20
             }
             // await axios.patch(`http://localhost:8080/cars/${id}`, data);
-               await axios.patch(`https://acko.herokuapp.com/${id}`, data);
+               await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
           }} className={style.popupbtn}>Continue</button>
         </Link>
       </div>
