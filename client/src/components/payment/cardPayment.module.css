@@ -79,4 +79,20 @@
   height: 46px;
   border-radius: 6px;
   border: 1px solid #4f34d2;
+  display: flex;
+  align-items: center;
+}
+.mainContainer
+  > :nth-child(2)
+  > :nth-child(1)
+  > :nth-child(2)
+  > :nth-child(2)
+  > input {
+  width: 307px;
+  padding: 0px 0px 0px 10px;
+  font-size: 14px;
+  background: #ffffff;
+  color: #151619;
+  font-weight: 700;
+  border: none;
 }

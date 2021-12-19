@@ -29,7 +29,7 @@ export const CardPayment = () => {
               <div>Card Number</div>
               <div>
                 {" "}
-                <input type="number" />
+                <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" />
                 {cardNumberSvg}
               </div>
             </div>
