@@ -20,13 +20,13 @@ export const OwnDamagePlan2 = () => {
       const netpre =
     data.premium - data.ncbDiscountAmount + conspre + data.paCover;
   const gst = 0.15 * netpre
-  const total = netpre - gst
-  console.log(total);
+  const total = netpre + gst
+ 
   
         const getData = async () => {
           const { data } = await axios.get(`http://localhost:8080/user/${id2}`);
           setData(data);
-
+ console.log(total);
           const totall = { total: total };
 
           await axios.patch(`http://localhost:8080/cars/${id}`,totall);
@@ -90,7 +90,7 @@ export const OwnDamagePlan2 = () => {
             Net Premium
           </div>
 
-          <div className="pricetables">- ₹ { netpre}</div>
+          <div className="pricetables"> ₹ { netpre}</div>
           <div className="pricetables">GST</div>
           <div className="pricetables">₹ { gst}</div>
         </div>
