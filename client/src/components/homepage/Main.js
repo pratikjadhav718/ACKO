@@ -83,7 +83,7 @@ const Main = () => {
           <div className="home_main_mid_divs">
             <div className="main_quote">
               <img src={gift}></img>
-              <div>
+              <div className='main_quote_child'>
                 <div className='main_quote_p1'>Looking to insure your new car?</div>
                 <div className='main_quote_p2'>
                   Save big with our zero commission insurance

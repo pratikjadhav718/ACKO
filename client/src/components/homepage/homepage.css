@@ -302,10 +302,13 @@ ul {
 .main_quote {
   display: flex;
   text-align: left;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   border: solid 1px var(--ligth-pin);
   padding: 10px;
   border-radius: 10px;
+}
+.main_quote>img{
+  margin-right: 20px;
 }
 .main_quote_btn {
   float: right;
@@ -319,6 +322,9 @@ ul {
   top: 5px;
   bottom: 5px;
   height: 35px;
+}
+.main_quote_child{
+  width: 70%;
 }
 
 .main_underline3 {
@@ -606,6 +612,9 @@ ul {
     background-color: var(--white);
     color: var(--violet);
   }
+  .main_quote_child{
+    width: 80%;
+  }
 }
 
 
@@ -740,6 +749,9 @@ ul {
 }
 .hidd_arr{
   display:block;
+}
+.main_quote_child{
+  width: 80%;
 }
 }
 
