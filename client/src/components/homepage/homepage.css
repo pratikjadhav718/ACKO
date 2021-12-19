@@ -29,7 +29,7 @@
   background-color: var(--violet);
   color: var(--white);
   top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   position: relative;
 }
 
@@ -43,12 +43,14 @@
   text-align: center;
 }
 
+
 .home_main_child {
   width: 33.33%;
   float: left;
 }
-.home_main_child:nth-child(2) {
-  padding: 0px 2.5%;
+.home_main_child:nth-child(2),.home_main_mid {
+  padding: 0px 5%;
+  margin: auto;
 }
 
 .home_main_child_left {
@@ -673,10 +675,11 @@ ul {
   }
   .home_main_child {
     display: none;
+    margin: auto;
   }
   .home_main_mid {
     display: block;
-    width: 96%;
+    width: 90%;
     margin: auto;
     background-color: var(--white);
   }

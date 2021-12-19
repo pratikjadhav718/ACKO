@@ -41,6 +41,8 @@
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
+   
+
 }
 
 .popup.active .overlay {
@@ -135,6 +137,8 @@
     background: #66C584;
     border-radius: 6px;
     color: white;
+    border: none;
+    cursor: pointer;
 }
 
 .otpresenddiv {

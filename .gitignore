@@ -579,3 +579,4 @@ dist
 
 
 connectionurl=mongodb+srv://seema:caddyproject@cluster0.dlhyh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+.vercel

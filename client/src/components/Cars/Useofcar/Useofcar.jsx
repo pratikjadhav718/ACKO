@@ -29,7 +29,11 @@ function Useofcar() {
           onClick={async () => {
             try {
               const data = { useofcar: "Personal use" };
-              const res = await axios.post("http://localhost:8080/cars", data);
+              // const res = await axios.post("http://localhost:8080/cars", data);
+              const res = await axios.post(
+                "https://acko.herokuapp.com/cars",
+                data
+              );
               // console.log(res.data._id);
               const id = res.data._id;
               localStorage.setItem("ackoid", id)
@@ -76,7 +80,10 @@ function Useofcar() {
           onClick={async () => {
             try {
               const data = { useofcar: "Commercial use" };
-              const res = await axios.post("http://localhost:8080/cars", data);
+              const res = await axios.post(
+                "https://acko.herokuapp.com/cars",
+                data
+              );
               // console.log(res.data._id);
                   const id = res.data._id;
                   localStorage.setItem("ackoid", id);

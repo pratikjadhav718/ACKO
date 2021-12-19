@@ -18,7 +18,8 @@ function Dynamic() {
   }, [dataaa]);
   // console.log(dataaa);
   const getData = async () => {
-    const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
+    // const { data } = await axios.get(`http://localhost:8080/cars/${id}`);
+      const { data } = await axios.get(`https://acko.herokuapp.com/cars/${id}`);
     setData([data]);
   };
 

@@ -68,7 +68,8 @@ export const AddtionalDetails = () => {
             username: username,
             email:mail
         }
-        await axios.patch(`http://localhost:8080/cars/${id}`,data);
+    // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+        await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
         
 }
 
@@ -142,7 +143,7 @@ export const AddtionalDetails = () => {
 
               <div className={style.mobilediv}>
                 <input
-                  type="number"
+                  type='tel'
                   placeholder="Mobile Number"
                   className={style.mobilinput}
                 />
