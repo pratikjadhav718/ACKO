@@ -19,40 +19,40 @@ export const AddtionalDetails = () => {
     const [username, setUsername] = useState("");
   const [mail, setMail] = useState("")
   
- const  configureCaptcha = () => {
-    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
-      "sign-in-button",
-      {
-        'size': "invisible",
-        'callback': (response) => {
-          // reCAPTCHA solved, allow signInWithPhoneNumber.
-          handleClickk();
-          console.log("recaptcha");
-        },
-        defaultCountry:"IN"
-      }
-    );
-  }
+//  const  configureCaptcha = () => {
+//     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+//       "sign-in-button",
+//       {
+//         'size': "invisible",
+//         'callback': (response) => {
+//           // reCAPTCHA solved, allow signInWithPhoneNumber.
+//           handleClickk();
+//           console.log("recaptcha");
+//         },
+//         defaultCountry:"IN"
+//       }
+//     );
+//   }
   
 
   const handleClickk = async (e) => {
-    e.preventDefault();
-    configureCaptcha()
-   const phoneNumber = '+916379935905'
-   const appVerifier = window.recaptchaVerifier;
-   firebase
-     .auth()
-     .signInWithPhoneNumber(phoneNumber, appVerifier)
-     .then((confirmationResult) => {
-       // SMS sent. Prompt user to type the code from the message, then sign the
-       // user in with confirmationResult.confirm(code).
-       window.confirmationResult = confirmationResult;
-       console.log("otp send");
-       // ...
-     })
-     .catch((error) => {
-     console.log(error);
-     });
+  //   e.preventDefault();
+  //   configureCaptcha()
+  //  const phoneNumber = '+916379935905'
+  //  const appVerifier = window.recaptchaVerifier;
+  //  firebase
+  //    .auth()
+  //    .signInWithPhoneNumber(phoneNumber, appVerifier)
+  //    .then((confirmationResult) => {
+  //      // SMS sent. Prompt user to type the code from the message, then sign the
+  //      // user in with confirmationResult.confirm(code).
+  //      window.confirmationResult = confirmationResult;
+  //      console.log("otp send");
+  //      // ...
+  //    })
+  //    .catch((error) => {
+  //    console.log(error);
+  //    });
 
 
 
@@ -61,12 +61,12 @@ export const AddtionalDetails = () => {
 
 
     ////////////////////////////
-        // setOtpPopup(true);
-        // const data = {
-        //     username: username,
-        //     email:mail
-        // }
-        // await axios.patch(`http://localhost:8080/cars/${id}`,data);
+        setOtpPopup(true);
+        const data = {
+            username: username,
+            email:mail
+        }
+        await axios.patch(`http://localhost:8080/cars/${id}`,data);
         
 }
 
@@ -241,7 +241,7 @@ export const AddtionalDetails = () => {
 
             <div className={style.continuebtndiv}>
               <button
-                id="sign-in-button"
+            
                 onClick={handleClickk}
                 className={style.continuebtn}
               >
