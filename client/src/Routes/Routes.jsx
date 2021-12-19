@@ -17,11 +17,12 @@ import { AdditionalCovers } from "../components/PlanOptions/AdditionalCovers";
 import { FinalDetails } from "../components/FinalDetails/FinalDetails";
 import Home from "../components/homepage/Home";
 import Paysuccessfull from "../components/Paysuccessfull/Paysuccessfull";
+import { CardPayment } from "../components/payment/CardPayment";
 function Routes() {
   return (
     <>
       <Switch>
-      <Route path="/" exact>
+        <Route path="/" exact>
           <Home />
         </Route>
 
@@ -73,9 +74,12 @@ function Routes() {
         <Route path="/final-details">
           <FinalDetails />
         </Route>
-        <Route path='/successfull' exact >
-          <Paysuccessfull/>
-</Route>
+        <Route path="/cardPayment" exact>
+          <CardPayment />
+        </Route>
+        <Route path="/successfull" exact>
+          <Paysuccessfull />
+        </Route>
         <Route>
           <h1>404:Page not found</h1>
         </Route>

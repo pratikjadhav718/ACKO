@@ -7,8 +7,6 @@ import noteicon from "./note.svg"
 import { OwnDamagePlan1 } from "../OwnDamagePlan/OwnDamagePlan1/OwnDamagePlan1";
 import { OwnDamagePlan2 } from "../OwnDamagePlan/OwnDamagePlan2/OwnDamagePlan2";
 import { TopProgressBar } from "./TopProgressBar";
-import { MoreDetails } from "./MoreDetails";
-import { OtpPopup } from "./OtpPopup";
 import { Pop } from "./Pop";
 import axios from "axios";
 import firebase from "./firebase.js"

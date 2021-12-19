@@ -1,0 +1,58 @@
+.mainContainer {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3vh;
+
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.mainContainer > :nth-child(1) {
+  width: 238px;
+  height: 600px;
+  border-radius: 6px;
+  border: 1px solid #d5d5d5;
+}
+.mainContainer > :nth-child(2) {
+  width: 450px;
+  border: 1px solid black;
+}
+.mainContainer > :nth-child(3) {
+  width: 210px;
+  border: 1px solid black;
+}
+.mainContainer > :nth-child(1) > :nth-child(n) {
+  width: 212px;
+  height: 46px;
+
+  margin: 10px 12px 12px 12px;
+
+  border-radius: 4px;
+}
+.mainContainer > :nth-child(1) > :nth-child(n) > :nth-child(1) {
+  padding: 0px 13px 0px 13px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+}
+.mainContainer > :nth-child(1) > :nth-child(n) > :nth-child(1) > :nth-child(1) {
+  width: 24px;
+  height: 24px;
+}
+.mainContainer > :nth-child(1) > :nth-child(n) > :nth-child(1) > :nth-child(2) {
+  padding: 0px 0px 0px 13px;
+  color: #555a68;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
+.mainContainer > :nth-child(1) > :first-child > div {
+  background-color: #f4f5f7;
+}
+.mainContainer > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  color: #151619;
+  font-weight: 700 !important;
+}
