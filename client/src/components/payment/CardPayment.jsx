@@ -90,7 +90,27 @@ export const CardPayment = () => {
             </div>
           </div>
         </div>
-        <div>d</div>
+        <div>
+          {" "}
+          <div>
+            <div>
+              <div>Own damage plan</div>
+              <div>Ford Titanium AT</div>
+              <div>
+                <div>
+                  <div>Net Premium</div>
+                  <div>GST</div>
+                  <div>Total</div>
+                </div>
+                <div>
+                  <div>₹3650</div>
+                  <div>₹657</div>
+                  <div>₹4307</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
