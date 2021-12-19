@@ -6,7 +6,7 @@ const Sub2 = () => {
     return (
        <div className='home_sub1_main'>
      
-       <p style={{fontSize:"28px"}}>
+       <p className='sub1_p'>
        Here’s why you’ll love ACKO
        </p>
        

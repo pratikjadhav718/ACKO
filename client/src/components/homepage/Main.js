@@ -67,7 +67,7 @@ const Main = () => {
   </input> */}
               <Link to='/cars/useofcar' >
                 <button className="custom-search-botton" type="submit">
-                  Insure now <i class="fas fa-arrow-right"></i>
+                 <span className='car_insure'>Insure now  <i class="fas fa-arrow-right"></i></span> <i className="fas fa-arrow-right hidd_arr"></i>
                 </button>{" "}
               </Link>
             </div>
@@ -84,14 +84,19 @@ const Main = () => {
             <div className="main_quote">
               <img src={gift}></img>
               <div>
-                <div>Looking to insure your new car?</div>
-                <div style={{ fontSize: "small", color: "#cebeef" }}>
+                <div className='main_quote_p1'>Looking to insure your new car?</div>
+                <div className='main_quote_p2'>
                   Save big with our zero commission insurance
+                </div>
+                <div className='main_quote_p3'>
+                  Get quote
                 </div>
               </div>
 
               <button className="main_quote_btn">Get a quote</button>
+              <button className="main_quote_btn2"><i class="fas fa-chevron-right"></i></button>
             </div>
+            
           </div>
 
           <div className="home_main_mid_divs">

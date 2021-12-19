@@ -25,8 +25,8 @@ const Main2 = () => {
   
         <div className='home_main2'>
         <div style={{paddingTop:"80px"}}>
-           <p style={{fontSize:"28px", marginBottom:"10px"}}>Have a partner issued policy?</p>
-           <p style={{fontSize:"18px", marginBottom:"30px"}}>Login to claim & download your policy</p>
+           <p className='main2_p'>Have a partner issued policy?</p>
+           <p className='main2_p1'>Login to claim & download your policy</p>
            </div>
            <div className='home_main_child1'>
            <div className='home_main_child2'>

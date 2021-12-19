@@ -9,7 +9,7 @@ const Sub = () => {
         <div className='home_sub_bg'>
         <div className='home_sub'>
         
-        <div className='home_sub_child'><ReactStars
+        <div className='home_sub_child sub_hid'><ReactStars
     count={5}
     size={16}
     activeColor="#ffd700"

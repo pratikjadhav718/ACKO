@@ -61,7 +61,8 @@
   float: right;
 }
 
-.home_sub_child ,.home_sub_child2{
+.home_sub_child,
+.home_sub_child2 {
   width: 33.33%;
 }
 /* 
@@ -148,15 +149,6 @@ ul {
   margin-left: 28px;
 }
 
-@media (max-width: 998px) {
-  .hamburger-menu,
-  .hid {
-    display: block;
-  }
-  .navlinks {
-    display: none;
-  }
-}
 
 /* main session */
 .home_main_mid_p1 {
@@ -203,6 +195,9 @@ ul {
   font-size: 14px;
   cursor: pointer;
 }
+.hidd_arr{
+  display: none;
+}
 /* input:focus ~ .floating-label,
   input:not(:focus):valid ~ .floating-label{
     top: 8px;
@@ -228,6 +223,9 @@ ul {
   justify-content: space-between;
   margin: auto;
   width: 100%;
+}
+.car_insure {
+  display: block;
 }
 
 .main_underline_sub:nth-child(1) {
@@ -449,22 +447,72 @@ ul {
   color: white;
 }
 
+
+
+.main_quote_p2 {
+  display:block;
+  font-size: small;
+  color: #cebeef;
+
+}
+.main_quote_p3 {
+  display: none;
+}
+.main_quote_btn2{
+  display: none;
+  border: none;
+  background-color: white;
+}
+.main_quote_btn{
+  display: block;
+}
+
+.main2_p{
+  margin-bottom: 10px;
+  font-size: 28px;
+ }
+
+ .main2_p1{
+  margin-bottom: 30px;
+  font-size:18px;
+ }
+ .sub1_p{
+  font-size: 28px;
+}
+
 /* media queries */
 
+@media (max-width: 998px) {
+  .hamburger-menu,
+  .hid {
+    display: block;
+  }
+  .navlinks {
+    display: none;
+  }
+}
+
+
 @media (max-width: 500px) {
+  .main_nav {
+    background-color: var(--white);
+    color: var(--violet);
+  }
   .home_sub2 {
     display: block;
     width: 100%;
     height: auto;
   }
-  .home_sub_child,.home_sub_child2 {
+  .home_sub_child,
+  .home_sub_child2 {
     width: 98%;
     height: auto;
   }
-  .home_sub_child{
+  .home_sub_child {
     margin: auto;
-    padding-left:10px;
+    padding-left: 10px;
     margin-bottom: 50px;
+    height: auto;
   }
   .home_main_child1 {
     width: 100%;
@@ -472,19 +520,110 @@ ul {
   }
   .home_main_child2,
   .home_main_child3 {
-  width: 98%;
-}
-.home_main_child1 > div > img {
-  height: 40px;
-  width: 40px;
-  margin: 5px;
- } 
- .home_sub {
-   display: block;
-   height: auto;
-   width: 100%;
-   padding-bottom:50px;
- }
-}
+    width: 98%;
+  }
+  .home_main_child1 > div > img {
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+  }
+  .home_sub {
+    display: block;
+    height: auto;
+    width: 100%;
+    padding-bottom: 50px;
+  }
+  .home_main {
+    display: block;
+    height: auto;
+    min-height: 80vh;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: var(--white);
+    color: black;
+    margin-bottom: 50px;
+  }
+  .home_home {
+    background-color: var(--white);
+  }
+  .home_main_child {
+    display: none;
+  }
+  .home_main_mid {
+    display: block;
+    width: 96%;
+    margin: auto;
+    background-color: var(--white);
+  }
+  .home_main_mid_p1 {
+    font-size: 28px;
+  }
+  .car1 {
+    background-color: var(--violet);
+    color: var(--violet);
+  }
+  .main_underline_sub:nth-child(1) {
+    border: 1.4px solid var(--violet);
+    background-color: var(--violet);
+  }
+  .main_car_text1 {
+    color: var(--violet);
+  }
+  .car_insure {
+    display: none;
+  }
+  .custom-search-input {
+    width: 100%;
+    height: 61px;
+  }
+  .custom-search-botton {
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0px 20px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .home_save {
+    height: 120px;
+  }
+  .main_quote > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  .main_quote_p1 {
+    font-size: small;
+  }
+  .main_quote_p2 {
+    display: none;
+  }
+  .main_quote_p3 {
+    display: block;
+    font-size: smaller;
+    color: var(--light-green);
+  }
+  .main_quote_btn{
+    display: none;
+  }
+  .main_quote_btn2{
+    display: block;
+  }
 
+.main2_p{
+  font-size:22px;
+ }
+ .main2_p1{
+  font-size:16px;
+ }
+.home_main2{
+  height: auto;
+}
+.sub1_p{
+  font-size: 22px;
+}
+.hidd_arr{
+  display:block;
+}
+}
 
