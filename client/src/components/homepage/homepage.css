@@ -482,6 +482,25 @@ ul {
 
 /* media queries */
 
+@media (max-width:1025px) {
+  .home_main_child {
+   width: 20%;
+  }
+  .home_main_mid {
+    width:60%;
+  }
+  .home_main_child_left {
+    width: 100%;
+  }
+  
+  .home_main_child_right {
+    width: 100%;
+  }
+  .home_main_child_right>img,.home_main_child_left>img{
+    width: 90%;
+  }
+}
+
 @media (max-width: 998px) {
   .hamburger-menu,
   .hid {
@@ -489,6 +508,102 @@ ul {
   }
   .navlinks {
     display: none;
+  }
+  .home_main {
+    display: block;
+    height: auto;
+    min-height: 80vh;
+    width: 100%;
+    padding-bottom: 100px;
+    background-color: var(--white);
+    color: black;
+    margin-bottom: 50px;
+  }
+  .home_home {
+    background-color: var(--white);
+  }
+  .home_main_child {
+    display: none;
+  }
+  .home_main_mid {
+    display: block;
+    width: 96%;
+    margin: auto;
+    background-color: var(--white);
+  }
+  .home_main_mid_p1 {
+    font-size: 28px;
+  }
+  .car1 {
+    background-color: var(--violet);
+    color: var(--violet);
+  }
+  .main_underline_sub:nth-child(1) {
+    border: 1.4px solid var(--violet);
+    background-color: var(--violet);
+  }
+  .main_car_text1 {
+    color: var(--violet);
+  }
+  .car_insure {
+    display: none;
+  }
+  .custom-search-input {
+    width: 100%;
+    height: 61px;
+  }
+  .custom-search-botton {
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    padding: 0px 20px;
+    height: 50px;
+    font-size: 18px;
+  }
+  .home_save {
+    height: 120px;
+  }
+  .main_quote > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  .main_quote_p1 {
+    font-size: small;
+  }
+  .main_quote_p2 {
+    display: none;
+  }
+  .main_quote_p3 {
+    display: block;
+    font-size: smaller;
+    color: var(--light-green);
+  }
+  .main_quote_btn{
+    display: none;
+  }
+  .main_quote_btn2{
+    display: block;
+  }
+
+.main2_p{
+  font-size:22px;
+ }
+ .main2_p1{
+  font-size:16px;
+ }
+.home_main2{
+  height: auto;
+}
+.sub1_p{
+  font-size: 22px;
+}
+.hidd_arr{
+  display:block;
+}
+ .main_nav {
+    background-color: var(--white);
+    color: var(--violet);
   }
 }
 
