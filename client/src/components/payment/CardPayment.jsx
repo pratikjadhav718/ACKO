@@ -6,6 +6,7 @@ import Header from "../Header/Header";
 import {
   cardNumberSvg,
   cardSvg,
+  justPaySvg,
   netBankSvg,
   upiSvg,
   walletSvg,
@@ -64,6 +65,9 @@ export const CardPayment = () => {
           <SIdeDiv svg={upiSvg} text={"UPI"}></SIdeDiv>{" "}
           <SIdeDiv svg={netBankSvg} text={"Netbanking"}></SIdeDiv>{" "}
           <SIdeDiv svg={walletSvg} text={"Wallets"}></SIdeDiv>{" "}
+          <div>
+            <div>Powered by {justPaySvg}</div>
+          </div>
         </div>
         <div>
           <div>
