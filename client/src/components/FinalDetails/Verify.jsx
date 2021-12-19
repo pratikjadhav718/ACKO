@@ -1,7 +1,27 @@
 import "./verify.css";
 import { TopProgressBar } from "../AddtionalDetails/TopProgressBar";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export const Verify = () => {
+
+    const id = localStorage.getItem("ackoid");
+
+    const idv = localStorage.getItem("currentIDV");
+
+    const [data,setData]=useState("")
+
+    const getData =async () => {
+        const {data} = await axios.get(`http://localhost:8080/cars/${id}`);
+        setData(data)
+    }
+
+    useEffect(() => {
+       getData() 
+    }, [])
+    
+    console.log(data);
+
     return (
         <div className="verifymaindiv">
             <div>
@@ -29,21 +49,21 @@ export const Verify = () => {
                     Full Name (As per RC copy)
                 </div>
                 <div>
-                    Jaysinth JOSEPH
+                    {data.username}
                 </div>
 
                 <div>
                     Email
                 </div>
                 <div>
-                    jaysinthjoseph7@gmail.com
+                    {data.email}
                 </div>
 
                 <div>
                     Mobile
                 </div>
                 <div>
-                    8850645962
+                   {data.mobile}
                 </div>
 
             </div>
@@ -60,42 +80,42 @@ export const Verify = () => {
                     Car Number
                 </div>
                 <div>
-                    MH04KL5359
+                    {data.number}
                 </div>
 
                 <div>
                     Make Model
                 </div>
                 <div>
-                    Ford Ecosport
+                   {data.name}
                 </div>
 
                 <div>
                     Variant
                 </div>
                 <div>
-                    Titanium AT
+                    {data.gear}
                 </div>
 
                 <div>
                     Fuel Type
                 </div>
                 <div>
-                    Petrol
+                   {data.fuel}
                 </div>
 
                 <div>
                     Insured Value
                 </div>
                 <div>
-                    IDV : 6.65 Lakh
+                    IDV : {idv} Lakhs
                 </div>
 
                 <div>
                     Purchase Year
                 </div>
                 <div>
-                    2020
+                    {data.year}
                 </div>
 
                 <div>
