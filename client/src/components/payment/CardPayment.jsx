@@ -1,3 +1,6 @@
+import axios from "axios";
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import { useState } from "react/cjs/react.development";
 import Header from "../Header/Header";
 import {
@@ -11,11 +14,44 @@ import styles from "./cardPayment.module.css";
 import { SIdeDiv } from "./SideDiv";
 
 export const CardPayment = () => {
+  var data;
+  const [paymentValues, setPaymentValues] = useState({
+    netPreminum: "",
+    gst: "",
+    total: "",
+  });
+  useEffect(() => {
+    try {
+      let id = localStorage.getItem("ackoUserId");
+      const res = axios.get(`http://localhost:8080/user/${id}`).then((res) => {
+        console.log(res.data);
+        data = res.data;
+        console.log(data);
+        setPaymentValues({
+          netPreminum: data.premium.toFixed(0),
+          gst: ((data.premium * 15) / 100).toFixed(0),
+          total: (
+            data.premium -
+            data.ncbDiscountAmount +
+            141 +
+            data.paCover +
+            (data.premium * 15) / 100
+          ).toFixed(0),
+        });
+      });
+    } catch (err) {
+      console.log(err.message);
+    }
+  }, []);
   const [allowPay, setAllowPay] = useState(false);
   const cvvChange = (e) => {
     if (e.target.value.length >= 3) {
       setAllowPay(true);
     }
+  };
+  const history = useHistory();
+  const handlePayClick = () => {
+    history.push("./successfull");
   };
   return (
     <div>
@@ -74,6 +110,7 @@ export const CardPayment = () => {
             </div>
             <div>
               <button
+                onClick={handlePayClick}
                 style={{
                   background: allowPay ? "#5A68E7" : "#d6d9e0",
                   color: "white",
@@ -103,9 +140,9 @@ export const CardPayment = () => {
                   <div>Total</div>
                 </div>
                 <div>
-                  <div>₹3650</div>
-                  <div>₹657</div>
-                  <div>₹4307</div>
+                  <div>₹{paymentValues.netPreminum}</div>
+                  <div>₹{paymentValues.gst}</div>
+                  <div>₹{paymentValues.total}</div>
                 </div>
               </div>
             </div>
