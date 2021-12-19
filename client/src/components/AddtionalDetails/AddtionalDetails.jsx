@@ -10,11 +10,13 @@ import { TopProgressBar } from "./TopProgressBar";
 import { Pop } from "./Pop";
 import axios from "axios";
 import firebase from "./firebase.js"
+import { DropDownPopup } from "./DropDownPopup";
 export const AddtionalDetails = () => {
 
 
     const id = localStorage.getItem("ackoid");
     
+    const [droppopup, setDropPopup] = useState(false);
 
     const [username, setUsername] = useState("");
   const [mail, setMail] = useState("")
@@ -172,7 +174,13 @@ export const AddtionalDetails = () => {
                   </option>
                 </select>
               </div>
-
+                    {/* Drop down popup for Previuos Insurer */}
+              {/* <div className={style.dropdownmaindiv} >
+                Previous Insurer
+              </div>
+              <div className={style.dorpdownpopupdiv} onClick={()=> {setDropPopup(!droppopup)}}>
+                  <DropDownPopup droppopup={droppopup}/>
+              </div> */}
               <div className={style.new}>
                 <p>When should your new policy start?</p>
 
