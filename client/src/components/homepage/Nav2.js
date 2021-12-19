@@ -9,30 +9,35 @@ const Nav2 = () => {
                 <div className='col2 col1'>
                     <p>Manage your policy</p>
                     <button classname="collapse_login">login</button>
+                    <hr></hr>
                 </div>
-                <hr></hr>
+               
 
                 <div className='col2'>
                     <p>Raise a claim</p>
                     <p>renew policy</p>
                     <p>Help</p>
+                    <hr></hr>
                 </div>
-                <hr></hr>
+                
 
                 <div className='col2'>
-                    <p>Have a partner issued policy</p>
+                    <h5>Have a partner issued policy</h5>
                     <button classname="collapse_claim">claim</button>
+                    <hr></hr>
                 </div>
-                <hr></hr>
+                
 
                 <div className='col2'>
-                   products
+                     
+                    <h5>products</h5>
                     <p>Car & taxi</p>
                     <p>Bike</p>
                     <p>Health</p>
                     <p>Electronics</p>
+                    <hr></hr>
                 </div>
-                <hr></hr>
+                
 
                 <div className='col2'>
                     <p style={{fontSize:"smaller", fontWeight:"normal"}}>Trade logo displayed above belongs to ACKO Technology & Services Pvt Ltd and used by ACKO General insurance Limited under License.</p>

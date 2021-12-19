@@ -426,13 +426,19 @@ ul {
   margin-left: 50px;
 }
 
-.col2{
-  padding-left: 40px;
+.col2>p, .col2>button,.col2>h5{
+  margin-left: 40px;
 }
 .col2>button{
   padding:8px 16px;
   border: none;
   border-radius:8px;
  border: 1px solid rgb(99, 96, 96);;
+ margin-bottom:10px;
  }
 
+ .col1{
+   background-color: rgb(147, 100, 237);;
+   padding-top:40px;
+   color: white;
+ }
