@@ -142,7 +142,7 @@ export const AddtionalDetails = () => {
 
               <div className={style.mobilediv}>
                 <input
-                  type="number"
+                  type='tel'
                   placeholder="Mobile Number"
                   className={style.mobilinput}
                 />
