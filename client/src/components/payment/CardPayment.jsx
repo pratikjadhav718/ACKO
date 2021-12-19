@@ -1,5 +1,11 @@
 import Header from "../Header/Header";
-import { cardSvg, netBankSvg, upiSvg, walletSvg } from "./assets/svgs";
+import {
+  cardNumberSvg,
+  cardSvg,
+  netBankSvg,
+  upiSvg,
+  walletSvg,
+} from "./assets/svgs";
 import styles from "./cardPayment.module.css";
 import { SIdeDiv } from "./SideDiv";
 
@@ -21,7 +27,11 @@ export const CardPayment = () => {
             <div>Pay using Credit or Debit Card</div>
             <div>
               <div>Card Number</div>
-              <input type="number" name="" id="" />
+              <div>
+                {" "}
+                <input type="number" />
+                {cardNumberSvg}
+              </div>
             </div>
           </div>
         </div>

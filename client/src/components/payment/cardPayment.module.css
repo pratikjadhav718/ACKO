@@ -73,3 +73,10 @@
   font-size: 14px;
   padding-bottom: 5px;
 }
+
+.mainContainer > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(2) {
+  width: 100%;
+  height: 46px;
+  border-radius: 6px;
+  border: 1px solid #4f34d2;
+}
