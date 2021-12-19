@@ -52,7 +52,11 @@ export const CardPayment = () => {
   };
   const history = useHistory();
   const handlePayClick = () => {
-    history.push("./successfull");
+    if (allowPay) {
+      history.push("./successfull");
+    } else {
+      alert("Please fill the details");
+    }
   };
   return (
     <div>
