@@ -68,7 +68,7 @@ console.log(data);
           <div>₹ {paymentValues.netPreminum} </div>
 
           <div>NCB Discount</div>
-          <div>- ₹ {data.ncbDiscountAmount}</div>
+          <div style={{color:"green"}} >- ₹ {data.ncbDiscountAmount}</div>
           <div>Consumables Premium</div>
           <div>₹ {conspre}</div>
         </div>
