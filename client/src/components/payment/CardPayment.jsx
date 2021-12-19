@@ -16,7 +16,15 @@ export const CardPayment = () => {
           <SIdeDiv svg={netBankSvg} text={"Netbanking"}></SIdeDiv>{" "}
           <SIdeDiv svg={walletSvg} text={"Wallets"}></SIdeDiv>{" "}
         </div>
-        <div>s</div>
+        <div>
+          <div>
+            <div>Pay using Credit or Debit Card</div>
+            <div>
+              <div>Card Number</div>
+              <input type="number" name="" id="" />
+            </div>
+          </div>
+        </div>
         <div>d</div>
       </div>
     </div>

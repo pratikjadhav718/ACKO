@@ -56,3 +56,20 @@
   color: #151619;
   font-weight: 700 !important;
 }
+.mainContainer > :nth-child(2) > :nth-child(1) {
+  margin-top: 24px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+.mainContainer > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  font-size: 18px;
+  color: #151619;
+  font-weight: 700;
+  padding-bottom: 36px;
+}
+.mainContainer > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(1) {
+  font-weight: 400;
+  color: #878992;
+  font-size: 14px;
+  padding-bottom: 5px;
+}
