@@ -4,6 +4,8 @@ import "./owndamageplan2.css";
 import ticmark from "./ticmark.svg"
 export const OwnDamagePlan2 = () => {
 
+  const id=localStorage.getItem("ackoid")
+
     const id2 = localStorage.getItem("ackoUserId");
 
     const [data, setData] = useState("");
@@ -11,10 +13,6 @@ export const OwnDamagePlan2 = () => {
 
 
 
-        const getData = async () => {
-          const {data} = await axios.get(`http://localhost:8080/user/${id2}`);
-          setData(data);
-        };
 
         useEffect(() => {
           getData();
@@ -22,7 +20,17 @@ export const OwnDamagePlan2 = () => {
       const netpre =
     data.premium - data.ncbDiscountAmount + conspre + data.paCover;
   const gst = 0.15 * netpre
-  const total=netpre-gst
+  const total = netpre - gst
+  console.log(total);
+  
+        const getData = async () => {
+          const { data } = await axios.get(`http://localhost:8080/user/${id2}`);
+          setData(data);
+
+          const totall = { total: total };
+
+          await axios.patch(`http://localhost:8080/cars/${id}`,totall);
+        };
     return (
       <div className="owndamageplandiv22">
         <div className="owndamagetopdiv">
