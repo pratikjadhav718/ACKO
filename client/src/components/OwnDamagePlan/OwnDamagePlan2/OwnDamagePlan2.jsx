@@ -4,10 +4,10 @@ import "./owndamageplan2.css";
 import ticmark from "./ticmark.svg"
 export const OwnDamagePlan2 = () => {
 
-  const id1=localStorage.getItem("ackoid")
+  
 
 
-  const [data, setData] = useState("");
+  // const [data, setData] = useState("");
 
 
 
@@ -19,6 +19,8 @@ export const OwnDamagePlan2 = () => {
       netPreminum: "",
       gst: "",
       total: "",
+      ncbDiscountAmount: "",
+      paCover:""
     });
   
   // const getData =async () => {
@@ -26,7 +28,7 @@ export const OwnDamagePlan2 = () => {
   //   setData(data)
   //   console.log(data.ncbDiscountAmount);
   // }
-console.log(data);
+// console.log(data);
   
   useEffect(() => {
     try {
@@ -35,12 +37,13 @@ console.log(data);
         // console.log(res.data);
       let  data = res.data;
         
-        setData(data)
+        // setData(data)
         setPaymentValues({
           netPreminum: data.premium.toFixed(0),
-          gst:
-           Math.round( (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
-            (15 / 100)),
+          gst: Math.round(
+            (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+              (15 / 100)
+          ),
           total: Math.round(
             data.premium -
               data.ncbDiscountAmount +
@@ -49,13 +52,15 @@ console.log(data);
               (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
                 (15 / 100)
           ),
+          ncbDiscountAmount: data.ncbDiscountAmount,
+          paCover: data.paCover,
         });
       })
     
     } catch (err) {
       console.log(err.message);
     }
-  }, []);
+  }, [paymentValues]);
  localStorage.setItem("totalacko", paymentValues.total);
     return (
       <div className="owndamageplandiv22">
@@ -68,7 +73,9 @@ console.log(data);
           <div>₹ {paymentValues.netPreminum} </div>
 
           <div>NCB Discount</div>
-          <div style={{color:"green"}} >- ₹ {data.ncbDiscountAmount}</div>
+          <div style={{ color: "green" }}>
+            - ₹ {paymentValues.ncbDiscountAmount}
+          </div>
           <div>Consumables Premium</div>
           <div>₹ {conspre}</div>
         </div>
@@ -101,7 +108,7 @@ console.log(data);
               lineHeight: "10px",
             }}
           >
-            ₹ {data.paCover}
+            ₹ {paymentValues.paCover}
           </div>
 
           <div

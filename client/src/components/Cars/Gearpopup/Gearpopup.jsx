@@ -20,7 +20,8 @@ function Gearpopup({ gearpopup, setGearpopup, setGear }) {
         style={{ width: "100%", cursor: "pointer" }}
         onChange={(e) => {
           setValuee(e.target.value);
-          setGear(e.target.value);
+          setGear(e.target.value)
+          setGearpopup(false)
         }}
       >
         <option value="Titanium AT">Titanium AT</option>

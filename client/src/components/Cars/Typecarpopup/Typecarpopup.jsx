@@ -16,6 +16,7 @@ function Typecarpopup({ setCarpopup, carpopup, setCar }) {
         onChange={(e) => {
           setValue(e.target.value);
           setCar(e.target.value);
+          setCarpopup(false)
         }}
       >
         <option value="Volvo">Volvo</option>
