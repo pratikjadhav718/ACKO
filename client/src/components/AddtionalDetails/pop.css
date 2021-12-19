@@ -23,7 +23,8 @@
     text-align: center;
     /* padding: 20px; */
     box-sizing: border-box;
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
+    font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .popup .close-btn {
@@ -70,7 +71,7 @@
 }
 
 .popupdatadiv > :nth-child(2) {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
@@ -83,7 +84,7 @@
 }
 
 .popupdatadiv > :nth-child(3){
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -93,7 +94,7 @@
 }
 
 .popupdatadiv > :nth-child(4) {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -139,7 +140,7 @@
 .otpresenddiv {
     margin: auto;
     margin-top: 32px;
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: bold;
     font-size: 12px;
@@ -159,7 +160,7 @@
 }
 
 .updatesonwhatsupotp > :nth-child(2) {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 700;
     font-size: 12px;

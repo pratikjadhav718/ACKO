@@ -1,18 +1,19 @@
 .verifymaindiv{
     /* border: 1px solid #DCDDE9; */
     padding-left: 10px;
+    font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .verifymaindiv > :nth-child(2) > p {
     font-weight: 600;
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-size: 20px;
     margin-top: 8px;
 }
 
 .verifymaindiv > :nth-child(3) > p {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     margin-top: 8px;
     font-style: normal;
     font-weight: 500;   
@@ -22,7 +23,7 @@
 }
 
 .verifymaindiv > :nth-child(4) > p {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 700;   
     font-size: 14px;
@@ -38,7 +39,7 @@
     grid-gap: 12px;
 }
 .carownerdetails > div {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
 }
 
@@ -54,7 +55,7 @@
 }
 
 .verifymaindiv > :nth-child(6) > p {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 700;   
     font-size: 14px;
@@ -70,7 +71,7 @@
 }
 
 .detailsofcar {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
 }
 

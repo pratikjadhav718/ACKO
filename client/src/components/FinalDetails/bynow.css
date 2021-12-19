@@ -8,6 +8,7 @@
     grid-gap: 17px;
     
     /* border: 1px solid red; */
+    font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .bynowmaindiv > :nth-child(1) {
@@ -22,7 +23,7 @@
     border-radius: 8px;
     padding: auto;
 
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -44,7 +45,7 @@
 
 .bynowmaindiv > :nth-child(3) {
     margin-top: 15px;
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
     font-style: normal;
     font-weight: bold;
     font-size: 14px;

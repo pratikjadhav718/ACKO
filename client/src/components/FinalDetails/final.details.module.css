@@ -8,7 +8,8 @@
 }
 
 .updatesonwhatsup > :nth-child(2) {
-    font-family: Helvetica Neue;
+    /* font-family: Helvetica Neue; */
+    font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -24,3 +25,14 @@
     /* border: 1px solid red; */
     margin-top: 0%;
 }
+
+/* 
+@media only screen and (max-width: 900px){
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        gap: 50px;
+    }
+} */

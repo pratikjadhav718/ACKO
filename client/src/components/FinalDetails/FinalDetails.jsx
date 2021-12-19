@@ -16,12 +16,14 @@ const Container = styled.div`
   margin-top: 64px;
   display: flex;
   grid-gap: 56px;
+  font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 const InContleft = styled.div`
   // background-color: #ffffff;
   // height: 400px;
   width: 368px;
   // border: 1px solid #dcdee9;
+  font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 const InContright = styled.div`
   // background-color: #ffffff;
@@ -29,6 +31,7 @@ const InContright = styled.div`
   width: 368px;
   // margin-left: 10.9%;
   // border: 1px solid #dcdee9;
+  font-family: system-ui, Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
 `;
 
 export const FinalDetails = () => {
