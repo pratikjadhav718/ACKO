@@ -30,9 +30,10 @@ export const CardPayment = () => {
         console.log(data);
         setPaymentValues({
           netPreminum: data.premium.toFixed(0),
-          gst:
+          gst: (
             (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
-            (15 / 100),
+            (15 / 100)
+          ).toFixed(0),
           total: Math.round(
             data.premium -
               data.ncbDiscountAmount +
