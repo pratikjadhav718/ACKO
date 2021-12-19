@@ -12,20 +12,20 @@ const Sub2 = () => {
        
         <div className='home_sub2'>
 
-        <div className='home_sub_child'>
+        <div className='home_sub_child2'>
         <div><img src={wallet} style={{height:"120px", width:"120px", marginBottom:"28px"}}></img></div>
         <div style={{marginBottom:"28px"}}>Incredibly low premiums</div>
         <div style={{fontSize:"14px", fontWeight:"normal"}}> Insuring things that matter to you shouldn’t come at a cost. That’s why when you buy from us, you get insurance that fits your pocket.</div>        
          </div>
 
         
-         <div className='home_sub_child'>
+         <div className='home_sub_child2'>
         <div><img src={mobile} style={{height:"120px", width:"120px", marginBottom:"28px"}}></img></div>
         <div style={{marginBottom:"28px"}}>Incredibly low premiums</div>
         <div style={{fontSize:"14px", fontWeight:"normal"}}>Insuring things that matter to you shouldn’t come at a cost. That’s why when you buy from us, you get insurance that fits your pocket.</div>        
          </div>
 
-         <div className='home_sub_child'>
+         <div className='home_sub_child2'>
         <div><img src={snap} style={{height:"120px", width:"120px", marginBottom:"28px"}}></img></div>
         <div style={{marginBottom:"28px"}}>Incredibly low premiums</div>
         <div style={{fontSize:"14px", fontWeight:"normal"}}>Insuring things that matter to you shouldn’t come at a cost. That’s why when you buy from us, you get insurance that fits your pocket.</div>        

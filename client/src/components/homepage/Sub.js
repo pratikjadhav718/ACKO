@@ -14,6 +14,7 @@ const Sub = () => {
     size={16}
     activeColor="#ffd700"
     color="darkgoldenrod"
+    className="sub_star"
   />
   <div style={{marginTop:"20px"}}>Very good experience. Got the settlement done in less than 24 hours.</div>
   <div className='sub_rate'>
