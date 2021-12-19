@@ -1,26 +1,26 @@
 .updatesonwhatsup {
-    margin-top: 41px;
-    display: flex;
-    grid-template-columns: auto auto auto;
-    grid-gap: 10px;
-    /* border: 1px solid red; */
-    width: 268px;
+  margin-top: 41px;
+  display: flex;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  /* border: 1px solid red; */
+  width: 268px;
 }
 
 .updatesonwhatsup > :nth-child(2) {
-    font-family: Helvetica Neue;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
+  font-family: "system-ui", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
 }
 
-.updatesonwhatsup > div > img{
-    /* border: 1px solid red; */
-    margin-top: 0%;
+.updatesonwhatsup > div > img {
+  /* border: 1px solid red; */
+  margin-top: 0%;
 }
 
-.updatesonwhatsup > div > input{
-    /* border: 1px solid red; */
-    margin-top: 0%;
+.updatesonwhatsup > div > input {
+  /* border: 1px solid red; */
+  margin-top: 0%;
 }
