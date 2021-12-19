@@ -513,7 +513,8 @@ ul {
     display: block;
     height: auto;
     min-height: 80vh;
-    width: 100%;
+    width: 80%;
+    margin: auto;
     padding-bottom: 100px;
     background-color: var(--white);
     color: black;
