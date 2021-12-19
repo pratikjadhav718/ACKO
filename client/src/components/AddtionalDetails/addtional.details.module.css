@@ -44,7 +44,7 @@
     min-width: 300px;
     width: 368px;
     height: 188px;
-    margin-top: 48px;
+    margin-top: 64px;
     /* margin-left: 24%; */
 }
 
@@ -88,7 +88,8 @@
     padding: 12px 48px;
     border-radius: 4px;
 
-
+border: none;
+cursor: pointer;
 
     /* Secondary Colour/Button */
 
@@ -118,7 +119,7 @@ hr.dottedline{
 .title {
     width: 303px;
     height: 28px;
-    /* margin-top: 23px; */
+    margin-top: 16px;
     margin-left: 10px;
 
     font-family: Helvetica Neue;
@@ -213,12 +214,36 @@ hr.dottedline{
     width: 100%;
     height: 40px;
     margin-top: 24px;
-    border: 1px solid DCDDE9;
+    /* border: 1px solid DCDDE9; */
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    /* display: flex; */
+    align-items: center;
+
+    color: #000000;
 }
 
 .dropdown {
     width: 100%;
     height: 40px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height, or 133% */
+
+    /* display: flex; */
+    align-items: center;
+
+    color: #000000;
     
 }
 
@@ -231,12 +256,26 @@ hr.dottedline{
     border-radius: 4px;
     margin-left: 10px;
     height: 30px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    padding: auto;
 }
 
 .tomorrowbtn {
     border: none;
     background: #f4f4f4;
     margin-left: 30px;
+
+    /* align-items: center; */
+    text-align: center;
 }
 
 .calenderdiv {
@@ -244,6 +283,12 @@ hr.dottedline{
     border-radius: 4px;
     margin-left: 10px;
     height: 30px;
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 .calender {
@@ -329,3 +374,33 @@ hr.dottedline{
     font-weight: bold;
 }
 
+.instuction1 {
+    width: 278px;
+    margin-top: 4px; 
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.instuction2 {
+    width: 278px;
+    margin-top: 4px; 
+
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.new {
+    margin-top: 16px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}

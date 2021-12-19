@@ -13,7 +13,9 @@ const carSchema = new mongoose.Schema({
   oddate: { type: String, required: false },
   cngkit: { type: String, required: false },
   mobile: { type: Number, required: false },
-  ncb: { type: Number, required: false }
+  ncb: { type: Number, required: false },
+  username: { type: String, required: false },
+  email: { type: String, required: false },
 });
 
 

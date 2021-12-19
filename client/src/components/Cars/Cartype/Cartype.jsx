@@ -42,7 +42,11 @@ function Cartype() {
           />
         </div>
         <hr />
-        <Typecarpopup carpopup={carpopup} setCarpopup={setCarpopup} />
+        <Typecarpopup
+          setCar={setCar}
+          carpopup={carpopup}
+          setCarpopup={setCarpopup}
+        />
         <div className={style.cartypeflex}>
           <img src={petrol} alt="" />
           <p>{fuel}</p>
@@ -78,18 +82,21 @@ function Cartype() {
           />
         </div>
         <hr />
-        <Gearpopup gearpopup={gearpopup} setGearpopup={setGearpopup} />
-        <Link to="/cars/cardetail" >
-        
+        <Gearpopup
+          gearpopup={gearpopup}
+          setGearpopup={setGearpopup}
+          setGear={setGear}
+        />
+        <Link to="/cars/cardetail">
           <button
             onClick={async () => {
               const id = localStorage.getItem("ackoid");
               const data = {
                 name: carr,
                 fuel: fuel,
-                gear: gearr
+                gear: gearr,
               };
-              await axios.patch(`http://localhost:8080/cars/${id}`,data);
+              await axios.patch(`http://localhost:8080/cars/${id}`, data);
             }}
             className={style.cartypebtn}
           >

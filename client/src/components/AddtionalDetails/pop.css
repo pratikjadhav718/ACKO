@@ -1,0 +1,177 @@
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    /* width: 80vw; */
+    height: 100vh;
+    background: rgba(202, 197, 197, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background: #fff;
+    width: 368px;   
+    /* max-width: 800px; */
+    height: 612px;
+    z-index: 2;
+    text-align: center;
+    /* padding: 20px; */
+    box-sizing: border-box;
+    font-family: Helvetica Neue;
+}
+
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    /* background: #222; */
+    color: gray;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 800ms ease-in-out;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#popup_div {
+    
+    background-color: white;
+    height: 100%;
+    width: 100%;
+}
+
+.popupdatadiv {
+    /* border: 1px solid red; */
+    border: none;
+}
+
+.popupicons {
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 72px;
+}
+
+.popupdatadiv > :nth-child(2) {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    /* display: flex; */
+    align-items: center;
+    letter-spacing: 0.02em;
+
+    margin-top: 24px;
+}
+
+.popupdatadiv > :nth-child(3){
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    margin-top: 24px;
+}
+
+.popupdatadiv > :nth-child(4) {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 32px;
+}
+
+.optenterdiv {
+    margin: auto;
+    margin-top: 18px;
+    
+    width: 240px;
+    height: 56;
+    display: flex;
+    grid-gap: 16px;
+}
+
+.optenterdiv > input {
+    width: 48px;
+    height: 56px;
+
+    border: 1px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-size: 24px;
+    text-align: center;
+}
+
+.otpbtncontinue {
+    margin-top: 24px;
+}
+
+.otpbtncontinuebtn {
+    width: 112px;
+    height: 40px;
+
+    background: #66C584;
+    border-radius: 6px;
+    color: white;
+}
+
+.otpresenddiv {
+    margin: auto;
+    margin-top: 32px;
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: #538AE3;
+}
+
+
+.updatesonwhatsupotp {
+    margin: auto;
+    margin-top: 41px;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    /* border: 1px solid red; */
+    width: 268px;
+}
+
+.updatesonwhatsupotp > :nth-child(2) {
+    font-family: Helvetica Neue;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.updatesonwhatsupotp > div > img{
+    /* border: 1px solid red; */
+    margin-top: 0%;
+}
+
+.updatesonwhatsupotp > div > input{
+    /* border: 1px solid red; */
+    margin-top: 0%;
+}

@@ -18,23 +18,3 @@ export const ByNow = () => {
 }
 
 
-
-
-
-
-
-
-
-// <div className={style.btnbuynowdiv}>
-//                       <div>1</div>
-//                       <div>2</div>
-//                       <div>3</div>
-//                     </div>
-
-
-
-// .btnbuynowdiv {
-//     margin-top: 42px;
-//     display: grid;
-//     grid-template-columns: auto auto auto;
-// }

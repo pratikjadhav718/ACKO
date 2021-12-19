@@ -202,6 +202,7 @@ ul {
   z-index: 2;
   font-weight: bold;
   font-size: 14px;
+  cursor: pointer;
 }
 /* input:focus ~ .floating-label,
   input:not(:focus):valid ~ .floating-label{
