@@ -96,7 +96,8 @@ function Cartype() {
                 fuel: fuel,
                 gear: gearr,
               };
-              await axios.patch(`http://localhost:8080/cars/${id}`, data);
+              // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+               await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
             }}
             className={style.cartypebtn}
           >

@@ -51,20 +51,23 @@ export const DifferentPlanOptions = () => {
   useEffect(() => {
     try {
       let id = localStorage.getItem("ackoid");
-      const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
-        console.log(res.data);
-        data = res.data;
-        console.log(data);
-        setCarDetails({
-          liscencePlate: data.number,
-          vehicleName: data.name,
-          NCB: data.ncb,
-          registrationMonthYear: data.month + "," + data.year,
-          pincode: data.pincode,
-          carValue: 12.55,
-          mobile: data.mobile,
+      //`http://localhost:8080/cars/${id}`
+      const res = axios
+        .get(`https://acko.herokuapp.com/cars/${id}`)
+        .then((res) => {
+          console.log(res.data);
+          data = res.data;
+          console.log(data);
+          setCarDetails({
+            liscencePlate: data.number,
+            vehicleName: data.name,
+            NCB: data.ncb,
+            registrationMonthYear: data.month + "," + data.year,
+            pincode: data.pincode,
+            carValue: 12.55,
+            mobile: data.mobile,
+          });
         });
-      });
     } catch (err) {
       console.log(err.message);
     }

@@ -24,26 +24,28 @@ export const CardPayment = () => {
   useEffect(() => {
     try {
       let id = localStorage.getItem("ackoUserId");
-      const res = axios.get(`http://localhost:8080/user/${id}`).then((res) => {
-        console.log(res.data);
-        data = res.data;
-        console.log(data);
-        setPaymentValues({
-          netPreminum: data.premium.toFixed(0),
-          gst: (
-            (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
-            (15 / 100)
-          ).toFixed(0),
-          total: Math.round(
-            data.premium -
-              data.ncbDiscountAmount +
-              141 +
-              data.paCover +
+      //http://localhost:8080/user/${id
+      const res = axios
+        .get(`https://acko.herokuapp.com/user/${id}`)
+        .then((res) => {
+          console.log(res.data);
+          data = res.data;
+          console.log(data);
+          setPaymentValues({
+            netPreminum: data.premium.toFixed(0),
+            gst:
               (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
-                (15 / 100)
-          ),
+              (15 / 100).toFixed(0),
+            total: Math.round(
+              data.premium -
+                data.ncbDiscountAmount +
+                141 +
+                data.paCover +
+                (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+                  (15 / 100)
+            ),
+          });
         });
-      });
     } catch (err) {
       console.log(err.message);
     }

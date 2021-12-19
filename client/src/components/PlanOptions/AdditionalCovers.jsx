@@ -60,20 +60,23 @@ export const AdditionalCovers = () => {
   useEffect(() => {
     try {
       let id = localStorage.getItem("ackoid");
-      const res = axios.get(`http://localhost:8080/cars/${id}`).then((res) => {
-        console.log(res.data);
-        data = res.data;
-        console.log(data);
-        setCarDetails({
-          liscencePlate: data.number,
-          vehicleName: data.name,
-          NCB: data.ncb,
-          registrationMonthYear: data.month + "," + data.year,
-          pincode: data.pincode,
-          carValue: 12.55,
-          mobile: data.mobile,
+      //http://localhost:8080/cars/${id}
+      const res = axios
+        .get(`https://acko.herokuapp.com/cars/${id}`)
+        .then((res) => {
+          console.log(res.data);
+          data = res.data;
+          console.log(data);
+          setCarDetails({
+            liscencePlate: data.number,
+            vehicleName: data.name,
+            NCB: data.ncb,
+            registrationMonthYear: data.month + "," + data.year,
+            pincode: data.pincode,
+            carValue: 12.55,
+            mobile: data.mobile,
+          });
         });
-      });
     } catch (err) {
       console.log(err.message);
     }
@@ -115,8 +118,9 @@ export const AdditionalCovers = () => {
   };
   totalPrice = +ownDamagePlan + +added;
   const sendData = () => {
+    //http://localhost:8080/user
     axios
-      .post(`http://localhost:8080/user`, {
+      .post(`https://acko.herokuapp.com/user`, {
         selectedPlan: "Own Damage Plan",
         mobile: carDetails.mobile,
         premium: +ownDamagePlan + (ownDamagePlan * 20) / 80,

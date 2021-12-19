@@ -43,7 +43,11 @@ const [pincode,setPincode]=useState("")
               onClick={async () => {
                 const id = localStorage.getItem("ackoid");
                 const data = { pincode: pincode };
-                await axios.patch(`http://localhost:8080/cars/${id}`, data);
+                // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+                 await axios.patch(
+                   `https://acko.herokuapp.com/cars/${id}`,
+                   data
+                 );
               }}
               className={style.pinbtn}
             >

@@ -108,6 +108,20 @@ function Year() {
             Before 2006
           </button>
         </div>
+
+        <Link to="/cars/month">
+          <button
+            className={style.yearbtn}
+            onClick={async () => {
+              const id = localStorage.getItem("ackoid");
+              const data = { year: value };
+              // await axios.patch(`http://localhost:8080/cars/${id}`, data);
+              await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
+            }}
+          >
+            Continue
+          </button>
+        </Link>
       </div>
 
       <Link to="/cars/month">
