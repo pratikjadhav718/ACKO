@@ -29,9 +29,45 @@ export const CardPayment = () => {
               <div>Card Number</div>
               <div>
                 {" "}
-                <input type="tel" inputmode="numeric" pattern="[0-9s]{13,19}" />
+                <input
+                  placeholder="Enter card number here"
+                  type="tel"
+                  inputmode="numeric"
+                  pattern="[0-9s]{13,19}"
+                />
                 {cardNumberSvg}
               </div>
+            </div>
+            <div>
+              <div>
+                <div>Expiry Date</div>
+                <div>
+                  {" "}
+                  <input
+                    type="tel"
+                    inputmode="numeric"
+                    pattern="[0-9s]{13,19}"
+                    placeholder="MM/YY"
+                  />
+                </div>
+              </div>
+              <div>
+                <div>CVV</div>
+                <div>
+                  {" "}
+                  <input
+                    type="tel"
+                    inputmode="numeric"
+                    pattern="[0-9s]{13,19}"
+                    placeholder="CVV"
+                  />
+                </div>
+              </div>
+            </div>
+            <div>
+              <button style={{ background: "#d6d9e0", color: "white" }}>
+                Pay Now
+              </button>
             </div>
           </div>
         </div>
