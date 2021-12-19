@@ -1,6 +1,5 @@
 .verifymaindiv{
     /* border: 1px solid #DCDDE9; */
-    /* background: white; */
     padding-left: 10px;
 }
 
@@ -54,36 +53,6 @@
     line-height: 14px;
 }
 
-/* .carownerdetails > :nth-child(3) {
-    font-size: 12px;
-    line-height: 14px;
-}
-.carownerdetails > :nth-child(4) {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.carownerdetails > :nth-child(3) {
-    font-size: 12px;
-    line-height: 14px;
-}
-.carownerdetails > :nth-child(4) {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-}
-
-.carownerdetails > :nth-child(5) {
-    font-size: 12px;
-    line-height: 14px;
-}
-.carownerdetails > :nth-child(6) {
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 14px;
-}
-*/
 .verifymaindiv > :nth-child(6) > p {
     font-family: Helvetica Neue;
     font-style: normal;

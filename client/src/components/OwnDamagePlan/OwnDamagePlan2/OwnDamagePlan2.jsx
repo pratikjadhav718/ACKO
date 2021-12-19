@@ -7,7 +7,8 @@ export const OwnDamagePlan2 = () => {
     const id2 = localStorage.getItem("ackoUserId");
 
     const [data, setData] = useState("");
-    const conspre=141
+  const conspre = 141
+
 
 
         const getData = async () => {
@@ -18,7 +19,10 @@ export const OwnDamagePlan2 = () => {
         useEffect(() => {
           getData();
         }, []);
-    
+      const netpre =
+    data.premium - data.ncbDiscountAmount + conspre + data.paCover;
+  const gst = 0.15 * netpre
+  const total=netpre-gst
     return (
       <div className="owndamageplandiv22">
         <div className="owndamagetopdiv">
@@ -78,9 +82,9 @@ export const OwnDamagePlan2 = () => {
             Net Premium
           </div>
 
-          <div className="pricetables">- ₹ {"4,049"}</div>
+          <div className="pricetables">- ₹ { netpre}</div>
           <div className="pricetables">GST</div>
-          <div className="pricetables">₹ 729</div>
+          <div className="pricetables">₹ { gst}</div>
         </div>
 
         <hr
@@ -93,7 +97,7 @@ export const OwnDamagePlan2 = () => {
 
         <div className="owndamageplanfinalprice">
           <div className="pricetables">Total</div>
-          <div className="pricetables">₹ 4,778</div>
+          <div className="pricetables">₹ { total}</div>
         </div>
       </div>
     );
