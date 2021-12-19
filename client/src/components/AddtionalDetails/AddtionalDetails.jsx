@@ -11,6 +11,7 @@ import { MoreDetails } from "./MoreDetails";
 import { OtpPopup } from "./OtpPopup";
 import { Pop } from "./Pop";
 import axios from "axios";
+import firebase from "./firebase.js"
 export const AddtionalDetails = () => {
 
 
@@ -18,16 +19,56 @@ export const AddtionalDetails = () => {
     
 
     const [username, setUsername] = useState("");
-    const [mail, setMail] = useState("")
+  const [mail, setMail] = useState("")
+  
+ const  configureCaptcha = () => {
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier(
+      "sign-in-button",
+      {
+        'size': "invisible",
+        'callback': (response) => {
+          // reCAPTCHA solved, allow signInWithPhoneNumber.
+          handleClickk();
+          console.log("recaptcha");
+        },
+        defaultCountry:"IN"
+      }
+    );
+  }
   
 
-    const handleClickk =async () => {
-        setOtpPopup(true);
-        const data = {
-            username: username,
-            email:mail
-        }
-        await axios.patch(`http://localhost:8080/cars/${id}`,data);
+  const handleClickk = async (e) => {
+    e.preventDefault();
+    configureCaptcha()
+   const phoneNumber = '+916379935905'
+   const appVerifier = window.recaptchaVerifier;
+   firebase
+     .auth()
+     .signInWithPhoneNumber(phoneNumber, appVerifier)
+     .then((confirmationResult) => {
+       // SMS sent. Prompt user to type the code from the message, then sign the
+       // user in with confirmationResult.confirm(code).
+       window.confirmationResult = confirmationResult;
+       console.log("otp send");
+       // ...
+     })
+     .catch((error) => {
+     console.log(error);
+     });
+
+
+
+
+
+
+
+    ////////////////////////////
+        // setOtpPopup(true);
+        // const data = {
+        //     username: username,
+        //     email:mail
+        // }
+        // await axios.patch(`http://localhost:8080/cars/${id}`,data);
         
 }
 
@@ -201,7 +242,13 @@ export const AddtionalDetails = () => {
             </div>
 
             <div className={style.continuebtndiv}>
-              <button onClick={handleClickk} className={style.continuebtn}>Continue</button>
+              <button
+                id="sign-in-button"
+                onClick={handleClickk}
+                className={style.continuebtn}
+              >
+                Continue
+              </button>
             </div>
           </div>
 
