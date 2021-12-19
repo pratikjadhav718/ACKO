@@ -16,21 +16,26 @@ export const OwnDamagePlan2 = () => {
 
         useEffect(() => {
           getData();
+          patchData()
         }, []);
       const netpre =
     data.premium - data.ncbDiscountAmount + conspre + data.paCover;
   const gst = 0.15 * netpre
-  const total = netpre + gst
+  var total = netpre + gst
+ localStorage.setItem("totalacko",total)
+  const ans={total:total}
  
   
         const getData = async () => {
           const { data } = await axios.get(`http://localhost:8080/user/${id2}`);
           setData(data);
- console.log(total);
-          const totall = { total: total };
+ 
+  };
 
-          await axios.patch(`http://localhost:8080/cars/${id}`,totall);
-        };
+  const patchData = async () => {
+    await axios.patch(`http://localhost:8080/cars/${id}`,ans);
+  }
+ 
     return (
       <div className="owndamageplandiv22">
         <div className="owndamagetopdiv">

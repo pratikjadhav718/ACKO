@@ -6,26 +6,29 @@ import { useEffect, useState } from "react";
 
 export const ByNow = () => {
 
-    const id = localStorage.getItem("ackoid");
+//     const id = localStorage.getItem("ackoid");
 
-    const [data,setData]=useState("")
+//     const [data,setData]=useState("")
     
-    const getData =async () => {
-        const { data } = await axios.get(`http://localhost:8080/cars/${id}`)
-        setData(data)
-        console.log(data);
-    }
+//     const getData =async () => {
+//         const { data } = await axios.get(`http://localhost:8080/cars/${id}`)
+//         setData(data)
+//         console.log(data);
+//     }
 
-    useEffect(() => {
-        getData(); 
-    },[])
-
+//     useEffect(() => {
+//         getData();
+//     },[])
+// console.log(data.total);
+    
+    
+    const total = localStorage.getItem("totalacko");
     return (
       <div className="bynowmaindiv">
         <Link style={{textDecoration:"none",width:"150px",heigth:'200px'}} to='/successfull' >
         
           <div>
-                    <div>₹ { data.total}</div>
+                    <div>₹ {total}</div>
             <div>Buy Now</div>
           </div>
         </Link>
