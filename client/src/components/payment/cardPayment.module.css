@@ -222,6 +222,7 @@
 .mainContainer > :nth-child(3) > :nth-child(1) > :nth-child(1) > :nth-child(3) {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 .mainContainer
   > :nth-child(3)
@@ -243,7 +244,7 @@
   > :nth-child(1)
   > :nth-child(2) {
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 13px;
   color: #151619;
 }
@@ -282,7 +283,7 @@
   > :nth-child(2)
   > :nth-child(2) {
   font-size: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   line-height: 13px;
   text-align: right;
   color: #151619;

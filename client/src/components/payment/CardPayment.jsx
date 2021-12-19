@@ -30,14 +30,17 @@ export const CardPayment = () => {
         console.log(data);
         setPaymentValues({
           netPreminum: data.premium.toFixed(0),
-          gst: ((data.premium * 15) / 100).toFixed(0),
-          total: (
+          gst:
+            (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+            (15 / 100),
+          total: Math.round(
             data.premium -
-            data.ncbDiscountAmount +
-            141 +
-            data.paCover +
-            (data.premium * 15) / 100
-          ).toFixed(0),
+              data.ncbDiscountAmount +
+              141 +
+              data.paCover +
+              (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
+                (15 / 100)
+          ),
         });
       });
     } catch (err) {
