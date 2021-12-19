@@ -1,3 +1,4 @@
+import { useState } from "react/cjs/react.development";
 import Header from "../Header/Header";
 import {
   cardNumberSvg,
@@ -10,6 +11,12 @@ import styles from "./cardPayment.module.css";
 import { SIdeDiv } from "./SideDiv";
 
 export const CardPayment = () => {
+  const [allowPay, setAllowPay] = useState(false);
+  const cvvChange = (e) => {
+    if (e.target.value.length >= 3) {
+      setAllowPay(true);
+    }
+  };
   return (
     <div>
       {" "}
@@ -56,7 +63,8 @@ export const CardPayment = () => {
                 <div>
                   {" "}
                   <input
-                    type="tel"
+                    onChange={cvvChange}
+                    type="password"
                     inputmode="numeric"
                     pattern="[0-9s]{13,19}"
                     placeholder="CVV"
@@ -65,9 +73,20 @@ export const CardPayment = () => {
               </div>
             </div>
             <div>
-              <button style={{ background: "#d6d9e0", color: "white" }}>
+              <button
+                style={{
+                  background: allowPay ? "#5A68E7" : "#d6d9e0",
+                  color: "white",
+                }}
+              >
                 Pay Now
               </button>
+            </div>
+            <div>
+              <img
+                src="https://payments.juspay.in/web/images/theme_light/security_symbol.png"
+                alt=""
+              />
             </div>
           </div>
         </div>

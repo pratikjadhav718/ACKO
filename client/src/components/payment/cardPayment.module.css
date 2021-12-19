@@ -16,7 +16,6 @@
 }
 .mainContainer > :nth-child(2) {
   width: 450px;
-  border: 1px solid black;
 }
 .mainContainer > :nth-child(3) {
   width: 210px;
@@ -78,11 +77,12 @@
   width: 100%;
   height: 46px;
   border-radius: 6px;
-  border: 1px solid #4f34d2;
+  border: 1px solid #d5d5d5;
   display: flex;
   align-items: center;
   margin: 0px 0px 24px 0px;
 }
+
 .mainContainer
   > :nth-child(2)
   > :nth-child(1)
@@ -132,7 +132,7 @@
   height: 46px;
   width: 155px;
   border-radius: 6px;
-  border: 1px solid #4f34d2;
+  border: 1px solid #d5d5d5;
   display: flex;
   align-items: center;
   margin: 0px 0px 24px 0px;
@@ -181,4 +181,21 @@
   cursor: pointer;
   border: none;
   border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.mainContainer > :nth-child(2) > :nth-child(1) > :nth-child(5) {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0px 0px 0px;
+}
+.mainContainer > :nth-child(2) > :nth-child(1) > :nth-child(5) > img {
+  width: 230px;
+  margin: 6px 0px 0px 0px;
 }
