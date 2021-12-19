@@ -661,7 +661,7 @@ ul {
   .home_main {
     display: block;
     height: auto;
-    min-height: 80vh;
+    min-height: 85vh;
     width: 100%;
     padding-bottom: 100px;
     background-color: var(--white);
