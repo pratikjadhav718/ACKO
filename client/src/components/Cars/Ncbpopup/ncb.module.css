@@ -1,66 +1,62 @@
-.ncbpopupbody{
-    /* border: 1px solid black; */
-    width: 600px;
-    height: 200px;
-background-color: #FAFAFA;
-border-radius: 10px;
+.ncbpopupbody {
+  border: 1px solid rgb(216, 216, 216);
+  width: 456px;
+  height: 200px;
+  background-color: #fafafa;
+  border-radius: 10px;
 
+  position: absolute;
+  top: 0;
+  bottom: 30vh;
+  left: 0;
+  right: 0;
 
-position: absolute;
-    top:0;
-    bottom: 30vh;
-    left: 0;
-    right: 0;
-    
-    margin: auto;
-
+  margin: auto;
 }
 
-.congradiv{
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-around;
+.congradiv {
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-around;
 }
 
-.congradiv p{
-font-style: normal;
-font-weight: bold;
-font-size: 20px;
-line-height: 24px;
-align-items: center;
-margin-left: 25%;
+.congradiv p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  margin-left: 25%;
 }
 
-.congradiv  img{
-    cursor: pointer;
+.congradiv img {
+  cursor: pointer;
 }
 
-.ncbdiv{
-    font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
+.ncbdiv {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
 }
 
-.popupbtn{
- margin-left: 40%;
+.popupbtn {
+  margin-left: 40%;
   width: 116px;
-height: 40px;
-background: #522ED3;
-border-radius: 4px;
-padding: 8px 32px;
-border: none;
-color: white;
-margin-top: 35px;
-cursor: pointer;
-
+  height: 40px;
+  background: #522ed3;
+  border-radius: 4px;
+  padding: 8px 32px;
+  border: none;
+  color: white;
+  margin-top: 35px;
+  cursor: pointer;
 }
 
-
-@media only screen and (max-width: 600px){
-    .ncbpopupbody{
-         width: 300px;
+@media only screen and (max-width: 600px) {
+  .ncbpopupbody {
+    width: 300px;
     height: 200px;
-    }
+  }
 }
