@@ -16,14 +16,14 @@ function Typecarpopup({ setCarpopup, carpopup, setCar }) {
         onChange={(e) => {
           setValue(e.target.value);
           setCar(e.target.value);
-          setCarpopup(false)
+          setCarpopup(false);
         }}
       >
-        <option value="Volvo">Volvo</option>
+        <option value="Swift">Swift</option>
         <option value="Saab">Saab</option>
         <option value="Mercedes">Mercedes</option>
         <option value="Audi">Audi</option>
-        <option value="BMW">BMW</option>
+        <option value="Ford Eco sport">Ford Eco sport</option>
         <option value="Swift">Swift</option>
         <option value="Wangnr">Wangnr</option>
         <option value="Tesla">Tesla</option>

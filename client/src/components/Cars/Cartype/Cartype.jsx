@@ -11,7 +11,7 @@ import axios from "axios"
 import {Link} from "react-router-dom"
 function Cartype() {
 
-    const [carr, setCar] = useState("Ford Ecosport");
+    const [carr, setCar] = useState("Swift");
 
     const [fuel, setFuel] = useState("Petrol");
 

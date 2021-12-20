@@ -24,6 +24,7 @@ export const CardPayment = () => {
   useEffect(() => {
     try {
       let id = localStorage.getItem("ackoUserId");
+      // let id1=localStorage.getItem("ackoid")
       //http://localhost:8080/user/${id
       const res = axios
         .get(`https://acko.herokuapp.com/user/${id}`)
@@ -45,8 +46,9 @@ export const CardPayment = () => {
                 (data.premium - data.ncbDiscountAmount + 141 + data.paCover) *
                   (15 / 100)
             ),
-          });
-        });
+          })
+        })
+      
     } catch (err) {
       console.log(err.message);
     }

@@ -62,7 +62,7 @@ export const OwnDamagePlan2 = () => {
     } catch (err) {
       console.log(err.message);
     }
-  }, [paymentValues]);
+  }, []);
  localStorage.setItem("totalacko", paymentValues.total);
     return (
       <div className="owndamageplandiv22">
