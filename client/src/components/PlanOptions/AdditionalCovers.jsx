@@ -474,6 +474,7 @@ export const AdditionalCovers = () => {
                 <div>
                   <button
                     onClick={() => {
+                      
                       sendData();
                       history.push("./addtional-details");
                     }}

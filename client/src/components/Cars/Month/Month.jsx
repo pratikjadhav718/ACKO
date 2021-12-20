@@ -20,7 +20,7 @@ function Month() {
 
   return (
     <div className={style.yearbody}>
-      <p>Which year did you buy your car?</p>
+      <p>Which month did you buy your car?</p>
 
       <div className={style.yearflexdiv}>
         <div>

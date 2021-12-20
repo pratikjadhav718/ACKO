@@ -11,6 +11,7 @@ import { Pop } from "./Pop";
 import axios from "axios";
 import firebase from "./firebase.js"
 import { DropDownPopup } from "./DropDownPopup";
+import { useHistory } from "react-router-dom";
 export const AddtionalDetails = () => {
 
 
@@ -35,7 +36,7 @@ export const AddtionalDetails = () => {
 //       }
 //     );
 //   }
-  
+  const history=useHistory()
 
   const handleClickk = async (e) => {
   //   e.preventDefault();
@@ -61,16 +62,16 @@ export const AddtionalDetails = () => {
 
 
 
-
     ////////////////////////////
-        setOtpPopup(true);
+        // setOtpPopup(true);
         const data = {
             username: username,
             email:mail
         }
     // await axios.patch(`http://localhost:8080/cars/${id}`, data);
         await axios.patch(`https://acko.herokuapp.com/cars/${id}`, data);
-        
+        history.push("/final-details");
+
 }
 
 
